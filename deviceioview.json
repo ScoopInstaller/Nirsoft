@@ -1,0 +1,17 @@
+{
+    "version": "1.06",
+    "homepage": "http://www.nirsoft.net/utils/device_io_view.html",
+    "url": "http://www.nirsoft.net/utils/deviceioview.zip",
+    "bin": "deviceioview.exe",
+    "hash": "6e838ff2bd864e4f004f8051f36a6d275dbb847c624fa9b7328d7f3e5b6e6848",
+    "description": "Watch the data transfer between a software or service and a device driver.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/deviceioview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/deviceioview.zip"
+    }
+}

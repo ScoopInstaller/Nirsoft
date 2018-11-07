@@ -1,0 +1,17 @@
+{
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/app_audio_config.html",
+    "url": "http://www.nirsoft.net/utils/appaudioconfig.zip",
+    "bin": "appaudioconfig.exe",
+    "hash": "95d713c2acb34e0bee47e8bd79d7f7bdb9ceebe0c217c65271abf495efae4527",
+    "description": "View/change audio settings of applications",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/appaudioconfig.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/appaudioconfig.zip"
+    }
+}

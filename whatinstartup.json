@@ -1,0 +1,17 @@
+{
+    "version": "1.35",
+    "homepage": "http://www.nirsoft.net/utils/what_run_in_startup.html",
+    "url": "http://www.nirsoft.net/utils/whatinstartup.zip",
+    "bin": "whatinstartup.exe",
+    "hash": "71241fb3d34661002d94cd0076216245182799894fbe0d43266a039f70115641",
+    "description": "disable/enable/delete programs that are loaded at Windows startup.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/whatinstartup.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/whatinstartup.zip"
+    }
+}

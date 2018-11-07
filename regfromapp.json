@@ -1,0 +1,17 @@
+{
+    "version": "1.33",
+    "homepage": "http://www.nirsoft.net/utils/reg_file_from_application.html",
+    "url": "http://www.nirsoft.net/utils/regfromapp.zip",
+    "bin": "regfromapp.exe",
+    "hash": "54977dc7f645e8b2ede1c40521cd04e3521c454800310cc8589020cec133a18d",
+    "description": "Creates .reg file according to Registry changes made by application.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/regfromapp.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/regfromapp.zip"
+    }
+}

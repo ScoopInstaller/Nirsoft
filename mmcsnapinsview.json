@@ -1,0 +1,17 @@
+{
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/utils/mmc_snapins_view.html",
+    "url": "http://www.nirsoft.net/utils/mmcsnapinsview.zip",
+    "bin": "mmcsnapinsview.exe",
+    "hash": "408599575a191f7e3d999a2e2eda58d16490e4871fe390b8af676907fc45c28b",
+    "description": "Displays the details of all MMC snap-ins installed on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/mmcsnapinsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/mmcsnapinsview.zip"
+    }
+}

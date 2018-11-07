@@ -1,0 +1,17 @@
+{
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/inside_clipboard.html",
+    "url": "http://www.nirsoft.net/utils/insideclipboard.zip",
+    "bin": "insideclipboard.exe",
+    "hash": "fe5052f6efc39f5f223b32006616841eb95c08eb8f85acff41f502ba883d7737",
+    "description": "Displays the content of all formats stored in the clipboard.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/insideclipboard.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/insideclipboard.zip"
+    }
+}

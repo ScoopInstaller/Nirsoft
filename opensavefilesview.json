@@ -1,0 +1,17 @@
+{
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/open_save_files_view.html",
+    "url": "http://www.nirsoft.net/utils/opensavefilesview.zip",
+    "bin": "opensavefilesview.exe",
+    "hash": "7ffbd15cd38235c88cdb34ffa0fe577c86b2ddc4192e9860d8f1e1dfc3ce64f5",
+    "description": "Displays list of files that you previously opened.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/opensavefilesview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/opensavefilesview.zip"
+    }
+}

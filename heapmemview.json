@@ -1,0 +1,17 @@
+{
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/heap_memory_view.html",
+    "url": "http://www.nirsoft.net/utils/heapmemview.zip",
+    "bin": "heapmemview.exe",
+    "hash": "10c70d8e33f1e9cbb842e8920171ec5472db53e652e21a640f5ad9d14964d233",
+    "description": "View the content of all memory blocks allocated in the heap.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/heapmemview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/heapmemview.zip"
+    }
+}

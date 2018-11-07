@@ -1,0 +1,17 @@
+{
+    "version": "2.18",
+    "homepage": "http://www.nirsoft.net/utils/wireless_network_watcher.html",
+    "url": "http://www.nirsoft.net/utils/wnetwatcher.zip",
+    "bin": "wnetwatcher.exe",
+    "hash": "b7f9481037a4bce0e25f77f05f8bd985dd96bbddfedbce7a30f1230eb4c885fd",
+    "description": "Shows who is connected to your wireless network.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wnetwatcher.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/wnetwatcher.zip"
+    }
+}

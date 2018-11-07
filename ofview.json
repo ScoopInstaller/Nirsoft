@@ -1,0 +1,17 @@
+{
+    "version": "1.86",
+    "homepage": "http://www.nirsoft.net/utils/opened_files_view.html",
+    "url": "http://www.nirsoft.net/utils/ofview.zip",
+    "bin": "ofview.exe",
+    "hash": "3e1861447f3e5e30e0530102a3994f38043295fe775c57238eb3aad17266edc1",
+    "description": "Displays the list of all opened files on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/ofview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/ofview.zip"
+    }
+}

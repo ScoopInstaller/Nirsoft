@@ -1,0 +1,17 @@
+{
+    "version": "1.83",
+    "homepage": "http://www.nirsoft.net/utils/wake_on_lan.html",
+    "url": "http://www.nirsoft.net/utils/wakemeonlan.zip",
+    "bin": "wakemeonlan.exe",
+    "hash": "e5da9dc46f703fd15fbb52b7c05140bcbfe3ec9fa087a1cdff4e02f4390d35d3",
+    "description": "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wakemeonlan.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/wakemeonlan.zip"
+    }
+}

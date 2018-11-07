@@ -1,0 +1,17 @@
+{
+    "version": "1.25",
+    "homepage": "http://www.nirsoft.net/utils/application_crash_report.html",
+    "url": "http://www.nirsoft.net/utils/wincrashreport.zip",
+    "bin": "wincrashreport.exe",
+    "hash": "2d754c8d4041b01809638bf07e366a5fd018fee12d263b1323306f5166476e4e",
+    "description": "Displays a report about crashed Windows application.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wincrashreport.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/wincrashreport.zip"
+    }
+}

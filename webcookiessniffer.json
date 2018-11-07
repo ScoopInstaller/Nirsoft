@@ -1,0 +1,17 @@
+{
+    "version": "1.30",
+    "homepage": "http://www.nirsoft.net/utils/web_cookies_sniffer.html",
+    "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip",
+    "bin": "webcookiessniffer.exe",
+    "hash": "c4d0aa66ee9fce9f6ad722d5991e9ca2757eab514045ba6b4de1bf842c2110c4",
+    "description": "Captures Web site cookies and displays them in a simple table",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/webcookiessniffer.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip"
+    }
+}

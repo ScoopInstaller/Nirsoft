@@ -1,0 +1,17 @@
+{
+    "version": "1.97",
+    "homepage": "http://www.nirsoft.net/utils/shexview.html",
+    "url": "http://www.nirsoft.net/utils/shexview.zip",
+    "bin": "shexview.exe",
+    "hash": "a42f0a197c7e77c8d336168250e0d25c4c2c6a887f051e9ac1b98fb9cc2bba0e",
+    "description": "Displays the details of shell extensions installed on your computer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/shexview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/shexview.zip"
+    }
+}

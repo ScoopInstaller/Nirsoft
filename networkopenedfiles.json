@@ -1,0 +1,17 @@
+{
+    "version": "1.22",
+    "homepage": "http://www.nirsoft.net/utils/network_opened_files.html",
+    "url": "http://www.nirsoft.net/utils/networkopenedfiles.zip",
+    "bin": "networkopenedfiles.exe",
+    "hash": "e316cb4bf09c9170259d16ae049a7b2e1c2ea49bebf50ac64e7033d4110ac338",
+    "description": "Displays the files that are currently opened by other computers on your network.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/networkopenedfiles.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/networkopenedfiles.zip"
+    }
+}

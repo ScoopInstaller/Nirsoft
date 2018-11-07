@@ -1,0 +1,17 @@
+{
+    "version": "1.17",
+    "homepage": "http://www.nirsoft.net/utils/event_log_channels_view.html",
+    "url": "http://www.nirsoft.net/utils/eventlogchannelsview.zip",
+    "bin": "eventlogchannelsview.exe",
+    "hash": "8f0b61576c88f32c93b5e583a230ac6f102a924d3813ce0df63817e9d0434d04",
+    "description": "View,Disable,Enable Event Log Channels.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/eventlogchannelsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/eventlogchannelsview.zip"
+    }
+}

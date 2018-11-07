@@ -1,0 +1,17 @@
+{
+    "version": "1.06",
+    "homepage": "https://www.nirsoft.net/utils/app_network_counter.html",
+    "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip",
+    "bin": "appnetworkcounter.exe",
+    "hash": "f6b8f01ef34df596f4457c0d07509fd41e1ba0a9c82979b37d79f6837208f4b1",
+    "description": "Displays number of TCP/UDP bytes and packets sent/received by every application",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/appnetworkcounter.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip"
+    }
+}

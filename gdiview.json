@@ -1,0 +1,17 @@
+{
+    "version": "1.26",
+    "homepage": "http://www.nirsoft.net/utils/gdi_handles.html",
+    "url": "http://www.nirsoft.net/utils/gdiview.zip",
+    "bin": "gdiview.exe",
+    "hash": "30dc7eda83eee7826e677c5f27a89d8389fb632476d4e413e332ae73769c32f6",
+    "description": "Displays the list of GDI handles opened by every process",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/gdiview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/gdiview.zip"
+    }
+}

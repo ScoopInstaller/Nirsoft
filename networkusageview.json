@@ -1,0 +1,17 @@
+{
+    "version": "1.11",
+    "homepage": "https://www.nirsoft.net/utils/network_usage_view.html",
+    "url": "https://www.nirsoft.net/utils/networkusageview.zip",
+    "bin": "networkusageview.exe",
+    "hash": "01a0bf513ea4077f48ab9e79d509dcadcde639c0efcb0bd0634a96d7d2fe38be",
+    "description": "Displays network usage information for Windows 8 and Windows 10",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/networkusageview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/networkusageview.zip"
+    }
+}

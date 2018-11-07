@@ -1,0 +1,17 @@
+{
+    "version": "4.30",
+    "homepage": "http://www.nirsoft.net/outlook_office_software.html",
+    "url": "http://www.nirsoft.net/packages/outlooktools.zip",
+    "bin": "outlooktools.exe",
+    "hash": "79e975318d5d8db6bec481564bd1be09ed73728853659342872714c08e6ac9d8",
+    "description": "5 Tools for Microsoft Outlook",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/outlooktools.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/packages/outlooktools.zip"
+    }
+}

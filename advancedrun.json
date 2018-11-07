@@ -1,0 +1,17 @@
+{
+    "version": "1.06",
+    "homepage": "http://www.nirsoft.net/utils/advanced_run.html",
+    "url": "http://www.nirsoft.net/utils/advancedrun.zip",
+    "bin": "advancedrun.exe",
+    "hash": "ac015bdfcf63b35ff2c31b09988048f607dc9db71614e4eec1bef61ad4f9d5da",
+    "description": "Run a program with different settings that you choose.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/advancedrun.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/advancedrun.zip"
+    }
+}

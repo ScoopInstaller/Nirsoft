@@ -1,0 +1,17 @@
+{
+    "version": "1.22",
+    "homepage": "http://www.nirsoft.net/utils/winlister.html",
+    "url": "http://www.nirsoft.net/utils/winlister.zip",
+    "bin": "winlister.exe",
+    "hash": "1285a20c47498f864bc33a7ab3cfd3c97168cbbbe9e14b1474b0bb5f02cd24a2",
+    "description": "This utility displays the list of opened windows on your system. ",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/winlister.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/winlister.zip"
+    }
+}

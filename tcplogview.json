@@ -1,0 +1,17 @@
+{
+    "version": "1.30",
+    "homepage": "http://www.nirsoft.net/utils/tcp_log_view.html",
+    "url": "http://www.nirsoft.net/utils/tcplogview.zip",
+    "bin": "tcplogview.exe",
+    "hash": "ccb96b26d63c7961e6dcce24ca35d6d3d330fbceacb88c1b9667cbc5ff8ea634",
+    "description": "Monitors the opened TCP connections on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/tcplogview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/tcplogview.zip"
+    }
+}

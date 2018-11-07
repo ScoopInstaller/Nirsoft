@@ -1,0 +1,17 @@
+{
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/url_protocol_view.html",
+    "url": "http://www.nirsoft.net/utils/urlprotocolview.zip",
+    "bin": "urlprotocolview.exe",
+    "hash": "17e9df993efdb66ed3e301fb69e531974f09a0ad3212efe88ac4331e40508873",
+    "description": "View/disable/enable the URL protocols installed on your system",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/urlprotocolview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/urlprotocolview.zip"
+    }
+}

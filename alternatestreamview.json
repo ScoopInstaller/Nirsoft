@@ -1,0 +1,17 @@
+{
+    "version": "1.55",
+    "homepage": "https://www.nirsoft.net/utils/alternate_data_streams.html",
+    "url": "https://www.nirsoft.net/utils/alternatestreamview.zip",
+    "bin": "alternatestreamview.exe",
+    "hash": "01f7212a8d389fc53769065d532580839330d302f063e31489cef59a61f367bb",
+    "description": "Find all hidden alternate streams stored in the file system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/alternatestreamview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/alternatestreamview.zip"
+    }
+}

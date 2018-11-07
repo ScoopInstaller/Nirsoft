@@ -1,0 +1,17 @@
+{
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/web_browser_addons_view.html",
+    "url": "http://www.nirsoft.net/utils/browseraddonsview.zip",
+    "bin": "browseraddonsview.exe",
+    "hash": "06deb3a5b082df68f2aec330ad59d10d7210440ed63519fdc0a9a1f319e6b547",
+    "description": "Displays the details of all Web browser addons/plugins installed in your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/browseraddonsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/browseraddonsview.zip"
+    }
+}

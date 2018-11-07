@@ -1,0 +1,17 @@
+{
+    "version": "1.66",
+    "homepage": "http://www.nirsoft.net/utils/dll_export_viewer.html",
+    "url": "http://www.nirsoft.net/utils/dllexp.zip",
+    "bin": "dllexp.exe",
+    "hash": "5a1149dc83b22f2c47600ab0f1f60c922607aaaa36feaee9c984f00ab7d96ec5",
+    "description": "Lists DLL exported functions and their memory addresses - for debugging.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/dllexp.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/dllexp.zip"
+    }
+}

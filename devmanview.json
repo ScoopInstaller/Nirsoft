@@ -1,0 +1,17 @@
+{
+    "version": "1.55",
+    "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
+    "url": "https://www.nirsoft.net/utils/devmanview.zip",
+    "bin": "devmanview.exe",
+    "hash": "b12556dbbf9e79929ce192c4b6b5ca70fb39a523874f7191c1e79ec4dc75b6e7",
+    "description": "Alternative to the standard Device Manager of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/devmanview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/devmanview.zip"
+    }
+}

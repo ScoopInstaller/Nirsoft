@@ -1,0 +1,17 @@
+{
+    "version": "1.23",
+    "homepage": "http://www.nirsoft.net/utils/uninstall_view.html",
+    "url": "http://www.nirsoft.net/utils/uninstallview.zip",
+    "bin": "uninstallview.exe",
+    "hash": "0dee61aa1525365a037cd5ea9c53d056cd8ea4cad9c670d0ef06c5fd1b8150e1",
+    "description": "Shows installed programs on your system and allows you to uninstall them.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/uninstallview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/uninstallview.zip"
+    }
+}

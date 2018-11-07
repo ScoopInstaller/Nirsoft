@@ -1,0 +1,17 @@
+{
+    "version": "1.46",
+    "homepage": "http://www.nirsoft.net/utils/drive_letter_view.html",
+    "url": "http://www.nirsoft.net/utils/driveletterview.zip",
+    "bin": "driveletterview.exe",
+    "hash": "675f4c94b75685afd877badd87b8fc1027bdf4da8d3cbaacf694ff1d49d6e32f",
+    "description": "View and change drive letter assignments ",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/driveletterview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/driveletterview.zip"
+    }
+}

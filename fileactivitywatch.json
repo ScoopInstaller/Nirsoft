@@ -1,0 +1,17 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
+    "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
+    "bin": "fileactivitywatch.exe",
+    "hash": "acb3c4f0d1380304ddc0ff31de0b6fc36d7766a06fe5e4762247ea506db70861",
+    "description": "Displays information about read/write/delete operations on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/fileactivitywatch.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip"
+    }
+}

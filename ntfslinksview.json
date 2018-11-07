@@ -1,0 +1,17 @@
+{
+    "version": "1.30",
+    "homepage": "http://www.nirsoft.net/utils/ntfs_links_view.html",
+    "url": "http://www.nirsoft.net/utils/ntfslinksview.zip",
+    "bin": "ntfslinksview.exe",
+    "hash": "cd082d2d4c8fea975327348901f2a7ec4ee4d0370010c8cb8066a6f20340d9cb",
+    "description": "View the list of NTFS symbolic links/junctions in selected folder.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/ntfslinksview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/ntfslinksview.zip"
+    }
+}

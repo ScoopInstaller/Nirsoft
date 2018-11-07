@@ -1,0 +1,17 @@
+{
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/utils/previous_files_recovery.html",
+    "url": "http://www.nirsoft.net/utils/previousfilesrecovery.zip",
+    "bin": "previousfilesrecovery.exe",
+    "hash": "c528ff1295d9a4e8f309b659f1bf7165ab1d89b1394b789e680d5646c2a3ac24",
+    "description": "find and recovery files from Windows shadow copies",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/previousfilesrecovery.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/previousfilesrecovery.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "2.51",
+    "homepage": "http://www.nirsoft.net/utils/cports.html",
+    "url": "http://www.nirsoft.net/utils/cports.zip",
+    "bin": "cports.exe",
+    "hash": "efdafc43f7d66a88df4d083fc0487efb6436eaa537d47f0a51ed63a5abe7cd4e",
+    "description": "Displays the list of all currently opened TCP/UDP ports on your computer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/cports.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/cports.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/utils/process_tcp_summary.html",
+    "url": "http://www.nirsoft.net/utils/processtcpsummary.zip",
+    "bin": "processtcpsummary.exe",
+    "hash": "816c377f054886ab994501ed9a5341303a745c6f69dd01dd14f3f923802bce0c",
+    "description": "Displays TCP connections summary",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/processtcpsummary.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/processtcpsummary.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.16",
+    "homepage": "http://www.nirsoft.net/utils/process_activity_view.html",
+    "url": "http://www.nirsoft.net/utils/processactivityview.zip",
+    "bin": "processactivityview.exe",
+    "hash": "7d5197e6c722fb57a7a980bb9c5d1b3e41a2ab67ecac970a5ad0918ae22f28d2",
+    "description": "Show the file activity for selected process.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/processactivityview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/processactivityview.zip"
+    }
+}

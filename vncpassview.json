@@ -1,0 +1,17 @@
+{
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/vnc_password.html",
+    "url": "http://www.nirsoft.net/toolsdownload/vncpassview.zip",
+    "bin": "vncpassview.exe",
+    "hash": "a598f49d5b6c06097550952aef7260f226227cf64a982c8fedb605f8f30039b4",
+    "description": "Recover the passwords stored by the VNC tool.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/vncpassview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/toolsdownload/vncpassview.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.22",
+    "homepage": "http://www.nirsoft.net/utils/rtmp_dump_helper.html",
+    "url": "http://www.nirsoft.net/utils/rtmpdumphelper.zip",
+    "bin": "rtmpdumphelper.exe",
+    "hash": "78a76c871e8bbbaa84f7afc754c29f0fe30fff2271ce198be1ac92ec4c996c43",
+    "description": "Download RTMP streams in conjunction with RTMPDump toolkit.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/rtmpdumphelper.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/rtmpdumphelper.zip"
+    }
+}

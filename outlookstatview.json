@@ -1,0 +1,17 @@
+{
+    "version": "2.16",
+    "homepage": "http://www.nirsoft.net/utils/outlook_statistics.html",
+    "url": "http://www.nirsoft.net/utils/outlookstatview.zip",
+    "bin": "outlookstatview.exe",
+    "hash": "ca6ff4f2f40ca215f76e6336172c7b5e9f939a910fe26ca3f4f89d2e27a24b75",
+    "description": "Display a general statistics of your Outlook emails.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/outlookstatview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/outlookstatview.zip"
+    }
+}

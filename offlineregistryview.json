@@ -1,0 +1,17 @@
+{
+    "version": "1.02",
+    "homepage": "http://www.nirsoft.net/utils/offline_registry_view.html",
+    "url": "http://www.nirsoft.net/utils/offlineregistryview.zip",
+    "bin": "offlineregistryview.exe",
+    "hash": "ced9ed4b50feb26acf85a52f9937db5ee251677b96ce59fc7655e38901e2b571",
+    "description": "View offline Registry files",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/offlineregistryview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/offlineregistryview.zip"
+    }
+}

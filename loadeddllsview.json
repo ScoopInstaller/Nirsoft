@@ -1,0 +1,17 @@
+{
+    "version": "1.01",
+    "homepage": "http://www.nirsoft.net/utils/loaded_dll_view.html",
+    "url": "http://www.nirsoft.net/utils/loadeddllsview.zip",
+    "bin": "loadeddllsview.exe",
+    "hash": "83f21febb1bac4917faedd9331fe4962cb969da0ec3e3a28a5ea1b3e0743bea3",
+    "description": "Displays all DLL files loaded on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/loadeddllsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/loadeddllsview.zip"
+    }
+}

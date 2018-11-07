@@ -1,0 +1,17 @@
+{
+    "version": "2.29",
+    "homepage": "http://www.nirsoft.net/utils/smsniff.html",
+    "url": "http://www.nirsoft.net/utils/smsniff.zip",
+    "bin": "smsniff.exe",
+    "hash": "d5ce6ef59020617a411bae4d0aa8a0d86d61d0855c00e1694de9a86e6188be1b",
+    "description": "Captures TCP/IP packets and view the captured data as sequence of conversations.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/smsniff.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/smsniff.zip"
+    }
+}

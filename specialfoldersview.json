@@ -1,0 +1,17 @@
+{
+    "version": "1.26",
+    "homepage": "http://www.nirsoft.net/utils/special_folders_view.html",
+    "url": "http://www.nirsoft.net/utils/specialfoldersview.zip",
+    "bin": "specialfoldersview.exe",
+    "hash": "9a4b737f912ae3dda48bd4046afbab478bcc36e85411941218d69425574c3d8d",
+    "description": "Easily jump to special folders in your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/specialfoldersview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/specialfoldersview.zip"
+    }
+}

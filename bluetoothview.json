@@ -1,0 +1,17 @@
+{
+    "version": "1.66",
+    "homepage": "http://www.nirsoft.net/utils/bluetooth_viewer.html",
+    "url": "http://www.nirsoft.net/utils/bluetoothview.zip",
+    "bin": "bluetoothview.exe",
+    "hash": "0c85497da7a0b4ecee9cdd5e55afa9bc248cd282dcd2eacc7a3ad1f16eb4ecbc",
+    "description": "Monitors the activity of Bluetooth devices around you.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/bluetoothview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/bluetoothview.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.62",
+    "homepage": "https://www.nirsoft.net/utils/ese_database_view.html",
+    "url": "https://www.nirsoft.net/utils/esedatabaseview.zip",
+    "bin": "esedatabaseview.exe",
+    "hash": "f55ca2f9db5d533f19be0da57bf33dcfcea89e2c9d90390016173261e19ae816",
+    "description": "View the content of ESE database files (.edb files)",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/esedatabaseview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/esedatabaseview.zip"
+    }
+}

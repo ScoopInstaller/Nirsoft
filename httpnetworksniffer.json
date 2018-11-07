@@ -1,0 +1,17 @@
+{
+    "version": "1.63",
+    "homepage": "http://www.nirsoft.net/utils/http_network_sniffer.html",
+    "url": "http://www.nirsoft.net/utils/httpnetworksniffer.zip",
+    "bin": "httpnetworksniffer.exe",
+    "hash": "c257e4d052fd48de0fd32f818a051d4e6c2d0a68dcc0f96bdb026c364ceb8182",
+    "description": "Captures and displays HTTP requests/responses.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/httpnetworksniffer.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/httpnetworksniffer.zip"
+    }
+}

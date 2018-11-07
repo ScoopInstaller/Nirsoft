@@ -1,0 +1,17 @@
+{
+    "version": "2.05",
+    "homepage": "http://www.nirsoft.net/utils/wireless_key.html",
+    "url": "http://www.nirsoft.net/toolsdownload/wirelesskeyview.zip",
+    "bin": "wirelesskeyview.exe",
+    "hash": "457a2f3f3beb8eb87dbde964165bb8de02db94d7c04b553fff1801277ceb50ae",
+    "description": "recovers lost wireless network keys (WEP/WPA) stored in your computer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wirelesskeyview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/toolsdownload/wirelesskeyview.zip"
+    }
+}

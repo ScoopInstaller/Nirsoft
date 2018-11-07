@@ -1,0 +1,17 @@
+{
+    "version": "1.38",
+    "homepage": "http://www.nirsoft.net/utils/firefox_downloads_view.html",
+    "url": "http://www.nirsoft.net/utils/firefoxdownloadsview.zip",
+    "bin": "firefoxdownloadsview.exe",
+    "hash": "6872f5dd08ab5fd0996e4738fc3e0c62916329f85305b295f2d7123f8e66ff7f",
+    "description": "Displayed the list of downloaded files in Firefox",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/firefoxdownloadsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/firefoxdownloadsview.zip"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/installed_drivers_list.html",
+    "url": "http://www.nirsoft.net/utils/installeddriverslist.zip",
+    "bin": "installeddriverslist.exe",
+    "hash": "8129da3386a3a84d244b4d2248bd3e5f1ee992a02ae8a6dde537aee5f3567279",
+    "description": "Lists all device drivers that are currently installed on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/installeddriverslist.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/installeddriverslist.zip"
+    }
+}

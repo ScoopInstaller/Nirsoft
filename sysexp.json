@@ -1,0 +1,17 @@
+{
+    "version": "1.76",
+    "homepage": "http://www.nirsoft.net/utils/sysexp.html",
+    "url": "http://www.nirsoft.net/utils/sysexp.zip",
+    "bin": "sysexp.exe",
+    "hash": "02fdde2c89f553abef26b8ba3a73ba43ec6a8105d62a65807a58044dda9c99f5",
+    "description": "Grab the data stored in list-views, tree-views, list boxes, and combo boxes.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/sysexp.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/sysexp.zip"
+    }
+}

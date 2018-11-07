@@ -1,0 +1,17 @@
+{
+    "version": "1.56",
+    "homepage": "http://www.nirsoft.net/domain_lookup_tools.html",
+    "url": "http://www.nirsoft.net/packages/domainlookuptools.zip",
+    "bin": "domainlookuptools.exe",
+    "hash": "ae2de1e45d7fe1b5d1aea5445ff7a1a50b52fce6b1834d032481f91c64019d58",
+    "description": "Package of domain/ip address  lookup tools for Windows",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/domainlookuptools.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/packages/domainlookuptools.zip"
+    }
+}

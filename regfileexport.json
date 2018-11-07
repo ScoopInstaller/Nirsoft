@@ -1,0 +1,17 @@
+{
+    "version": "1.10",
+    "homepage": "http://www.nirsoft.net/utils/registry_file_offline_export.html",
+    "url": "http://www.nirsoft.net/utils/regfileexport.zip",
+    "bin": "regfileexport.exe",
+    "hash": "babc304b5634195c6e5b267b65cea060f6bf794fe56f1780afdd5441f24013cb",
+    "description": "Export offline Registry file to .reg file",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/regfileexport.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/regfileexport.zip"
+    }
+}

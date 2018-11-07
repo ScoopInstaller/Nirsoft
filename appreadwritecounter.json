@@ -1,0 +1,17 @@
+{
+    "version": "1.06",
+    "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
+    "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip",
+    "bin": "appreadwritecounter.exe",
+    "hash": "60a71faae8d71e1a20a47ef37a45730febe9d9fba406c856dd679d337f772d6d",
+    "description": "Displays read/write operations of every application running on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/appreadwritecounter.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip"
+    }
+}

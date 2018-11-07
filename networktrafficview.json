@@ -1,0 +1,17 @@
+{
+    "version": "2.16",
+    "homepage": "http://www.nirsoft.net/utils/network_traffic_view.html",
+    "url": "http://www.nirsoft.net/utils/networktrafficview.zip",
+    "bin": "networktrafficview.exe",
+    "hash": "5a257337fc1f2c897ee7ebc3a2650211119656ada5e55a88a53a07eb72231eef",
+    "description": "Displays network traffic statistics on your network adapter",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/networktrafficview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/networktrafficview.zip"
+    }
+}

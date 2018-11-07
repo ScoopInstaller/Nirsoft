@@ -1,0 +1,17 @@
+{
+    "version": "1.40",
+    "homepage": "http://www.nirsoft.net/utils/shell_menu_view.html",
+    "url": "http://www.nirsoft.net/utils/shmnview.zip",
+    "bin": "shmnview.exe",
+    "hash": "ee2a9df19673b30119e299847a20a6f82232600d6a7a72a329c54ca9173d9293",
+    "description": "Disable/enable static menu items in context menu of Explorer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/shmnview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/shmnview.zip"
+    }
+}

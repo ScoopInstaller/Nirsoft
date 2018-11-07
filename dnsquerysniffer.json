@@ -1,0 +1,17 @@
+{
+    "version": "1.72",
+    "homepage": "http://www.nirsoft.net/utils/dns_query_sniffer.html",
+    "url": "http://www.nirsoft.net/utils/dnsquerysniffer.zip",
+    "bin": "dnsquerysniffer.exe",
+    "hash": "550e5044f47c2ec055ac8e240015d7dcd13d049775a53032711cfa0f797d6850",
+    "description": "Network sniffer utility that shows the DNS queries sent on your system. ",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/dnsquerysniffer.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/dnsquerysniffer.zip"
+    }
+}

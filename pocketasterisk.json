@@ -1,0 +1,17 @@
+{
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/pocket_pc/pocket_asterisk.html",
+    "url": "http://www.nirsoft.net/pocket_pc/pocketasterisk.zip",
+    "bin": "pocketasterisk.exe",
+    "hash": "823acbc7958014ec2999b5b61408f0415a90d428707fe158b3f14db6f8612ebd",
+    "description": "Reveals the passwords stored behind the asterisks ('***')",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/pocketasterisk.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/pocket_pc/pocketasterisk.zip"
+    }
+}

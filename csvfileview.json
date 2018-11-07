@@ -1,0 +1,17 @@
+{
+    "version": "2.40",
+    "homepage": "http://www.nirsoft.net/utils/csv_file_view.html",
+    "url": "http://www.nirsoft.net/utils/csvfileview.zip",
+    "bin": "csvfileview.exe",
+    "hash": "be601cb41b97c013db3ca676dd2aaefded2bdfc2c54b7ae4090ca4e8da6023fb",
+    "description": "CSV/Tab-delimited file viewer and converter",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/csvfileview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/csvfileview.zip"
+    }
+}
