@@ -1,9 +1,9 @@
 {
-    "version": "1.31",
+    "version": "1.35",
     "homepage": "http://www.nirsoft.net/utils/app_crash_view.html",
     "url": "http://www.nirsoft.net/utils/appcrashview.zip",
     "bin": "appcrashview.exe",
-    "hash": "32561a6305bcb9f97119a6ecc526a1964085f1769423b8fe3514f9fcdba31bac",
+    "hash": "76eca5db923e938504d525b8b48a64ab4ad375ced896665dbc543960b07c6054",
     "description": "Displays the details of all application crashes occurred in your system. ",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
