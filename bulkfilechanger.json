@@ -1,9 +1,9 @@
 {
-    "version": "1.51",
+    "version": "1.52",
     "homepage": "http://www.nirsoft.net/utils/bulk_file_changer.html",
     "url": "http://www.nirsoft.net/utils/bulkfilechanger.zip",
     "bin": "bulkfilechanger.exe",
-    "hash": "763f92127d9e9d035d1c574e9a799d4e73596b5ce690599da5ecbb032ef41dbe",
+    "hash": "514557a47f5e446451d5f61dc7cd449d0e1c0e507c00774e39f41ffea7ab83db",
     "description": "Change date/time/attributes of multiple files.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
