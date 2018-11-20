@@ -1,9 +1,9 @@
 {
-    "version": "6.15",
+    "version": "6.20",
     "homepage": "http://www.nirsoft.net/network_tools.html",
     "url": "http://www.nirsoft.net/packages/networktools.zip",
     "bin": "networktools.exe",
-    "hash": "b0734fd2ce4cbb8db50d0a78d47fea8f23e2af500bd130261b426e0caf842747",
+    "hash": "27b6beb380d21d57537d050ac4579842dfdd12d182d2ebe0da332f7dde111029",
     "description": "Package of network monitoring tools for Windows",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
