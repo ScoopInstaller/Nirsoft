@@ -1,9 +1,9 @@
 {
-    "version": "1.01",
+    "version": "1.02",
     "homepage": "https://www.nirsoft.net/utils/installed_packages_view.html",
     "url": "https://www.nirsoft.net/utils/installedpackagesview.zip",
     "bin": "installedpackagesview.exe",
-    "hash": "2f279946e667ea8dc89da8537e68c50eec847c7de651734decbc39c100840a2c",
+    "hash": "9e0ec11529f269bdd13c428ef9db788e0fa9aec6511f30d517ebed6084fd58e4",
     "description": "Displays installed MSI packages on your system.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
