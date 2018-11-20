@@ -1,9 +1,9 @@
 {
-    "version": "5.05",
+    "version": "5.10",
     "homepage": "http://www.nirsoft.net/system_tools.html",
     "url": "http://www.nirsoft.net/packages/systools.zip",
     "bin": "systools.exe",
-    "hash": "ab91ca0e971df0b44900e54bcf47986edd96dcebb9614b2849f7ebfaa4a6f240",
+    "hash": "54f96e601267a42618688492bc174e7272564824e160aa7e0c4263ba9f74c8c1",
     "description": "Package of system tools for Windows",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
