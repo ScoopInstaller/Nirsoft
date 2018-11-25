@@ -1,9 +1,9 @@
 {
-    "version": "1.30",
+    "version": "1.31",
     "homepage": "http://www.nirsoft.net/utils/full_event_log_view.html",
     "url": "http://www.nirsoft.net/utils/fulleventlogview.zip",
     "bin": "fulleventlogview.exe",
-    "hash": "819914b1e7a975f4744dcceb94f6972ea8e08c9a82a885bc77efffcb110f7bcc",
+    "hash": "152e5837b22fe623dee9d63bdec1b686594ee17b7637a39132fc555f77b844c9",
     "description": "Event log viewer for Windows 10/8/7/Vista.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
