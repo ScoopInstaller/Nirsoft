@@ -1,17 +1,17 @@
 {
-    "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/keyboard_state_view.html",
-    "url": "http://www.nirsoft.net/utils/keyboardstateview.zip",
-    "bin": "keyboardstateview.exe",
-    "hash": "b8ea99128e5ec854f3ce2596177687538f8d2b802943f35a223795d9452a0cd5",
-    "description": "Shows the  current state and virtual key code of every key you press.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/keyboardstateview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/keyboardstateview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/keyboard_state_view.html",
+ "url": "http://www.nirsoft.net/utils/keyboardstateview.zip",
+ "bin": "KeyboardStateView.exe",
+ "hash": "tbd",
+ "description": "Shows the  current state and virtual key code of every key you press.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/keyboardstateview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/keyboardstateview.zip"
+ }
 }

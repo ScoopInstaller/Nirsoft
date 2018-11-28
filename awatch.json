@@ -1,17 +1,17 @@
 {
-    "version": "1.05",
-    "homepage": "http://www.nirsoft.net/utils/awatch.html",
-    "url": "http://www.nirsoft.net/utils/awatch.zip",
-    "bin": "awatch.exe",
-    "hash": "cc059ac00160b4bb3a2f6ad1c34017b8d938dfdd85152c137ddffecc7f203d0d",
-    "description": "displays useful information about your network adapters.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/awatch.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/awatch.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/awatch.html",
+ "url": "http://www.nirsoft.net/utils/awatch.zip",
+ "bin": "awatch.exe",
+ "hash": "tbd",
+ "description": "displays useful information about your network adapters.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/awatch.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/awatch.zip"
+ }
 }

@@ -1,17 +1,32 @@
 {
-    "version": "1.05",
-    "homepage": "http://www.nirsoft.net/utils/simple_program_debugger.html",
-    "url": "http://www.nirsoft.net/utils/simpleprogramdebugger.zip",
-    "bin": "simpleprogramdebugger.exe",
-    "hash": "998534cf82148c0d4d89cb12ca57a349e77a560ceb83332b7f7ee35037fe1aab",
-    "description": "Displays debugging events of a running program.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/simpleprogramdebugger.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/simpleprogramdebugger.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/simple_program_debugger.html",
+ "bin": "SimpleProgramDebugger.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/simpleprogramdebugger.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays debugging events of a running program.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/simpleprogramdebugger.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/simpleprogramdebugger.zip"
+   }
+  }
+ }
 }

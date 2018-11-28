@@ -1,17 +1,17 @@
 {
-    "version": "1.21",
-    "homepage": "http://www.nirsoft.net/utils/folrep.html",
-    "url": "http://www.nirsoft.net/utils/folrep.zip",
-    "bin": "folrep.exe",
-    "hash": "82a662e081f86fee20ae390ab83d05ed5a0290a83ba0aaf0c2e50c46bf4e1fdb",
-    "description": "Scans your disk, and displays a report about each folder.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/folrep.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/folrep.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/folrep.html",
+ "url": "http://www.nirsoft.net/utils/folrep.zip",
+ "bin": "folrep.exe",
+ "hash": "tbd",
+ "description": "Scans your disk, and displays a report about each folder.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/folrep.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/folrep.zip"
+ }
 }

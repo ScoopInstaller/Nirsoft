@@ -1,17 +1,32 @@
 {
-    "version": "1.65",
-    "homepage": "http://www.nirsoft.net/utils/mozilla_history_view.html",
-    "url": "http://www.nirsoft.net/utils/mozillahistoryview.zip",
-    "bin": "mozillahistoryview.exe",
-    "hash": "f5fb0c643976fe360a660086dd35540c8b6bf61915bf52c5d732b7bb75d62e87",
-    "description": "Displays the list of visited Web sites in Firefox/Mozilla/Netscape Web browsers.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/mozillahistoryview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/mozillahistoryview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/mozilla_history_view.html",
+ "bin": "MozillaHistoryView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/mozillahistoryview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/mozillahistoryview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays the list of visited Web sites in Firefox/Mozilla/Netscape Web browsers.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/mozillahistoryview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/mozillahistoryview-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/mozillahistoryview.zip"
+   }
+  }
+ }
 }

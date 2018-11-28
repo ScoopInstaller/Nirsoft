@@ -1,17 +1,17 @@
 {
-    "version": "1.07",
-    "homepage": "http://www.nirsoft.net/utils/bluetoothcl.html",
-    "url": "http://www.nirsoft.net/utils/bluetoothcl.zip",
-    "bin": "bluetoothcl.exe",
-    "hash": "025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f",
-    "description": "Show bluetooth devices  list",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/bluetoothcl.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/bluetoothcl.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/bluetoothcl.html",
+ "url": "http://www.nirsoft.net/utils/bluetoothcl.zip",
+ "bin": "BluetoothCL.exe",
+ "hash": "tbd",
+ "description": "Show bluetooth devices  list",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/bluetoothcl.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/bluetoothcl.zip"
+ }
 }

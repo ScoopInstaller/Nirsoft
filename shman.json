@@ -1,17 +1,32 @@
 {
-    "version": "1.10",
-    "homepage": "http://www.nirsoft.net/utils/shman.html",
-    "url": "http://www.nirsoft.net/utils/shman.zip",
-    "bin": "shman.exe",
-    "hash": "b998c8dbaf29a07ba69c88793bea71f267ca145c9017b95b75e48c42332a87eb",
-    "description": "Lists all shortcuts on your desktop/start menu.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/shman.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/shman.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/shman.html",
+ "bin": "shman.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/shman-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/shman.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Lists all shortcuts on your desktop/start menu.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/shman.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/shman-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/shman.zip"
+   }
+  }
+ }
 }

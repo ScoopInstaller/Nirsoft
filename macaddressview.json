@@ -1,17 +1,17 @@
 {
-    "version": "1.41",
-    "homepage": "http://www.nirsoft.net/utils/mac_address_lookup_find.html",
-    "url": "http://www.nirsoft.net/utils/macaddressview.zip",
-    "bin": "macaddressview.exe",
-    "hash": "b795ad4f4bdc102ee1ec2e05cba20dfd2479e4bfd9ef17d52edcac754a87c41c",
-    "description": "MAC address lookup tool",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/macaddressview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/macaddressview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/mac_address_lookup_find.html",
+ "url": "http://www.nirsoft.net/utils/macaddressview.zip",
+ "bin": "MACAddressView.exe",
+ "hash": "tbd",
+ "description": "MAC address lookup tool",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/macaddressview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/macaddressview.zip"
+ }
 }

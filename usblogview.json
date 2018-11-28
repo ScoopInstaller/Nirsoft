@@ -1,17 +1,17 @@
 {
-    "version": "1.25",
-    "homepage": "http://www.nirsoft.net/utils/usb_log_view.html",
-    "url": "http://www.nirsoft.net/utils/usblogview.zip",
-    "bin": "usblogview.exe",
-    "hash": "88e5b26a1999635b10b0df6349ae0349afeca42fbb4fcd59524ac1067ede5ef9",
-    "description": "Records the details of any USB device that is plugged/unplugged into your system",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/usblogview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/usblogview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/usb_log_view.html",
+ "url": "http://www.nirsoft.net/utils/usblogview.zip",
+ "bin": "USBLogView.exe",
+ "hash": "tbd",
+ "description": "Records the details of any USB device that is plugged/unplugged into your system",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/usblogview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/usblogview.zip"
+ }
 }

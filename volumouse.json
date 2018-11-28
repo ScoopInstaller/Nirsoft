@@ -1,17 +1,32 @@
 {
-    "version": "2.03",
-    "homepage": "http://www.nirsoft.net/utils/volumouse.html",
-    "url": "http://www.nirsoft.net/utils/volumouse.zip",
-    "bin": "volumouse.exe",
-    "hash": "a73ea9f6ad492f83660c192a8fb97d31b4e5a773981c2527fa6ab0d47bafe08a",
-    "description": "Adjust the volume of your speaker with the wheel of your mouse.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/volumouse.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/volumouse.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/volumouse.html",
+ "bin": "volumouse.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/volumouse-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/volumouse.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Adjust the volume of your speaker with the wheel of your mouse.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/volumouse.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/volumouse-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/volumouse.zip"
+   }
+  }
+ }
 }

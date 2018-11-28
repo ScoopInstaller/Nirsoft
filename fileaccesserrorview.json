@@ -1,17 +1,32 @@
 {
-    "version": "1.07",
-    "homepage": "https://www.nirsoft.net/utils/file_access_error_view.html",
-    "url": "https://www.nirsoft.net/utils/fileaccesserrorview.zip",
-    "bin": "fileaccesserrorview.exe",
-    "hash": "0025b2f07666b7e4cc4afe3d392f70076b68bbf798975cb1ba4d3d008fdc2d44",
-    "description": "Displays file access error information",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/fileaccesserrorview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/fileaccesserrorview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/file_access_error_view.html",
+ "bin": "FileAccessErrorView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/fileaccesserrorview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays file access error information",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/fileaccesserrorview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/fileaccesserrorview.zip"
+   }
+  }
+ }
 }

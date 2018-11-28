@@ -1,17 +1,32 @@
 {
-    "version": "1.33",
-    "homepage": "https://www.nirsoft.net/utils/simple_wmi_view.html",
-    "url": "https://www.nirsoft.net/utils/simplewmiview.zip",
-    "bin": "simplewmiview.exe",
-    "hash": "122f25eb16bac41ac72becc92a2c89b63416529012e0b8e60a675d1614e9eb86",
-    "description": "Displays the result of WMI queries in a simple table",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/simplewmiview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/simplewmiview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/simple_wmi_view.html",
+ "bin": "SimpleWMIView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/simplewmiview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays the result of WMI queries in a simple table",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/simplewmiview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/simplewmiview.zip"
+   }
+  }
+ }
 }

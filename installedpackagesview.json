@@ -1,17 +1,32 @@
 {
-    "version": "1.02",
-    "homepage": "https://www.nirsoft.net/utils/installed_packages_view.html",
-    "url": "https://www.nirsoft.net/utils/installedpackagesview.zip",
-    "bin": "installedpackagesview.exe",
-    "hash": "9e0ec11529f269bdd13c428ef9db788e0fa9aec6511f30d517ebed6084fd58e4",
-    "description": "Displays installed MSI packages on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/installedpackagesview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/installedpackagesview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/installed_packages_view.html",
+ "bin": "InstalledPackagesView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/installedpackagesview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/installedpackagesview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays installed MSI packages on your system.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/installedpackagesview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/installedpackagesview-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/installedpackagesview.zip"
+   }
+  }
+ }
 }

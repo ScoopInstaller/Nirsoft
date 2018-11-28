@@ -1,17 +1,17 @@
 {
-    "version": "1.85",
-    "homepage": "https://www.nirsoft.net/utils/chrome_cache_view.html",
-    "url": "https://www.nirsoft.net/utils/chromecacheview.zip",
-    "bin": "chromecacheview.exe",
-    "hash": "b47f4da8a296b18cc681fc656bcfb23ec425d25572eda0ec22fe374517704573",
-    "description": "Chrome Browser Cache Viewer",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/chromecacheview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/chromecacheview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/chrome_cache_view.html",
+ "url": "https://www.nirsoft.net/utils/chromecacheview.zip",
+ "bin": "ChromeCacheView.exe",
+ "hash": "tbd",
+ "description": "Chrome Browser Cache Viewer",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/chromecacheview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/chromecacheview.zip"
+ }
 }

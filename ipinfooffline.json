@@ -1,17 +1,17 @@
 {
-    "version": "1.47",
-    "homepage": "http://www.nirsoft.net/utils/ip_country_info_offline.html",
-    "url": "http://www.nirsoft.net/utils/ipinfooffline.zip",
-    "bin": "ipinfooffline.exe",
-    "hash": "b0a2048c32cbd620a28f8369c780659264c21570564b8003498529daf2f3be41",
-    "description": "view country information about IP addresses.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/ipinfooffline.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/ipinfooffline.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/ip_country_info_offline.html",
+ "url": "http://www.nirsoft.net/utils/ipinfooffline.zip",
+ "bin": "IPInfoOffline.exe",
+ "hash": "tbd",
+ "description": "view country information about IP addresses.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/ipinfooffline.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/ipinfooffline.zip"
+ }
 }

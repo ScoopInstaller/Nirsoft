@@ -1,17 +1,32 @@
 {
-    "version": "1.08",
-    "homepage": "http://www.nirsoft.net/utils/registry_changes_view.html",
-    "url": "http://www.nirsoft.net/utils/registrychangesview.zip",
-    "bin": "registrychangesview.exe",
-    "hash": "8109f519bb235672ceddfd01f5214bcb90d8ee0351c61d9dd8a8af48266307ca",
-    "description": "Compares 2 snapshots of Windows Registry.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/registrychangesview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/registrychangesview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/registry_changes_view.html",
+ "bin": "RegistryChangesView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/registrychangesview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/registrychangesview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Compares 2 snapshots of Windows Registry.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/registrychangesview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/registrychangesview-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/registrychangesview.zip"
+   }
+  }
+ }
 }

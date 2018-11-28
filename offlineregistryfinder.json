@@ -1,17 +1,32 @@
 {
-    "version": "1.03",
-    "homepage": "http://www.nirsoft.net/utils/offline_registry_finder.html",
-    "url": "http://www.nirsoft.net/utils/offlineregistryfinder.zip",
-    "bin": "offlineregistryfinder.exe",
-    "hash": "6ddb68d355b5445285244c7f034f07159eec99ad0a90b4ff1a3ae884fa7da285",
-    "description": "Find data in external Registry files",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/offlineregistryfinder.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/offlineregistryfinder.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/offline_registry_finder.html",
+ "bin": "OfflineRegistryFinder.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/offlineregistryfinder-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/offlineregistryfinder.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Find data in external Registry files",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/offlineregistryfinder.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/offlineregistryfinder-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/offlineregistryfinder.zip"
+   }
+  }
+ }
 }

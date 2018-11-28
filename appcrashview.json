@@ -1,17 +1,17 @@
 {
-    "version": "1.35",
-    "homepage": "http://www.nirsoft.net/utils/app_crash_view.html",
-    "url": "http://www.nirsoft.net/utils/appcrashview.zip",
-    "bin": "appcrashview.exe",
-    "hash": "76eca5db923e938504d525b8b48a64ab4ad375ced896665dbc543960b07c6054",
-    "description": "Displays the details of all application crashes occurred in your system. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/appcrashview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/appcrashview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/app_crash_view.html",
+ "url": "https://www.nirsoft.net/utils/appcrashview.zip",
+ "bin": "AppCrashView.exe",
+ "hash": "tbd",
+ "description": "Displays the details of all application crashes occurred in your system. ",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/appcrashview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/appcrashview.zip"
+ }
 }

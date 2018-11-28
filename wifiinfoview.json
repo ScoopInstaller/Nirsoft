@@ -1,17 +1,17 @@
 {
-    "version": "2.41",
-    "homepage": "https://www.nirsoft.net/utils/wifi_information_view.html",
-    "url": "https://www.nirsoft.net/utils/wifiinfoview.zip",
-    "bin": "wifiinfoview.exe",
-    "hash": "e2d87bf28fa55b2260f191a2c41808d012ab2a5217bb5684c4bc1f0d01b9e4dd",
-    "description": "Displays extensive information about wireless networks in your area.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/wifiinfoview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/wifiinfoview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/wifi_information_view.html",
+ "url": "https://www.nirsoft.net/utils/wifiinfoview.zip",
+ "bin": "WifiInfoView.exe",
+ "hash": "tbd",
+ "description": "Displays extensive information about wireless networks in your area.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/wifiinfoview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/wifiinfoview.zip"
+ }
 }

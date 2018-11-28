@@ -1,17 +1,32 @@
 {
-    "version": "1.06",
-    "homepage": "http://www.nirsoft.net/utils/advanced_run.html",
-    "url": "http://www.nirsoft.net/utils/advancedrun.zip",
-    "bin": "advancedrun.exe",
-    "hash": "ac015bdfcf63b35ff2c31b09988048f607dc9db71614e4eec1bef61ad4f9d5da",
-    "description": "Run a program with different settings that you choose.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/advancedrun.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/advancedrun.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/advanced_run.html",
+ "bin": "AdvancedRun.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/advancedrun-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/advancedrun.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Run a program with different settings that you choose.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/advancedrun.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/advancedrun-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/advancedrun.zip"
+   }
+  }
+ }
 }

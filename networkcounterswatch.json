@@ -1,17 +1,17 @@
 {
-    "version": "1.01",
-    "homepage": "http://www.nirsoft.net/utils/network_counters_watch.html",
-    "url": "http://www.nirsoft.net/utils/networkcounterswatch.zip",
-    "bin": "networkcounterswatch.exe",
-    "hash": "66815a2731b7b8556e10ca68126b65e3859c4dc5cf928b95a3dcd2fbbec59d5a",
-    "description": "Displays system counters for every network interface on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/networkcounterswatch.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/networkcounterswatch.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/network_counters_watch.html",
+ "url": "http://www.nirsoft.net/utils/networkcounterswatch.zip",
+ "bin": "NetworkCountersWatch.exe",
+ "hash": "tbd",
+ "description": "Displays system counters for every network interface on your system.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/networkcounterswatch.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/networkcounterswatch.zip"
+ }
 }

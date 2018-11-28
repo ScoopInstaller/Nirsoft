@@ -1,17 +1,17 @@
 {
-    "version": "1.18",
-    "homepage": "http://www.nirsoft.net/utils/whosip.html",
-    "url": "http://www.nirsoft.net/utils/whosip.zip",
-    "bin": "whosip.exe",
-    "hash": "a84ac36ffd1a6e0d7c28aa00c2d1f27c511443741047dca9977747afba0fe92b",
-    "description": "find all available information about an IP address from command-line.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/whosip.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/whosip.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/whosip.html",
+ "url": "http://www.nirsoft.net/utils/whosip.zip",
+ "bin": "whosip.exe",
+ "hash": "tbd",
+ "description": "find all available information about an IP address from command-line.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/whosip.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/whosip.zip"
+ }
 }

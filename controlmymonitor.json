@@ -1,17 +1,17 @@
 {
-    "version": "1.10",
-    "homepage": "http://www.nirsoft.net/utils/control_my_monitor.html",
-    "url": "http://www.nirsoft.net/utils/controlmymonitor.zip",
-    "bin": "controlmymonitor.exe",
-    "hash": "b99c9fbee4b458db2316fbbd9453d79a981faf8e1a264be0ac4d892a95a2d01b",
-    "description": "View and modify the settings of your monitor.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/controlmymonitor.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/controlmymonitor.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/control_my_monitor.html",
+ "url": "http://www.nirsoft.net/utils/controlmymonitor.zip",
+ "bin": "ControlMyMonitor.exe",
+ "hash": "tbd",
+ "description": "View and modify the settings of your monitor.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/controlmymonitor.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/controlmymonitor.zip"
+ }
 }

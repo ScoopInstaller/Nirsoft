@@ -1,17 +1,17 @@
 {
-    "version": "1.27",
-    "homepage": "http://www.nirsoft.net/utils/netresview.html",
-    "url": "http://www.nirsoft.net/utils/netresview.zip",
-    "bin": "netresview.exe",
-    "hash": "84ce97effb45314d315ab221482ccbf7237f6942f0c4fac0d3b52fec22c28c15",
-    "description": "displays the list of all network resources  on your LAN.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/netresview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/netresview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/netresview.html",
+ "url": "http://www.nirsoft.net/utils/netresview.zip",
+ "bin": "NetResView.exe",
+ "hash": "tbd",
+ "description": "displays the list of all network resources  on your LAN.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/netresview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/netresview.zip"
+ }
 }

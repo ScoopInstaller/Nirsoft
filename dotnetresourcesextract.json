@@ -1,17 +1,17 @@
 {
-    "version": "1.01",
-    "homepage": "http://www.nirsoft.net/utils/dot_net_resources_extract.html",
-    "url": "http://www.nirsoft.net/utils/dotnetresourcesextract.zip",
-    "bin": "dotnetresourcesextract.exe",
-    "hash": "5375bd9fbb7dd9d84fc2584ccee12280402585b7f9de30fe38fe453019fb3a93",
-    "description": "Extract embedded resources from .NET applications.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/dotnetresourcesextract.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/dotnetresourcesextract.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/dot_net_resources_extract.html",
+ "url": "http://www.nirsoft.net/utils/dotnetresourcesextract.zip",
+ "bin": "DotNetResourcesExtract.exe",
+ "hash": "tbd",
+ "description": "Extract embedded resources from .NET applications.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/dotnetresourcesextract.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/dotnetresourcesextract.zip"
+ }
 }

@@ -1,17 +1,32 @@
 {
-    "version": "2.85",
-    "homepage": "http://www.nirsoft.net/utils/search_my_files.html",
-    "url": "http://www.nirsoft.net/utils/searchmyfiles.zip",
-    "bin": "searchmyfiles.exe",
-    "hash": "147d62f016a1f493ca7186e86e6e20c7603974caeaa1b5fe6c869e16ba1423fe",
-    "description": "Alternative to the standard \"Search For Files And Folders\" module of Windows.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/searchmyfiles.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/searchmyfiles.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/search_my_files.html",
+ "bin": "SearchMyFiles.exe",
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/searchmyfiles.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Alternative to the standard \"Search For Files And Folders\" module of Windows.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/searchmyfiles.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/searchmyfiles.zip"
+   }
+  }
+ }
 }

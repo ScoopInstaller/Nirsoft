@@ -1,17 +1,32 @@
 {
-    "version": "1.52",
-    "homepage": "http://www.nirsoft.net/utils/folder_time_update.html",
-    "url": "http://www.nirsoft.net/utils/foldertimeupdate.zip",
-    "bin": "foldertimeupdate.exe",
-    "hash": "8f38fefe70465848935612314a1abcde9cbf092276501887292f10f65eb4ef46",
-    "description": "Updates the 'Modified Time' of folders.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/foldertimeupdate.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/foldertimeupdate.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/folder_time_update.html",
+ "bin": "FolderTimeUpdate.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/foldertimeupdate-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/foldertimeupdate.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Updates the 'Modified Time' of folders.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/foldertimeupdate.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/foldertimeupdate-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/foldertimeupdate.zip"
+   }
+  }
+ }
 }

@@ -1,17 +1,32 @@
 {
-    "version": "1.05",
-    "homepage": "http://www.nirsoft.net/utils/shadow_copy_view.html",
-    "url": "http://www.nirsoft.net/utils/shadowcopyview.zip",
-    "bin": "shadowcopyview.exe",
-    "hash": "c89a84f28552f347dff09b00d996c7f0da3819419b546b431fcedf8c88f4a6ef",
-    "description": "View shadow copies on your system",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/shadowcopyview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/shadowcopyview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/shadow_copy_view.html",
+ "bin": "ShadowCopyView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/shadowcopyview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/shadowcopyview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "View shadow copies on your system",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/shadowcopyview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/shadowcopyview-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/shadowcopyview.zip"
+   }
+  }
+ }
 }

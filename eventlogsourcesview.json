@@ -1,17 +1,32 @@
 {
-    "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/event_log_sources_view.html",
-    "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip",
-    "bin": "eventlogsourcesview.exe",
-    "hash": "f60a90200ac6daceba5acf2a24546ca27f0af1b28ad1320e637eaa695a6d03e9",
-    "description": "Displays the list of all event log sources installed on your system. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/eventlogsourcesview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/event_log_sources_view.html",
+ "bin": "EventLogSourcesView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/eventlogsourcesview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays the list of all event log sources installed on your system. ",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/eventlogsourcesview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/eventlogsourcesview-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip"
+   }
+  }
+ }
 }

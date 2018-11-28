@@ -1,17 +1,32 @@
 {
-    "version": "1.56",
-    "homepage": "http://www.nirsoft.net/utils/mzcv.html",
-    "url": "http://www.nirsoft.net/utils/mzcv.zip",
-    "bin": "mzcv.exe",
-    "hash": "e6f6b04b1631fbf2558aca551be1eff7dbd55a6f6e89e17fef3f7276eb54340e",
-    "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/mzcv.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/mzcv.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/mzcv.html",
+ "bin": "mzcv.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/mzcv-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/mzcv.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/mzcv.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/mzcv-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/mzcv.zip"
+   }
+  }
+ }
 }

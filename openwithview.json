@@ -1,17 +1,17 @@
 {
-    "version": "1.11",
-    "homepage": "http://www.nirsoft.net/utils/open_with_view.html",
-    "url": "http://www.nirsoft.net/utils/openwithview.zip",
-    "bin": "openwithview.exe",
-    "hash": "91c6bc5be89d52329882f85637e63e35c20efb5c289d9f83c9083e72cab7192e",
-    "description": "Disable/enable items in the  'Open With'  dialog-box of Windows.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/openwithview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/openwithview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/open_with_view.html",
+ "url": "http://www.nirsoft.net/utils/openwithview.zip",
+ "bin": "OpenWithView.exe",
+ "hash": "tbd",
+ "description": "Disable/enable items in the  'Open With'  dialog-box of Windows.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/openwithview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "url": "http://www.nirsoft.net/utils/openwithview.zip"
+ }
 }

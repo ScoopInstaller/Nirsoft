@@ -1,17 +1,32 @@
 {
-    "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/app_compatibility_view.html",
-    "url": "http://www.nirsoft.net/utils/appcompatibilityview.zip",
-    "bin": "appcompatibilityview.exe",
-    "hash": "be34f6b1d1c2b312e16f1d3cbf3f621f931a36e22cf58044126b86f1aa0baa46",
-    "description": "List of all programs that run with different compatibility setting",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "http://www.nirsoft.net/pad/appcompatibilityview.xml",
-        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
-    },
-    "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/appcompatibilityview.zip"
-    }
+ "version": "0",
+ "homepage": "http://www.nirsoft.net/utils/app_compatibility_view.html",
+ "bin": "AppCompatibilityView.exe",
+ "architecture": {
+  "64bit": {
+   "url": "http://www.nirsoft.net/utils/appcompatibilityview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "http://www.nirsoft.net/utils/appcompatibilityview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "List of all programs that run with different compatibility setting",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "http://www.nirsoft.net/pad/appcompatibilityview.xml",
+  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "http://www.nirsoft.net/utils/appcompatibilityview-x64.zip"
+   },
+   "32bit": {
+    "url": "http://www.nirsoft.net/utils/appcompatibilityview.zip"
+   }
+  }
+ }
 }
