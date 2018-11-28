@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/zipinst.html",
- "url": "http://www.nirsoft.net/utils/zipinst.zip",
- "bin": "zipinst.exe",
- "hash": "tbd",
- "description": "Install applications that do not provide an installation module.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/zipinst.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/zipinst.zip"
- }
+    "version": "1.21",
+    "homepage": "http://www.nirsoft.net/utils/zipinst.html",
+    "url": "http://www.nirsoft.net/utils/zipinst.zip",
+    "bin": "zipinst.exe",
+    "hash": "5f086a0dc689217026f06111327ae5a7d9baaa250322b84ff9dda2c74f3de788",
+    "description": "Install applications that do not provide an installation module.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/zipinst.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/zipinst.zip"
+    }
 }

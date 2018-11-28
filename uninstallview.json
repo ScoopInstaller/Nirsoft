@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
- "bin": "UninstallView.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/uninstallview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Shows installed programs on your system and allows you to uninstall them.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/uninstallview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/uninstallview.zip"
-   }
-  }
- }
+    "version": "1.24",
+    "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
+    "bin": "UninstallView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",
+            "hash": "3981ca9af254826b0728aceb6efebbfb48a57669a97fc6357a7cb248d4fa0360"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/uninstallview.zip",
+            "hash": "f1b5330fa2a6a220ba7735940161bec2d26116dffc5c9eba8de0a1330e5bd872"
+        }
+    },
+    "description": "Shows installed programs on your system and allows you to uninstall them.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/uninstallview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/uninstallview.zip"
+            }
+        }
+    }
 }

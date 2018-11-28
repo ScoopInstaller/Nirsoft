@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/my_event_viewer.html",
- "bin": "MyEventViewer.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/myeventviewer-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/myeventviewer.zip",
-   "hash": "tbd"
-  }
- },
- "description": "MyEventViewer is a simple alternative to the standard event viewer of Windows.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/myeventviewer.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/myeventviewer-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/myeventviewer.zip"
-   }
-  }
- }
+    "version": "2.25",
+    "homepage": "http://www.nirsoft.net/utils/my_event_viewer.html",
+    "bin": "MyEventViewer.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/myeventviewer-x64.zip",
+            "hash": "d1e94d89f2831c76d46bb0b80e4248df82244b021950769bffab9cba0054ecfc"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/myeventviewer.zip",
+            "hash": "f3f9c2021185e6d4f5e89cf9b241eac67eb6e467db52cfe00370e40f07049313"
+        }
+    },
+    "description": "MyEventViewer is a simple alternative to the standard event viewer of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/myeventviewer.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/myeventviewer-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/myeventviewer.zip"
+            }
+        }
+    }
 }

@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/dot_net_tools/gac_viewer.html",
- "url": "http://www.nirsoft.net/dot_net_tools/gacview.zip",
- "bin": "gacview.exe",
- "hash": "tbd",
- "description": "Alternative to the standard .NET assembly viewer on Windows Explorer.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/gacview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/dot_net_tools/gacview.zip"
- }
+    "version": "1.11",
+    "homepage": "http://www.nirsoft.net/dot_net_tools/gac_viewer.html",
+    "url": "http://www.nirsoft.net/dot_net_tools/gacview.zip",
+    "bin": "gacview.exe",
+    "hash": "f8f6b2033681aee70136ca8880197b84b08e119da0518625b42ec38ec6380045",
+    "description": "Alternative to the standard .NET assembly viewer on Windows Explorer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/gacview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/dot_net_tools/gacview.zip"
+    }
 }

@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/app_audio_config.html",
- "bin": "AppAudioConfig.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/appaudioconfig-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/appaudioconfig.zip",
-   "hash": "tbd"
-  }
- },
- "description": "View/change audio settings of applications",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/appaudioconfig.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/appaudioconfig-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/appaudioconfig.zip"
-   }
-  }
- }
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/app_audio_config.html",
+    "bin": "AppAudioConfig.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/appaudioconfig-x64.zip",
+            "hash": "59168c8031d178bde27d036b0747983ec61e401c54846214ee2c11820274a5bb"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/appaudioconfig.zip",
+            "hash": "95d713c2acb34e0bee47e8bd79d7f7bdb9ceebe0c217c65271abf495efae4527"
+        }
+    },
+    "description": "View/change audio settings of applications",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/appaudioconfig.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/appaudioconfig-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/appaudioconfig.zip"
+            }
+        }
+    }
 }

@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/quick_set_dns.html",
- "url": "http://www.nirsoft.net/utils/quicksetdns.zip",
- "bin": "QuickSetDNS.exe",
- "hash": "tbd",
- "description": "Change the DNS servers that are used for your Internet connection.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/quicksetdns.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/quicksetdns.zip"
- }
+    "version": "1.22",
+    "homepage": "http://www.nirsoft.net/utils/quick_set_dns.html",
+    "url": "http://www.nirsoft.net/utils/quicksetdns.zip",
+    "bin": "QuickSetDNS.exe",
+    "hash": "c51083661c146870f7074bde74a32be3b9b7e0b334de274cf2eb9be6b561355d",
+    "description": "Change the DNS servers that are used for your Internet connection.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/quicksetdns.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/quicksetdns.zip"
+    }
 }

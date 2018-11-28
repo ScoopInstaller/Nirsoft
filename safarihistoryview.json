@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/safari_history_view.html",
- "url": "http://www.nirsoft.net/utils/safarihistoryview.zip",
- "bin": "SafariHistoryView.exe",
- "hash": "tbd",
- "description": "History viewer for Safari Web browser",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/safarihistoryview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/safarihistoryview.zip"
- }
+    "version": "1.01",
+    "homepage": "http://www.nirsoft.net/utils/safari_history_view.html",
+    "url": "http://www.nirsoft.net/utils/safarihistoryview.zip",
+    "bin": "SafariHistoryView.exe",
+    "hash": "6b467088a046c2428fad1a7a78395622f6e23798c87186220fee04fbec0f488c",
+    "description": "History viewer for Safari Web browser",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/safarihistoryview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/safarihistoryview.zip"
+    }
 }

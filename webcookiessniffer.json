@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/web_cookies_sniffer.html",
- "bin": "WebCookiesSniffer.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/webcookiessniffer-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Captures Web site cookies and displays them in a simple table",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/webcookiessniffer.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/webcookiessniffer-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip"
-   }
-  }
- }
+    "version": "1.30",
+    "homepage": "http://www.nirsoft.net/utils/web_cookies_sniffer.html",
+    "bin": "WebCookiesSniffer.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/webcookiessniffer-x64.zip",
+            "hash": "b9893bfc930ee68088f60e3235fe734adf8459031cb7bc33112a150ed28b97c1"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip",
+            "hash": "c4d0aa66ee9fce9f6ad722d5991e9ca2757eab514045ba6b4de1bf842c2110c4"
+        }
+    },
+    "description": "Captures Web site cookies and displays them in a simple table",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/webcookiessniffer.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/webcookiessniffer-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/webcookiessniffer.zip"
+            }
+        }
+    }
 }

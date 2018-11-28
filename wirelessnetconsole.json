@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/wireless_net_console.html",
- "url": "http://www.nirsoft.net/utils/wirelessnetconsole.zip",
- "bin": "WirelessNetConsole.exe",
- "hash": "tbd",
- "description": "View wireless networks information (console application)",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/wirelessnetconsole.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/wirelessnetconsole.zip"
- }
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/utils/wireless_net_console.html",
+    "url": "http://www.nirsoft.net/utils/wirelessnetconsole.zip",
+    "bin": "WirelessNetConsole.exe",
+    "hash": "6b365808b7526bcfcee1cf870dd4d0602669695481ed70ed6edb2f4572abb78a",
+    "description": "View wireless networks information (console application)",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wirelessnetconsole.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/wirelessnetconsole.zip"
+    }
 }

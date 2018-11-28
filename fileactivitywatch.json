@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
- "bin": "FileActivityWatch.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays information about read/write/delete operations on your system.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/fileactivitywatch.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip"
-   }
-  }
- }
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
+    "bin": "FileActivityWatch.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",
+            "hash": "5b14da4338898cbb43adb330f25e6fc130af5edb8fb5fad4cd309f054bf5a9a4"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
+            "hash": "acb3c4f0d1380304ddc0ff31de0b6fc36d7766a06fe5e4762247ea506db70861"
+        }
+    },
+    "description": "Displays information about read/write/delete operations on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/fileactivitywatch.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip"
+            }
+        }
+    }
 }

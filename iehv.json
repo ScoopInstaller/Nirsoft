@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/iehv.html",
- "url": "http://www.nirsoft.net/utils/iehv.zip",
- "bin": "iehv.exe",
- "hash": "tbd",
- "description": "Displays the list of Web sites that you visited with IE Web browser.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/iehv.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/iehv.zip"
- }
+    "version": "1.70",
+    "homepage": "http://www.nirsoft.net/utils/iehv.html",
+    "url": "http://www.nirsoft.net/utils/iehv.zip",
+    "bin": "iehv.exe",
+    "hash": "7bdab7e43af86d5f8e43854a290073033b2b97c83f0d240a526660f643c94351",
+    "description": "Displays the list of Web sites that you visited with IE Web browser.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/iehv.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/iehv.zip"
+    }
 }

@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/faview.html",
- "url": "http://www.nirsoft.net/utils/faview.zip",
- "bin": "faview.exe",
- "hash": "tbd",
- "description": "displays the list of all your Favorties/bookmarks in a single page.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/faview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/faview.zip"
- }
+    "version": "1.32",
+    "homepage": "http://www.nirsoft.net/utils/faview.html",
+    "url": "http://www.nirsoft.net/utils/faview.zip",
+    "bin": "faview.exe",
+    "hash": "60f94079be9f34247c424e5512ea42f8633df694d6b7c9cfd38fd5fe863b19c3",
+    "description": "displays the list of all your Favorties/bookmarks in a single page.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/faview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/faview.zip"
+    }
 }

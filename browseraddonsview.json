@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/web_browser_addons_view.html",
- "bin": "BrowserAddonsView.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/browseraddonsview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/browseraddonsview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays the details of all Web browser addons/plugins installed in your system.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/browseraddonsview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/browseraddonsview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/browseraddonsview.zip"
-   }
-  }
- }
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/web_browser_addons_view.html",
+    "bin": "BrowserAddonsView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/browseraddonsview-x64.zip",
+            "hash": "bf75ab6cf9e32eef7b1c95ee166986b4b3d0359d2a7b7cec844c1a6c09777e1d"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/browseraddonsview.zip",
+            "hash": "06deb3a5b082df68f2aec330ad59d10d7210440ed63519fdc0a9a1f319e6b547"
+        }
+    },
+    "description": "Displays the details of all Web browser addons/plugins installed in your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/browseraddonsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/browseraddonsview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/browseraddonsview.zip"
+            }
+        }
+    }
 }

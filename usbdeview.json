@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
- "bin": "USBDeview.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/usbdeview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Lists all installed USB devices that you previously used.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/usbdeview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/usbdeview.zip"
-   }
-  }
- }
+    "version": "2.77",
+    "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
+    "bin": "USBDeview.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",
+            "hash": "b3fd3bf6371cd5ed88a3142d56c06fd0448707a1e133873c194f796e1287c08d"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/usbdeview.zip",
+            "hash": "3955c13b4592dd6b997a98b4cd5d8bb85074d4111173ccedfeeb6e682e9908e0"
+        }
+    },
+    "description": "Lists all installed USB devices that you previously used.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/usbdeview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/usbdeview.zip"
+            }
+        }
+    }
 }

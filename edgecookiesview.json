@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/edge_cookies_view.html",
- "url": "https://www.nirsoft.net/utils/edgecookiesview.zip",
- "bin": "EdgeCookiesView.exe",
- "hash": "tbd",
- "description": "Display cookies from new versions of MS-Edge",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/edgecookiesview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "https://www.nirsoft.net/utils/edgecookiesview.zip"
- }
+    "version": "1.07",
+    "homepage": "https://www.nirsoft.net/utils/edge_cookies_view.html",
+    "url": "https://www.nirsoft.net/utils/edgecookiesview.zip",
+    "bin": "EdgeCookiesView.exe",
+    "hash": "eb1b0e151d77c9328046a780d5005f179fd53fb14e64984998add0bbf81fdafd",
+    "description": "Display cookies from new versions of MS-Edge",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/edgecookiesview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/edgecookiesview.zip"
+    }
 }

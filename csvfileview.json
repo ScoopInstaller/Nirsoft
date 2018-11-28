@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/csv_file_view.html",
- "bin": "CSVFileView.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/csvfileview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/csvfileview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "CSV/Tab-delimited file viewer and converter",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/csvfileview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/csvfileview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/csvfileview.zip"
-   }
-  }
- }
+    "version": "2.40",
+    "homepage": "http://www.nirsoft.net/utils/csv_file_view.html",
+    "bin": "CSVFileView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/csvfileview-x64.zip",
+            "hash": "ed0c362ab20a1976aaa964557e616d97be1dc88adafe86c3079f463df154dd84"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/csvfileview.zip",
+            "hash": "be601cb41b97c013db3ca676dd2aaefded2bdfc2c54b7ae4090ca4e8da6023fb"
+        }
+    },
+    "description": "CSV/Tab-delimited file viewer and converter",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/csvfileview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/csvfileview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/csvfileview.zip"
+            }
+        }
+    }
 }

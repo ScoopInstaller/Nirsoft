@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
- "bin": "BulkFileChanger.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Change date/time/attributes of multiple files.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/bulkfilechanger.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip"
-   }
-  }
- }
+    "version": "1.52",
+    "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
+    "bin": "BulkFileChanger.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
+            "hash": "038ae392e15838d3d86f3fb53c5b0161c7e392864566a991f136b1637b94708b"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
+            "hash": "514557a47f5e446451d5f61dc7cd449d0e1c0e507c00774e39f41ffea7ab83db"
+        }
+    },
+    "description": "Change date/time/attributes of multiple files.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/bulkfilechanger.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip"
+            }
+        }
+    }
 }

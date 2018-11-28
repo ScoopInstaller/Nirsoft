@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/gui_prop_view.html",
- "bin": "GUIPropView.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/guipropview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/guipropview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays extensive information about all windows currently opened on your system",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/guipropview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/guipropview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/guipropview.zip"
-   }
-  }
- }
+    "version": "1.05",
+    "homepage": "http://www.nirsoft.net/utils/gui_prop_view.html",
+    "bin": "GUIPropView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/guipropview-x64.zip",
+            "hash": "debc0fc805afcfa9c2305d684b5b9b261651345d695356780fe86574e1e179ed"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/guipropview.zip",
+            "hash": "5eed9cee5932cd22842cfd492030e1fbb692e272d9f87d887640d538eb2b3ff0"
+        }
+    },
+    "description": "Displays extensive information about all windows currently opened on your system",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/guipropview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/guipropview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/guipropview.zip"
+            }
+        }
+    }
 }

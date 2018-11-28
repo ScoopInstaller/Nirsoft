@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/html_doc_edit.html",
- "url": "http://www.nirsoft.net/utils/htmldocedit.zip",
- "bin": "HtmlDocEdit.exe",
- "hash": "tbd",
- "description": "Simple HTML designer/editor",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/htmldocedit.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/htmldocedit.zip"
- }
+    "version": "1.02",
+    "homepage": "http://www.nirsoft.net/utils/html_doc_edit.html",
+    "url": "http://www.nirsoft.net/utils/htmldocedit.zip",
+    "bin": "HtmlDocEdit.exe",
+    "hash": "eed77808621fa1331ba194b1593bc18ec7a1628601282ff0a5163b02ce945cde",
+    "description": "Simple HTML designer/editor",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/htmldocedit.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/htmldocedit.zip"
+    }
 }

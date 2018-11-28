@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/browsing_history_view.html",
- "bin": "BrowsingHistoryView.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/browsinghistoryview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/browsinghistoryview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "View browsing history of popular Web browsers ",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/browsinghistoryview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/browsinghistoryview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/browsinghistoryview.zip"
-   }
-  }
- }
+    "version": "2.17",
+    "homepage": "http://www.nirsoft.net/utils/browsing_history_view.html",
+    "bin": "BrowsingHistoryView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/browsinghistoryview-x64.zip",
+            "hash": "3953914ef6d7bb00011fd2dc59940ee1ce4bec68bf17f4cdf9d46d480b6d4642"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/browsinghistoryview.zip",
+            "hash": "e0fde9e05647a85535ffec9f5f0efe440bfac3ccc4634714ae9e7e1cc107a707"
+        }
+    },
+    "description": "View browsing history of popular Web browsers ",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/browsinghistoryview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/browsinghistoryview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/browsinghistoryview.zip"
+            }
+        }
+    }
 }

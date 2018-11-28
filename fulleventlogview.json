@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
- "bin": "FullEventLogView.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/fulleventlogview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Event log viewer for Windows 10/8/7/Vista.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/fulleventlogview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/fulleventlogview.zip"
-   }
-  }
- }
+    "version": "1.31",
+    "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
+    "bin": "FullEventLogView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
+            "hash": "8fe5c25a55edfd43714986e8d4a329704ee3df2a627588e75f0b987f898367c2"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/fulleventlogview.zip",
+            "hash": "152e5837b22fe623dee9d63bdec1b686594ee17b7637a39132fc555f77b844c9"
+        }
+    },
+    "description": "Event log viewer for Windows 10/8/7/Vista.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/fulleventlogview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/fulleventlogview.zip"
+            }
+        }
+    }
 }

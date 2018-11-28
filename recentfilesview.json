@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/recent_files_view.html",
- "url": "http://www.nirsoft.net/utils/recentfilesview.zip",
- "bin": "RecentFilesView.exe",
- "hash": "tbd",
- "description": "Display the list of recently opened files",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/recentfilesview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/recentfilesview.zip"
- }
+    "version": "1.33",
+    "homepage": "http://www.nirsoft.net/utils/recent_files_view.html",
+    "url": "http://www.nirsoft.net/utils/recentfilesview.zip",
+    "bin": "RecentFilesView.exe",
+    "hash": "6920cc0165fcffa1a009c663c3dce7c84a62ca0e4b73d9d86dc9cc0dc39dca61",
+    "description": "Display the list of recently opened files",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/recentfilesview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/recentfilesview.zip"
+    }
 }

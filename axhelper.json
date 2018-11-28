@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/axhelper.html",
- "url": "http://www.nirsoft.net/utils/axhelper.zip",
- "bin": "axhelper.exe",
- "hash": "tbd",
- "description": "view essential information about ActiveX components installed on your computer.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/axhelper.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/axhelper.zip"
- }
+    "version": "1.12",
+    "homepage": "http://www.nirsoft.net/utils/axhelper.html",
+    "url": "http://www.nirsoft.net/utils/axhelper.zip",
+    "bin": "axhelper.exe",
+    "hash": "57b7f131622fc10e42db30525880780402453367cfd7cb83198e9afab4f7aba7",
+    "description": "view essential information about ActiveX components installed on your computer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/axhelper.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/axhelper.zip"
+    }
 }

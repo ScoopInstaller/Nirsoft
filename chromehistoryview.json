@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/chrome_history_view.html",
- "url": "http://www.nirsoft.net/utils/chromehistoryview.zip",
- "bin": "ChromeHistoryView.exe",
- "hash": "tbd",
- "description": "View the browsing history of Chrome Web browser",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/chromehistoryview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/chromehistoryview.zip"
- }
+    "version": "1.35",
+    "homepage": "http://www.nirsoft.net/utils/chrome_history_view.html",
+    "url": "http://www.nirsoft.net/utils/chromehistoryview.zip",
+    "bin": "ChromeHistoryView.exe",
+    "hash": "125d305fb435e61c6ebb0df56cba0aeb0f0850099384553a7d5497ed5771f7a0",
+    "description": "View the browsing history of Chrome Web browser",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/chromehistoryview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/chromehistoryview.zip"
+    }
 }

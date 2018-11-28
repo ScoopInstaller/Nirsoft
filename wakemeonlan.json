@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/wake_on_lan.html",
- "bin": "WakeMeOnLan.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/wakemeonlan-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/wakemeonlan.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/wakemeonlan.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/wakemeonlan-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/wakemeonlan.zip"
-   }
-  }
- }
+    "version": "1.83",
+    "homepage": "http://www.nirsoft.net/utils/wake_on_lan.html",
+    "bin": "WakeMeOnLan.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/wakemeonlan-x64.zip",
+            "hash": "34c02b6b3acd8edb2a566dc52351b3467282a5f321585b0f73f15930950ed1a2"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/wakemeonlan.zip",
+            "hash": "e5da9dc46f703fd15fbb52b7c05140bcbfe3ec9fa087a1cdff4e02f4390d35d3"
+        }
+    },
+    "description": "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/wakemeonlan.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/wakemeonlan-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/wakemeonlan.zip"
+            }
+        }
+    }
 }

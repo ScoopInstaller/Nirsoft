@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/jump_lists_view.html",
- "url": "http://www.nirsoft.net/utils/jumplistsview.zip",
- "bin": "JumpListsView.exe",
- "hash": "tbd",
- "description": "Displays the information stored by the 'Jump Lists' feature of Windows 7.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/jumplistsview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/jumplistsview.zip"
- }
+    "version": "1.16",
+    "homepage": "http://www.nirsoft.net/utils/jump_lists_view.html",
+    "url": "http://www.nirsoft.net/utils/jumplistsview.zip",
+    "bin": "JumpListsView.exe",
+    "hash": "2e3447efac788110292e8bb3438bbdb24246b46cedc873a2d55ef87c152705b9",
+    "description": "Displays the information stored by the 'Jump Lists' feature of Windows 7.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/jumplistsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/jumplistsview.zip"
+    }
 }

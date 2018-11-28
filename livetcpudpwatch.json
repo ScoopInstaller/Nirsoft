@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/live_tcp_udp_watch.html",
- "bin": "LiveTcpUdpWatch.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/livetcpudpwatch.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays live information about all TCP and UDP activity on your system.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/livetcpudpwatch.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/livetcpudpwatch.zip"
-   }
-  }
- }
+    "version": "1.07",
+    "homepage": "https://www.nirsoft.net/utils/live_tcp_udp_watch.html",
+    "bin": "LiveTcpUdpWatch.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip",
+            "hash": "449092b506e481c7193cc6ed9aefdfd7317313aa039c129f38c4f2d4572113a4"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/livetcpudpwatch.zip",
+            "hash": "f491ffecf41e1f6d8fb634543da9f68f91735da63a97ac9398ade76c67aede9c"
+        }
+    },
+    "description": "Displays live information about all TCP and UDP activity on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/livetcpudpwatch.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/livetcpudpwatch.zip"
+            }
+        }
+    }
 }

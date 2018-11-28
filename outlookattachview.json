@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/outlook_attachment.html",
- "bin": "OutlookAttachView.exe",
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/outlookattachview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Extract multiple attachments from Outlook.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/outlookattachview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/outlookattachview.zip"
-   }
-  }
- }
+    "version": "3.15",
+    "homepage": "https://www.nirsoft.net/utils/outlook_attachment.html",
+    "bin": "OutlookAttachView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip",
+            "hash": "552112f420e1d113820a3457d03c482bf333d0a848cd9f63d8f3508d4ce35e3d"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/outlookattachview.zip",
+            "hash": "746147b637d4bb359200885112e250f869d0b8656aed8c13de88840f4bfe7bfd"
+        }
+    },
+    "description": "Extract multiple attachments from Outlook.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/outlookattachview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/outlookattachview.zip"
+            }
+        }
+    }
 }

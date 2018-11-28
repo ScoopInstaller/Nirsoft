@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/country_traceroute.html",
- "url": "http://www.nirsoft.net/utils/countrytraceroute.zip",
- "bin": "CountryTraceRoute.exe",
- "hash": "tbd",
- "description": "Fast Traceroute utility with IP country information.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/countrytraceroute.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/countrytraceroute.zip"
- }
+    "version": "1.28",
+    "homepage": "http://www.nirsoft.net/utils/country_traceroute.html",
+    "url": "http://www.nirsoft.net/utils/countrytraceroute.zip",
+    "bin": "CountryTraceRoute.exe",
+    "hash": "1ccc01bd1992fa0c9da37c02a9b28665d325a57478714c7fdbb6e24a4f16ca1e",
+    "description": "Fast Traceroute utility with IP country information.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/countrytraceroute.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/countrytraceroute.zip"
+    }
 }

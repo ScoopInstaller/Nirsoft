@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/shexview.html",
- "bin": "shexview.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/shexview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/shexview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays the details of shell extensions installed on your computer.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/shexview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/shexview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/shexview.zip"
-   }
-  }
- }
+    "version": "1.97",
+    "homepage": "http://www.nirsoft.net/utils/shexview.html",
+    "bin": "shexview.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/shexview-x64.zip",
+            "hash": "a7116d5b8e66fe00fc076ec972832e643f8ba72457d54bb79cba07f9b9745c86"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/shexview.zip",
+            "hash": "a42f0a197c7e77c8d336168250e0d25c4c2c6a887f051e9ac1b98fb9cc2bba0e"
+        }
+    },
+    "description": "Displays the details of shell extensions installed on your computer.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/shexview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/shexview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/shexview.zip"
+            }
+        }
+    }
 }

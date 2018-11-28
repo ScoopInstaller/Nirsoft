@@ -1,17 +1,17 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/injected_dll.html",
- "url": "http://www.nirsoft.net/utils/injecteddll.zip",
- "bin": "InjectedDLL.exe",
- "hash": "tbd",
- "description": "Display the list of injected DLLs.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/injecteddll.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "url": "http://www.nirsoft.net/utils/injecteddll.zip"
- }
+    "version": "1.00",
+    "homepage": "http://www.nirsoft.net/utils/injected_dll.html",
+    "url": "http://www.nirsoft.net/utils/injecteddll.zip",
+    "bin": "InjectedDLL.exe",
+    "hash": "8f601d8d92b4c28b64a756b447157834e510fb8b471210b2881ca810470bc4bb",
+    "description": "Display the list of injected DLLs.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/injecteddll.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "http://www.nirsoft.net/utils/injecteddll.zip"
+    }
 }

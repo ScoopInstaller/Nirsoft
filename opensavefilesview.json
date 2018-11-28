@@ -1,32 +1,32 @@
 {
- "version": "0",
- "homepage": "http://www.nirsoft.net/utils/open_save_files_view.html",
- "bin": "OpenSaveFilesView.exe",
- "architecture": {
-  "64bit": {
-   "url": "http://www.nirsoft.net/utils/opensavefilesview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "http://www.nirsoft.net/utils/opensavefilesview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays list of files that you previously opened.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "http://www.nirsoft.net/pad/opensavefilesview.xml",
-  "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "http://www.nirsoft.net/utils/opensavefilesview-x64.zip"
-   },
-   "32bit": {
-    "url": "http://www.nirsoft.net/utils/opensavefilesview.zip"
-   }
-  }
- }
+    "version": "1.15",
+    "homepage": "http://www.nirsoft.net/utils/open_save_files_view.html",
+    "bin": "OpenSaveFilesView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.nirsoft.net/utils/opensavefilesview-x64.zip",
+            "hash": "c21b7d419f3e74913fb2a9f460a5bea58cb5907eea589a453f2ddf613b49c743"
+        },
+        "32bit": {
+            "url": "http://www.nirsoft.net/utils/opensavefilesview.zip",
+            "hash": "7ffbd15cd38235c88cdb34ffa0fe577c86b2ddc4192e9860d8f1e1dfc3ce64f5"
+        }
+    },
+    "description": "Displays list of files that you previously opened.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "http://www.nirsoft.net/pad/opensavefilesview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.nirsoft.net/utils/opensavefilesview-x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.nirsoft.net/utils/opensavefilesview.zip"
+            }
+        }
+    }
 }
