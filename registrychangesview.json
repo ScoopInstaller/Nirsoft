@@ -1,15 +1,15 @@
 {
-    "version": "1.08",
+    "version": "1.10",
     "homepage": "http://www.nirsoft.net/utils/registry_changes_view.html",
     "bin": "RegistryChangesView.exe",
     "architecture": {
         "64bit": {
             "url": "http://www.nirsoft.net/utils/registrychangesview-x64.zip",
-            "hash": "6a0b74ebef191ec5bc90d6f3242c259f694cc68795d6df0910208104b7a8bfd2"
+            "hash": "dd3e9a1049f99490acda4980ddf2a9bf26dc59baa90d4a231ed73ebff4db6f72"
         },
         "32bit": {
             "url": "http://www.nirsoft.net/utils/registrychangesview.zip",
-            "hash": "8109f519bb235672ceddfd01f5214bcb90d8ee0351c61d9dd8a8af48266307ca"
+            "hash": "2809a31f0a29b0ebb563e136f3c179e24e6c7c3fca2997631f2155d982444965"
         }
     },
     "description": "Compares 2 snapshots of Windows Registry.",
