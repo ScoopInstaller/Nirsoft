@@ -1,14 +1,14 @@
 {
     "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/event_log_sources_view.html",
+    "homepage": "https://www.nirsoft.net/utils/event_log_sources_view.html",
     "bin": "EventLogSourcesView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/eventlogsourcesview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/eventlogsourcesview-x64.zip",
             "hash": "23e2dcb254e88307457ce81782666c25a84b4e1e2659d0a2e573d69992530dbc"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip",
+            "url": "https://www.nirsoft.net/utils/eventlogsourcesview.zip",
             "hash": "f60a90200ac6daceba5acf2a24546ca27f0af1b28ad1320e637eaa695a6d03e9"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/eventlogsourcesview.xml",
+        "url": "https://www.nirsoft.net/pad/eventlogsourcesview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/eventlogsourcesview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/eventlogsourcesview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/eventlogsourcesview.zip"
+                "url": "https://www.nirsoft.net/utils/eventlogsourcesview.zip"
             }
         }
     }

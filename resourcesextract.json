@@ -1,14 +1,14 @@
 {
     "version": "1.18",
-    "homepage": "http://www.nirsoft.net/utils/resources_extract.html",
+    "homepage": "https://www.nirsoft.net/utils/resources_extract.html",
     "bin": "ResourcesExtract.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/resourcesextract-x64.zip",
+            "url": "https://www.nirsoft.net/utils/resourcesextract-x64.zip",
             "hash": "c68e2ebda348d67bbf92d45fb423038e9413e24b531fc5c50aa663b17dbccbb5"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/resourcesextract.zip",
+            "url": "https://www.nirsoft.net/utils/resourcesextract.zip",
             "hash": "cdccfe0063a66f95cb47127f351416423c960df6260c321ab587f33df0d8a417"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/resourcesextract.xml",
+        "url": "https://www.nirsoft.net/pad/resourcesextract.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/resourcesextract-x64.zip"
+                "url": "https://www.nirsoft.net/utils/resourcesextract-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/resourcesextract.zip"
+                "url": "https://www.nirsoft.net/utils/resourcesextract.zip"
             }
         }
     }

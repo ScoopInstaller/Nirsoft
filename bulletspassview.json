@@ -1,14 +1,14 @@
 {
     "version": "1.32",
-    "homepage": "http://www.nirsoft.net/utils/bullets_password_view.html",
+    "homepage": "https://www.nirsoft.net/utils/bullets_password_view.html",
     "bin": "BulletsPassView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/bulletspassview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/bulletspassview-x64.zip",
             "hash": "7a811e7e8124ead14240c03e76d824adfadef7eead5b1d207e79ac7f14b59e09"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/bulletspassview.zip",
+            "url": "https://www.nirsoft.net/utils/bulletspassview.zip",
             "hash": "d5c801da275540c1713102518e67ed94a1afecbae2418d5b9f94148e338f61e5"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/bulletspassview.xml",
+        "url": "https://www.nirsoft.net/pad/bulletspassview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/bulletspassview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/bulletspassview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/bulletspassview.zip"
+                "url": "https://www.nirsoft.net/utils/bulletspassview.zip"
             }
         }
     }

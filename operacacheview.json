@@ -1,17 +1,17 @@
 {
     "version": "1.40",
-    "homepage": "http://www.nirsoft.net/utils/opera_cache_view.html",
-    "url": "http://www.nirsoft.net/utils/operacacheview.zip",
+    "homepage": "https://www.nirsoft.net/utils/opera_cache_view.html",
+    "url": "https://www.nirsoft.net/utils/operacacheview.zip",
     "bin": "OperaCacheView.exe",
     "hash": "b205f7d66e4fdb7e2c3af7ab3903cb6cfa15467f0913a30f49a93acea971780e",
     "description": "Cache viewer for Opera Web browser.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/operacacheview.xml",
+        "url": "https://www.nirsoft.net/pad/operacacheview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/operacacheview.zip"
+        "url": "https://www.nirsoft.net/utils/operacacheview.zip"
     }
 }

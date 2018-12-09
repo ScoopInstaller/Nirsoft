@@ -1,17 +1,17 @@
 {
     "version": "2.37",
-    "homepage": "http://www.nirsoft.net/utils/whois_this_domain.html",
-    "url": "http://www.nirsoft.net/utils/whoistd.zip",
+    "homepage": "https://www.nirsoft.net/utils/whois_this_domain.html",
+    "url": "https://www.nirsoft.net/utils/whoistd.zip",
     "bin": "whoistd.exe",
     "hash": "883b6ddc8f76ec570d6ec87c091680a465474965631ed42bc8ad236d8a41cac5",
     "description": "Get information about a registered domain from WHOIS server.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/whoistd.xml",
+        "url": "https://www.nirsoft.net/pad/whoistd.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/whoistd.zip"
+        "url": "https://www.nirsoft.net/utils/whoistd.zip"
     }
 }

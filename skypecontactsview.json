@@ -1,17 +1,17 @@
 {
     "version": "1.05",
-    "homepage": "http://www.nirsoft.net/utils/skype_contacts_view.html",
-    "url": "http://www.nirsoft.net/utils/skypecontactsview.zip",
+    "homepage": "https://www.nirsoft.net/utils/skype_contacts_view.html",
+    "url": "https://www.nirsoft.net/utils/skypecontactsview.zip",
     "bin": "SkypeContactsView.exe",
     "hash": "03a920762ff09cf20b5328e2f6700089b0dfef1bf893d3a14c6868c041943120",
     "description": "Displays the list of Skype contacts stored in the local database file of Skype.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/skypecontactsview.xml",
+        "url": "https://www.nirsoft.net/pad/skypecontactsview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/skypecontactsview.zip"
+        "url": "https://www.nirsoft.net/utils/skypecontactsview.zip"
     }
 }

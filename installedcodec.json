@@ -1,14 +1,14 @@
 {
     "version": "1.30",
-    "homepage": "http://www.nirsoft.net/utils/installed_codec.html",
+    "homepage": "https://www.nirsoft.net/utils/installed_codec.html",
     "bin": "InstalledCodec.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/installedcodec-x64.zip",
+            "url": "https://www.nirsoft.net/utils/installedcodec-x64.zip",
             "hash": "08105602e668c073fccb58d1c4a93f2eb84c8b564eaf0fe716792f7f200f64ee"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/installedcodec.zip",
+            "url": "https://www.nirsoft.net/utils/installedcodec.zip",
             "hash": "c0381e687f67dc3196abcb326bc606150842014f4334e02fd6ae844bdae0710b"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/installedcodec.xml",
+        "url": "https://www.nirsoft.net/pad/installedcodec.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/installedcodec-x64.zip"
+                "url": "https://www.nirsoft.net/utils/installedcodec-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/installedcodec.zip"
+                "url": "https://www.nirsoft.net/utils/installedcodec.zip"
             }
         }
     }

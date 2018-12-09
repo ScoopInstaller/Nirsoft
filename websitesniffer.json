@@ -1,14 +1,14 @@
 {
     "version": "1.51",
-    "homepage": "http://www.nirsoft.net/utils/web_site_sniffer.html",
+    "homepage": "https://www.nirsoft.net/utils/web_site_sniffer.html",
     "bin": "WebSiteSniffer.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/websitesniffer-x64.zip",
+            "url": "https://www.nirsoft.net/utils/websitesniffer-x64.zip",
             "hash": "da76a2e30e3f1167c6effc51b76eae7b8795068479c379d00994d2554b6aae86"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/websitesniffer.zip",
+            "url": "https://www.nirsoft.net/utils/websitesniffer.zip",
             "hash": "f9c841fae243e1584ce9127ebafb7a7c8ce314336759e5ee149b21d18a267f5e"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/websitesniffer.xml",
+        "url": "https://www.nirsoft.net/pad/websitesniffer.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/websitesniffer-x64.zip"
+                "url": "https://www.nirsoft.net/utils/websitesniffer-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/websitesniffer.zip"
+                "url": "https://www.nirsoft.net/utils/websitesniffer.zip"
             }
         }
     }

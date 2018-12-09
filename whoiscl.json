@@ -1,17 +1,17 @@
 {
     "version": "1.85",
-    "homepage": "http://www.nirsoft.net/utils/whoiscl.html",
-    "url": "http://www.nirsoft.net/utils/whoiscl.zip",
+    "homepage": "https://www.nirsoft.net/utils/whoiscl.html",
+    "url": "https://www.nirsoft.net/utils/whoiscl.zip",
     "bin": "WhoisCL.exe",
     "hash": "d4f1e3a45e6b2e0ea79aab6d38895f450741ff24109341ca451250cd5f2d0d8e",
     "description": "Get WHOIS information about a registered domain from command-line.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/whoiscl.xml",
+        "url": "https://www.nirsoft.net/pad/whoiscl.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/whoiscl.zip"
+        "url": "https://www.nirsoft.net/utils/whoiscl.zip"
     }
 }

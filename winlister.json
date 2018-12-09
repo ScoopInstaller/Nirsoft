@@ -1,14 +1,14 @@
 {
     "version": "1.22",
-    "homepage": "http://www.nirsoft.net/utils/winlister.html",
+    "homepage": "https://www.nirsoft.net/utils/winlister.html",
     "bin": "winlister.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/winlister-x64.zip",
+            "url": "https://www.nirsoft.net/utils/winlister-x64.zip",
             "hash": "2a07bb34147dea6ca6fbf2be6004ece72cc9ce308f29f86fa2e2d5842b7e997c"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/winlister.zip",
+            "url": "https://www.nirsoft.net/utils/winlister.zip",
             "hash": "1285a20c47498f864bc33a7ab3cfd3c97168cbbbe9e14b1474b0bb5f02cd24a2"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/winlister.xml",
+        "url": "https://www.nirsoft.net/pad/winlister.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/winlister-x64.zip"
+                "url": "https://www.nirsoft.net/utils/winlister-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/winlister.zip"
+                "url": "https://www.nirsoft.net/utils/winlister.zip"
             }
         }
     }

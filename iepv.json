@@ -1,17 +1,17 @@
 {
     "version": "1.40",
-    "homepage": "http://www.nirsoft.net/utils/internet_explorer_password.html",
-    "url": "http://www.nirsoft.net/toolsdownload/iepv.zip",
+    "homepage": "https://www.nirsoft.net/utils/internet_explorer_password.html",
+    "url": "https://www.nirsoft.net/toolsdownload/iepv.zip",
     "bin": "iepv.exe",
     "hash": "5fb60debcada978e60b1d1c1a6ff062a76f6893cc9a965543eae8e76f1a9cade",
     "description": "Recover passwords stored by Internet Explorer (Versions 4.0 - 8.0)",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/iepv.xml",
+        "url": "https://www.nirsoft.net/pad/iepv.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/toolsdownload/iepv.zip"
+        "url": "https://www.nirsoft.net/toolsdownload/iepv.zip"
     }
 }

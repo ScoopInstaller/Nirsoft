@@ -1,14 +1,14 @@
 {
     "version": "1.83",
-    "homepage": "http://www.nirsoft.net/utils/file_types_manager.html",
+    "homepage": "https://www.nirsoft.net/utils/file_types_manager.html",
     "bin": "FileTypesMan.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/filetypesman-x64.zip",
+            "url": "https://www.nirsoft.net/utils/filetypesman-x64.zip",
             "hash": "a92b316f3b14ace527df18fd39f9dee3af6153a758d4301df54718a9eb07a605"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/filetypesman.zip",
+            "url": "https://www.nirsoft.net/utils/filetypesman.zip",
             "hash": "c46cdf5dc1d4c6233b2e900f13685b07553a5f7b184d579db4a5a5b8b22017c6"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/filetypesman.xml",
+        "url": "https://www.nirsoft.net/pad/filetypesman.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/filetypesman-x64.zip"
+                "url": "https://www.nirsoft.net/utils/filetypesman-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/filetypesman.zip"
+                "url": "https://www.nirsoft.net/utils/filetypesman.zip"
             }
         }
     }

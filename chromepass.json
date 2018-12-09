@@ -1,17 +1,17 @@
 {
     "version": "1.46",
-    "homepage": "http://www.nirsoft.net/utils/chromepass.html",
-    "url": "http://www.nirsoft.net/toolsdownload/chromepass.zip",
+    "homepage": "https://www.nirsoft.net/utils/chromepass.html",
+    "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip",
     "bin": "chromepass.exe",
     "hash": "517629b9c01b060c8b936f46c97dd389243db0f2851f42053a767448ef1cb21d",
     "description": "Password recovery tool for Google Chrome Web browser. ",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/chromepass.xml",
+        "url": "https://www.nirsoft.net/pad/chromepass.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/toolsdownload/chromepass.zip"
+        "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip"
     }
 }

@@ -1,17 +1,17 @@
 {
     "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/jrview.html",
-    "url": "http://www.nirsoft.net/utils/jrview.zip",
+    "homepage": "https://www.nirsoft.net/utils/jrview.html",
+    "url": "https://www.nirsoft.net/utils/jrview.zip",
     "bin": "jrview.exe",
     "hash": "ef9bbfbd17b7b9c7215b54b86597c5e345b44904d1ab7b55d1081796453619a1",
     "description": "Displays the installed Java Runtime  Environments.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/jrview.xml",
+        "url": "https://www.nirsoft.net/pad/jrview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/jrview.zip"
+        "url": "https://www.nirsoft.net/utils/jrview.zip"
     }
 }

@@ -1,14 +1,14 @@
 {
     "version": "1.06",
-    "homepage": "http://www.nirsoft.net/utils/device_io_view.html",
+    "homepage": "https://www.nirsoft.net/utils/device_io_view.html",
     "bin": "DeviceIOView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/deviceioview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/deviceioview-x64.zip",
             "hash": "810308a117d949f923e77a80206489208bf3b5e381f1406934ee5ce9d9537e33"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/deviceioview.zip",
+            "url": "https://www.nirsoft.net/utils/deviceioview.zip",
             "hash": "6e838ff2bd864e4f004f8051f36a6d275dbb847c624fa9b7328d7f3e5b6e6848"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/deviceioview.xml",
+        "url": "https://www.nirsoft.net/pad/deviceioview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/deviceioview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/deviceioview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/deviceioview.zip"
+                "url": "https://www.nirsoft.net/utils/deviceioview.zip"
             }
         }
     }

@@ -1,17 +1,17 @@
 {
     "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/hot_keys_list.html",
-    "url": "http://www.nirsoft.net/utils/hotkeyslist.zip",
+    "homepage": "https://www.nirsoft.net/utils/hot_keys_list.html",
+    "url": "https://www.nirsoft.net/utils/hotkeyslist.zip",
     "bin": "HotKeysList.exe",
     "hash": "794f33f58b7d3c92067228f7c3d4bfa11e346925fa76432966a290ed5919b8e5",
     "description": "Displays the list of hot keys that are currently registered on your system.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/hotkeyslist.xml",
+        "url": "https://www.nirsoft.net/pad/hotkeyslist.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/hotkeyslist.zip"
+        "url": "https://www.nirsoft.net/utils/hotkeyslist.zip"
     }
 }

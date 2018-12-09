@@ -1,14 +1,14 @@
 {
     "version": "2.16",
-    "homepage": "http://www.nirsoft.net/utils/network_traffic_view.html",
+    "homepage": "https://www.nirsoft.net/utils/network_traffic_view.html",
     "bin": "NetworkTrafficView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/networktrafficview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/networktrafficview-x64.zip",
             "hash": "ce68a5ae28b75f02380f11806d39edcf4ff419d87e4b26aa66521d17eac73072"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/networktrafficview.zip",
+            "url": "https://www.nirsoft.net/utils/networktrafficview.zip",
             "hash": "5a257337fc1f2c897ee7ebc3a2650211119656ada5e55a88a53a07eb72231eef"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/networktrafficview.xml",
+        "url": "https://www.nirsoft.net/pad/networktrafficview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/networktrafficview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/networktrafficview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/networktrafficview.zip"
+                "url": "https://www.nirsoft.net/utils/networktrafficview.zip"
             }
         }
     }

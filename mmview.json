@@ -1,17 +1,17 @@
 {
     "version": "1.10",
-    "homepage": "http://www.nirsoft.net/utils/mmview.html",
-    "url": "http://www.nirsoft.net/utils/mmview.zip",
+    "homepage": "https://www.nirsoft.net/utils/mmview.html",
+    "url": "https://www.nirsoft.net/utils/mmview.zip",
     "bin": "mmview.exe",
     "hash": "8dfcf804a9fe9c0e07893ececb083459c24d64ed7c9d9d35ac40e60d4f55bebe",
     "description": "Lists the installed Codec, and allows you to disable/enable them.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/mmview.xml",
+        "url": "https://www.nirsoft.net/pad/mmview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/mmview.zip"
+        "url": "https://www.nirsoft.net/utils/mmview.zip"
     }
 }

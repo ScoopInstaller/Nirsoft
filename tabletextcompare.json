@@ -1,17 +1,17 @@
 {
     "version": "1.20",
-    "homepage": "http://www.nirsoft.net/utils/csv_file_comparison.html",
-    "url": "http://www.nirsoft.net/utils/tabletextcompare.zip",
+    "homepage": "https://www.nirsoft.net/utils/csv_file_comparison.html",
+    "url": "https://www.nirsoft.net/utils/tabletextcompare.zip",
     "bin": "TableTextCompare.exe",
     "hash": "9450b1ebea00d1ec6e868e740e8c35fc7a8aff0cdd0ee05da7066e95f2ace88e",
     "description": "Compare tab-delimited or comma-delimited (csv) files.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/tabletextcompare.xml",
+        "url": "https://www.nirsoft.net/pad/tabletextcompare.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/tabletextcompare.zip"
+        "url": "https://www.nirsoft.net/utils/tabletextcompare.zip"
     }
 }

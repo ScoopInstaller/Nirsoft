@@ -1,14 +1,14 @@
 {
     "version": "1.30",
-    "homepage": "http://www.nirsoft.net/utils/tcp_log_view.html",
+    "homepage": "https://www.nirsoft.net/utils/tcp_log_view.html",
     "bin": "TcpLogView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/tcplogview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/tcplogview-x64.zip",
             "hash": "f6870aa211c9eeb2cacce17137dff20965632463ff95a20e3061897aa3ab5eaf"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/tcplogview.zip",
+            "url": "https://www.nirsoft.net/utils/tcplogview.zip",
             "hash": "ccb96b26d63c7961e6dcce24ca35d6d3d330fbceacb88c1b9667cbc5ff8ea634"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/tcplogview.xml",
+        "url": "https://www.nirsoft.net/pad/tcplogview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/tcplogview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/tcplogview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/tcplogview.zip"
+                "url": "https://www.nirsoft.net/utils/tcplogview.zip"
             }
         }
     }

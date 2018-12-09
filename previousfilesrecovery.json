@@ -1,14 +1,14 @@
 {
     "version": "1.00",
-    "homepage": "http://www.nirsoft.net/utils/previous_files_recovery.html",
+    "homepage": "https://www.nirsoft.net/utils/previous_files_recovery.html",
     "bin": "PreviousFilesRecovery.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/previousfilesrecovery-x64.zip",
+            "url": "https://www.nirsoft.net/utils/previousfilesrecovery-x64.zip",
             "hash": "8c18f60fa2a4c5d3a60b94cc998eb7152c3358cf14b04a2d4b5795bfdaf552b2"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/previousfilesrecovery.zip",
+            "url": "https://www.nirsoft.net/utils/previousfilesrecovery.zip",
             "hash": "c528ff1295d9a4e8f309b659f1bf7165ab1d89b1394b789e680d5646c2a3ac24"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/previousfilesrecovery.xml",
+        "url": "https://www.nirsoft.net/pad/previousfilesrecovery.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/previousfilesrecovery-x64.zip"
+                "url": "https://www.nirsoft.net/utils/previousfilesrecovery-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/previousfilesrecovery.zip"
+                "url": "https://www.nirsoft.net/utils/previousfilesrecovery.zip"
             }
         }
     }

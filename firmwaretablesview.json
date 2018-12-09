@@ -1,14 +1,14 @@
 {
     "version": "1.01",
-    "homepage": "http://www.nirsoft.net/utils/firmware_tables_view.html",
+    "homepage": "https://www.nirsoft.net/utils/firmware_tables_view.html",
     "bin": "FirmwareTablesView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/firmwaretablesview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/firmwaretablesview-x64.zip",
             "hash": "bd105b88022ed9b5b6994a6ad66e284750cc94c4d393821276145a9e51e7b594"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/firmwaretablesview.zip",
+            "url": "https://www.nirsoft.net/utils/firmwaretablesview.zip",
             "hash": "ccbcef06ca073392d1f2ac1be63968fecc2f1e3cb855508ac1d5d9e22493c82e"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/firmwaretablesview.xml",
+        "url": "https://www.nirsoft.net/pad/firmwaretablesview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/firmwaretablesview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/firmwaretablesview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/firmwaretablesview.zip"
+                "url": "https://www.nirsoft.net/utils/firmwaretablesview.zip"
             }
         }
     }

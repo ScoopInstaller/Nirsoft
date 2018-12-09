@@ -1,14 +1,14 @@
 {
     "version": "1.36",
-    "homepage": "http://www.nirsoft.net/utils/run_as_date.html",
+    "homepage": "https://www.nirsoft.net/utils/run_as_date.html",
     "bin": "RunAsDate.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/runasdate-x64.zip",
+            "url": "https://www.nirsoft.net/utils/runasdate-x64.zip",
             "hash": "29b467615b65b390ac25effeb34c03918dd7f786d6c9ec912aa9e68212109bb1"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/runasdate.zip",
+            "url": "https://www.nirsoft.net/utils/runasdate.zip",
             "hash": "321b6915ead1b96b630a9aca1c4cbfdc0d464182705fcb9a66cb05d3d18e1d7e"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/runasdate.xml",
+        "url": "https://www.nirsoft.net/pad/runasdate.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/runasdate-x64.zip"
+                "url": "https://www.nirsoft.net/utils/runasdate-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/runasdate.zip"
+                "url": "https://www.nirsoft.net/utils/runasdate.zip"
             }
         }
     }

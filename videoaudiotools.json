@@ -1,17 +1,17 @@
 {
     "version": "1.20",
     "homepage": null,
-    "url": "http://www.nirsoft.net/packages/videoaudiotools.zip",
+    "url": "https://www.nirsoft.net/packages/videoaudiotools.zip",
     "bin": "videoaudiotools.exe",
     "hash": "923b18d10a647f9daf67b33574eb9c6ebff6b739fec101043455a7ce4479fcfd",
     "description": "A package of 6 tools for Windows related to video/audio.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/videoaudiotools.xml",
+        "url": "https://www.nirsoft.net/pad/videoaudiotools.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/packages/videoaudiotools.zip"
+        "url": "https://www.nirsoft.net/packages/videoaudiotools.zip"
     }
 }

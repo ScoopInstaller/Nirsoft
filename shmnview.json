@@ -1,14 +1,14 @@
 {
     "version": "1.40",
-    "homepage": "http://www.nirsoft.net/utils/shell_menu_view.html",
+    "homepage": "https://www.nirsoft.net/utils/shell_menu_view.html",
     "bin": "shmnview.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/shmnview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/shmnview-x64.zip",
             "hash": "5227288fe979a10035ef5f8a03575a9856754182f78d9a94abcfe7608f76258e"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/shmnview.zip",
+            "url": "https://www.nirsoft.net/utils/shmnview.zip",
             "hash": "ee2a9df19673b30119e299847a20a6f82232600d6a7a72a329c54ca9173d9293"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/shmnview.xml",
+        "url": "https://www.nirsoft.net/pad/shmnview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/shmnview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/shmnview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/shmnview.zip"
+                "url": "https://www.nirsoft.net/utils/shmnview.zip"
             }
         }
     }

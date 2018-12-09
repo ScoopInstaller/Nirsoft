@@ -1,17 +1,17 @@
 {
     "version": "1.01",
-    "homepage": "http://www.nirsoft.net/utils/addrview.html",
-    "url": "http://www.nirsoft.net/utils/addrview.zip",
+    "homepage": "https://www.nirsoft.net/utils/addrview.html",
+    "url": "https://www.nirsoft.net/utils/addrview.zip",
     "bin": "AddrView.exe",
     "hash": "806883045b6b510625d05ae965222b80c451a0b18ce30343ec9607cca10d4017",
     "description": "Extract URL addresses from HTML pages.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/addrview.xml",
+        "url": "https://www.nirsoft.net/pad/addrview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/addrview.zip"
+        "url": "https://www.nirsoft.net/utils/addrview.zip"
     }
 }

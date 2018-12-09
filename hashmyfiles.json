@@ -1,14 +1,14 @@
 {
     "version": "2.31",
-    "homepage": "http://www.nirsoft.net/utils/hash_my_files.html",
+    "homepage": "https://www.nirsoft.net/utils/hash_my_files.html",
     "bin": "HashMyFiles.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/hashmyfiles-x64.zip",
+            "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip",
             "hash": "ee1397d3d9aaad9841720e8b9c540a0f954335e8b465ffc52fb629a99f06e25f"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/hashmyfiles.zip",
+            "url": "https://www.nirsoft.net/utils/hashmyfiles.zip",
             "hash": "3dfff4724ca179a87f688294220fdc4f905d6b6a32acbaee1aba5a73c61474be"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/hashmyfiles.xml",
+        "url": "https://www.nirsoft.net/pad/hashmyfiles.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/hashmyfiles-x64.zip"
+                "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/hashmyfiles.zip"
+                "url": "https://www.nirsoft.net/utils/hashmyfiles.zip"
             }
         }
     }

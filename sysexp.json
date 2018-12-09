@@ -1,14 +1,14 @@
 {
     "version": "1.76",
-    "homepage": "http://www.nirsoft.net/utils/sysexp.html",
+    "homepage": "https://www.nirsoft.net/utils/sysexp.html",
     "bin": "sysexp.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/sysexp-x64.zip",
+            "url": "https://www.nirsoft.net/utils/sysexp-x64.zip",
             "hash": "896e480fb7d05aecb7d16a634971e44ae42051c5353f74b87aaf3fb439361028"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/sysexp.zip",
+            "url": "https://www.nirsoft.net/utils/sysexp.zip",
             "hash": "02fdde2c89f553abef26b8ba3a73ba43ec6a8105d62a65807a58044dda9c99f5"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/sysexp.xml",
+        "url": "https://www.nirsoft.net/pad/sysexp.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/sysexp-x64.zip"
+                "url": "https://www.nirsoft.net/utils/sysexp-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/sysexp.zip"
+                "url": "https://www.nirsoft.net/utils/sysexp.zip"
             }
         }
     }

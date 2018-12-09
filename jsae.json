@@ -1,17 +1,17 @@
 {
     "version": "1.10",
-    "homepage": "http://www.nirsoft.net/utils/jsae.html",
-    "url": "http://www.nirsoft.net/utils/jsae.zip",
+    "homepage": "https://www.nirsoft.net/utils/jsae.html",
+    "url": "https://www.nirsoft.net/utils/jsae.zip",
     "bin": "jsae.exe",
     "hash": "2b6e1be03a3b897f25bbc4249e0b39efe368e47ad63d8909c2aaaecfc1f082e1",
     "description": "Creates Javascript animation  from image files on your local drive.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/jsae.xml",
+        "url": "https://www.nirsoft.net/pad/jsae.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/jsae.zip"
+        "url": "https://www.nirsoft.net/utils/jsae.zip"
     }
 }

@@ -1,14 +1,14 @@
 {
     "version": "1.47",
-    "homepage": "http://www.nirsoft.net/utils/driverview.html",
+    "homepage": "https://www.nirsoft.net/utils/driverview.html",
     "bin": "DriverView.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/driverview-x64.zip",
+            "url": "https://www.nirsoft.net/utils/driverview-x64.zip",
             "hash": "c86dad1ac0b6662f3d4d66325f62b31c0c2b2b2437f9e34a7810b9f198be623c"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/driverview.zip",
+            "url": "https://www.nirsoft.net/utils/driverview.zip",
             "hash": "3b54948ede7ab5e14761d4036fa78364e6c46d8ec4fa0ea7572855b1701359a8"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/driverview.xml",
+        "url": "https://www.nirsoft.net/pad/driverview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/driverview-x64.zip"
+                "url": "https://www.nirsoft.net/utils/driverview-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/driverview.zip"
+                "url": "https://www.nirsoft.net/utils/driverview.zip"
             }
         }
     }

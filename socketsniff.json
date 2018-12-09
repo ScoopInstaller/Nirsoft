@@ -1,17 +1,17 @@
 {
     "version": "1.11",
-    "homepage": "http://www.nirsoft.net/utils/socket_sniffer.html",
-    "url": "http://www.nirsoft.net/utils/socketsniff.zip",
+    "homepage": "https://www.nirsoft.net/utils/socket_sniffer.html",
+    "url": "https://www.nirsoft.net/utils/socketsniff.zip",
     "bin": "SocketSniff.exe",
     "hash": "2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc",
     "description": "Watch the Windows Sockets (WinSock) activity of the selected process.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/socketsniff.xml",
+        "url": "https://www.nirsoft.net/pad/socketsniff.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/socketsniff.zip"
+        "url": "https://www.nirsoft.net/utils/socketsniff.zip"
     }
 }

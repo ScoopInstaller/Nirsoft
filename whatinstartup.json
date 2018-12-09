@@ -1,14 +1,14 @@
 {
     "version": "1.35",
-    "homepage": "http://www.nirsoft.net/utils/what_run_in_startup.html",
+    "homepage": "https://www.nirsoft.net/utils/what_run_in_startup.html",
     "bin": "WhatInStartup.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/whatinstartup-x64.zip",
+            "url": "https://www.nirsoft.net/utils/whatinstartup-x64.zip",
             "hash": "9a50776456f79c08d9de06862beb3531d8e4f90062ae54f2b2d700aa4338a330"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/whatinstartup.zip",
+            "url": "https://www.nirsoft.net/utils/whatinstartup.zip",
             "hash": "71241fb3d34661002d94cd0076216245182799894fbe0d43266a039f70115641"
         }
     },
@@ -16,16 +16,16 @@
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/whatinstartup.xml",
+        "url": "https://www.nirsoft.net/pad/whatinstartup.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/whatinstartup-x64.zip"
+                "url": "https://www.nirsoft.net/utils/whatinstartup-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/whatinstartup.zip"
+                "url": "https://www.nirsoft.net/utils/whatinstartup.zip"
             }
         }
     }

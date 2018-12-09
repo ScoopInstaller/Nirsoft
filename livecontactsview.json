@@ -1,17 +1,17 @@
 {
     "version": "1.26",
-    "homepage": "http://www.nirsoft.net/utils/live_messenger_contacts.html",
-    "url": "http://www.nirsoft.net/utils/livecontactsview.zip",
+    "homepage": "https://www.nirsoft.net/utils/live_messenger_contacts.html",
+    "url": "https://www.nirsoft.net/utils/livecontactsview.zip",
     "bin": "LiveContactsView.exe",
     "hash": "8cc89f10e002c3aa4da6d711ce4342d318d9cfe4471d38835c89ddb03594119e",
     "description": "View the details of all contacts in your Windows Live Messenger.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/livecontactsview.xml",
+        "url": "https://www.nirsoft.net/pad/livecontactsview.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/livecontactsview.zip"
+        "url": "https://www.nirsoft.net/utils/livecontactsview.zip"
     }
 }

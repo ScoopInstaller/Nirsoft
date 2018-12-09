@@ -1,17 +1,17 @@
 {
     "version": "1.07",
-    "homepage": "http://www.nirsoft.net/utils/dump_edid.html",
-    "url": "http://www.nirsoft.net/utils/dumpedid.zip",
+    "homepage": "https://www.nirsoft.net/utils/dump_edid.html",
+    "url": "https://www.nirsoft.net/utils/dumpedid.zip",
     "bin": "DumpEDID.exe",
     "hash": "1773478ecec2d0e7dcb8d41dd3dd1353e26446a4a798ab294a1ce652a9b84609",
     "description": "Dump EDID information into the console window.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/dumpedid.xml",
+        "url": "https://www.nirsoft.net/pad/dumpedid.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/dumpedid.zip"
+        "url": "https://www.nirsoft.net/utils/dumpedid.zip"
     }
 }

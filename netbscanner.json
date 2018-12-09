@@ -1,17 +1,17 @@
 {
     "version": "1.11",
-    "homepage": "http://www.nirsoft.net/utils/netbios_scanner.html",
-    "url": "http://www.nirsoft.net/utils/netbscanner.zip",
+    "homepage": "https://www.nirsoft.net/utils/netbios_scanner.html",
+    "url": "https://www.nirsoft.net/utils/netbscanner.zip",
     "bin": "NetBScanner.exe",
     "hash": "f4970e58d94ef7112924b16ae81187e18d9bad26d407e9b6a37172c5d5973c3c",
     "description": "Scans all computers in the IP addresses range you choose, using NetBIOS protocol",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
-        "url": "http://www.nirsoft.net/pad/netbscanner.xml",
+        "url": "https://www.nirsoft.net/pad/netbscanner.xml",
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/netbscanner.zip"
+        "url": "https://www.nirsoft.net/utils/netbscanner.zip"
     }
 }
