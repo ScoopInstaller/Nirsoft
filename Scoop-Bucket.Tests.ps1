@@ -1,4 +1,4 @@
-. "$env:SCOOP_HOME\lib\core.ps1"
+﻿. "$env:SCOOP_HOME\lib\core.ps1"
 . "$env:SCOOP_HOME\lib\manifest.ps1"
 . "$env:SCOOP_HOME\lib\unix.ps1"
 . "$env:SCOOP_HOME\test\Scoop-TestLib.ps1"
