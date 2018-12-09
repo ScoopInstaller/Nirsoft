@@ -37,8 +37,8 @@ for line in pads.splitlines():
         except AttributeError:
             pass
         web_info = root.find("Web_Info")
-        website = web_info.find("Application_URLs").find("Application_Info_URL").text
-        download = web_info.find("Download_URLs").find("Primary_Download_URL").text
+        website = web_info.find("Application_URLs").find("Application_Info_URL").text.replace("http:", "https:")
+        download = web_info.find("Download_URLs").find("Primary_Download_URL").text.replace("http:", "https:")
         download64 = download.replace(".zip", "-x64.zip")
         name = os.path.splitext(os.path.basename(line))[0]
 
@@ -64,7 +64,7 @@ for line in pads.splitlines():
             "license": "Freeware",
             "notes": "If this application is useful to you, please consider donating to nirsoft.",
             "checkver": {
-                "url": "http://www.nirsoft.net/pad/" + name + ".xml",
+                "url": "https://www.nirsoft.net/pad/" + name + ".xml",
                 "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
             },
             "autoupdate": {
