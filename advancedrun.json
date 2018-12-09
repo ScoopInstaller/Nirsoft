@@ -1,14 +1,14 @@
 {
     "version": "1.07",
-    "homepage": "http://www.nirsoft.net/utils/advanced_run.html",
+    "homepage": "https://www.nirsoft.net/utils/advanced_run.html",
     "bin": "AdvancedRun.exe",
     "architecture": {
         "64bit": {
-            "url": "http://www.nirsoft.net/utils/advancedrun-x64.zip",
+            "url": "https://www.nirsoft.net/utils/advancedrun-x64.zip",
             "hash": "0ede9acd6cbf524904a9133db733b0af8870a94cacafddf7caaa2b0ba19cfa43"
         },
         "32bit": {
-            "url": "http://www.nirsoft.net/utils/advancedrun.zip",
+            "url": "https://www.nirsoft.net/utils/advancedrun.zip",
             "hash": "c27ab0127059573b20aadafe839a832e3407ebdbf5d79613d531f2d14f5d5e1c"
         }
     },
@@ -22,10 +22,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.nirsoft.net/utils/advancedrun-x64.zip"
+                "url": "https://www.nirsoft.net/utils/advancedrun-x64.zip"
             },
             "32bit": {
-                "url": "http://www.nirsoft.net/utils/advancedrun.zip"
+                "url": "https://www.nirsoft.net/utils/advancedrun.zip"
             }
         }
     }

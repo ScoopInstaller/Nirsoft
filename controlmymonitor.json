@@ -1,7 +1,7 @@
 {
     "version": "1.11",
-    "homepage": "http://www.nirsoft.net/utils/control_my_monitor.html",
-    "url": "http://www.nirsoft.net/utils/controlmymonitor.zip",
+    "homepage": "https://www.nirsoft.net/utils/control_my_monitor.html",
+    "url": "https://www.nirsoft.net/utils/controlmymonitor.zip",
     "bin": "ControlMyMonitor.exe",
     "hash": "22f3131672afbe0bfd3f8759e9ddfe60dee144cd89cbcbf51a4dc7a94cdb0ceb",
     "description": "View and modify the settings of your monitor.",
@@ -12,6 +12,6 @@
         "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
     },
     "autoupdate": {
-        "url": "http://www.nirsoft.net/utils/controlmymonitor.zip"
+        "url": "https://www.nirsoft.net/utils/controlmymonitor.zip"
     }
 }
