@@ -1,15 +1,15 @@
 {
-    "version": "1.10",
+    "version": "1.20",
     "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
     "bin": "FileActivityWatch.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",
-            "hash": "5b14da4338898cbb43adb330f25e6fc130af5edb8fb5fad4cd309f054bf5a9a4"
+            "hash": "efd8bcab82b175cecc13a1f3997b66ea69a5fcd408ca27225a93e879eaa347de"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
-            "hash": "acb3c4f0d1380304ddc0ff31de0b6fc36d7766a06fe5e4762247ea506db70861"
+            "hash": "1e5fc987899395b47463a350cf393d72aa3635255e267ebbe2093ee3c07a2f71"
         }
     },
     "description": "Displays information about read/write/delete operations on your system.",
