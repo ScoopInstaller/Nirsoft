@@ -1,15 +1,15 @@
 {
-    "version": "1.55",
+    "version": "1.56",
     "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
     "bin": "DevManView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/devmanview-x64.zip",
-            "hash": "93256184fbaf6fd334a4c4001aea47535409f6e7f1a03835eb3ef1597ca5354b"
+            "hash": "2608d1373069ecee11b635293b13419dbb7644435a0cc47cdb398c3dd0496809"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/devmanview.zip",
-            "hash": "b12556dbbf9e79929ce192c4b6b5ca70fb39a523874f7191c1e79ec4dc75b6e7"
+            "hash": "991a790b16a9d5830a7427ca3b534581b57c2d505fbafda466b94de5717cf2c4"
         }
     },
     "description": "Alternative to the standard Device Manager of Windows.",
