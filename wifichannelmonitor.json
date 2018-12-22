@@ -1,15 +1,15 @@
 {
-    "version": "1.57",
+    "version": "1.58",
     "homepage": "https://www.nirsoft.net/utils/wifi_channel_monitor.html",
     "bin": "WifiChannelMonitor.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wifichannelmonitor-x64.zip",
-            "hash": "5d6f96c7fbde7640fc50b91b0e495238c7834cc7dcc6a1bb0327d768bb3ad1a2"
+            "hash": "963f29f04604dc0f80645c742691c657c832d7c1437a11f929bed3a7f9bd9b68"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/wifichannelmonitor.zip",
-            "hash": "bfd3739dccb676591b9272a1f9618e89188b50c88cd3e4d54d1c07fa370295cc"
+            "hash": "c2f75c7ec11a834656feb1db078066f343b9b3db14ae013374865c59c2c9b1e6"
         }
     },
     "description": "Captures wifi traffic in monitor mode and displays AP/clients information.",
