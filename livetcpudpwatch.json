@@ -1,15 +1,15 @@
 {
-    "version": "1.10",
+    "version": "1.11",
     "homepage": "https://www.nirsoft.net/utils/live_tcp_udp_watch.html",
     "bin": "LiveTcpUdpWatch.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip",
-            "hash": "9c920ac830d175da03606bd54908c6769885b1e5e91e002d219532832c0f0feb"
+            "hash": "f4c1920ad4e4b3d17156adeab2463d892178819002580f56d63ec53d3f0cb422"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/livetcpudpwatch.zip",
-            "hash": "cee0a2638d655e2b81bf605c99cd57507892a45940cf1efc215916d2b0ba7244"
+            "hash": "320bca29ab82d5e3b53850484beaeb1aff5e55afdc20398abcff17317f8c6fd1"
         }
     },
     "description": "Displays live information about all TCP and UDP activity on your system.",
