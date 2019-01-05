@@ -1,15 +1,15 @@
 {
-    "version": "1.07",
+    "version": "1.10",
     "homepage": "https://www.nirsoft.net/utils/file_access_error_view.html",
     "bin": "FileAccessErrorView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip",
-            "hash": "b5e1f1b26afbd5c751ea8ae6fc1074cd8b064b4ec90ccf1c06c07a37309b0546"
+            "hash": "48913114486eee8ce2f12e2526414b006d39bbfa2483f82fe92e6e18dbc01233"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/fileaccesserrorview.zip",
-            "hash": "0025b2f07666b7e4cc4afe3d392f70076b68bbf798975cb1ba4d3d008fdc2d44"
+            "hash": "878ce4dbdd63b4575f91e637a799657d0c715bbb3dc5370bb7a98cec6f2a1d71"
         }
     },
     "description": "Displays file access error information",
