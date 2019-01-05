@@ -1,15 +1,15 @@
 {
-    "version": "1.18",
+    "version": "1.19",
     "homepage": "https://www.nirsoft.net/utils/event_log_channels_view.html",
     "bin": "EventLogChannelsView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/eventlogchannelsview-x64.zip",
-            "hash": "d61e6f17588c955f32cb13f8b420865deae2ffdeac768c9c2acaed9aa4b8a86c"
+            "hash": "05ac88c2db7f79cc865f03b332486cfd68e1b53090f863b6a7945a335dbebb10"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/eventlogchannelsview.zip",
-            "hash": "cc009e19abd9717f1b40a2c32588e0f55a721e141658eedad7b503b37bd9bbdd"
+            "hash": "5eb614f8e3e111f3996fc089831557e7f5d7dab8a5f0e1e488417a34e1609689"
         }
     },
     "description": "View,Disable,Enable Event Log Channels.",
