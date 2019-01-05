@@ -1,9 +1,9 @@
 {
-    "version": "1.81",
+    "version": "1.82",
     "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
     "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
     "bin": "PingInfoView.exe",
-    "hash": "f93d5f45535d0053b60903286a6b2c3c9e55dbfe50f9511c75e5b8318d2306c6",
+    "hash": "7d59130e547338250c5015e39867254abe2067695cbcdf18d0bb141183cf8f5f",
     "description": "ping multiple host names and IP addresses.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
