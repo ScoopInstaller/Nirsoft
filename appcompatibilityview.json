@@ -1,15 +1,15 @@
 {
-    "version": "1.00",
+    "version": "1.01",
     "homepage": "https://www.nirsoft.net/utils/app_compatibility_view.html",
     "bin": "AppCompatibilityView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appcompatibilityview-x64.zip",
-            "hash": "8fc31d7a9271ca3d339c51d8d14ad120b3a274ac1bace1de74f72857cb7554ae"
+            "hash": "e4ef12d8f3eb405bd938b98fad78f3b6a23d043941ff70a426a503136ec9810d"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/appcompatibilityview.zip",
-            "hash": "be34f6b1d1c2b312e16f1d3cbf3f621f931a36e22cf58044126b86f1aa0baa46"
+            "hash": "3a540d61e8c184f887361b1fae8908cc35c765e5868d3f6e66d969c69d8c19ca"
         }
     },
     "description": "List of all programs that run with different compatibility setting",
