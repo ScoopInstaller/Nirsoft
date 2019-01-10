@@ -1,15 +1,15 @@
 {
-    "version": "1.72",
+    "version": "1.73",
     "homepage": "https://www.nirsoft.net/utils/dns_query_sniffer.html",
     "bin": "DNSQuerySniffer.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/dnsquerysniffer-x64.zip",
-            "hash": "58bd45434b85acd259f52299b22711cb2b308c35c0b21489624b0d79bcc1fedc"
+            "hash": "6dd0b657313bd179ef3e2a38bee12a6e79f5ba3082bb0badad202161fe34e0f5"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/dnsquerysniffer.zip",
-            "hash": "550e5044f47c2ec055ac8e240015d7dcd13d049775a53032711cfa0f797d6850"
+            "hash": "cd4725ddade30559c52060a4b38e0635649b71c3e6f96a40d7d66183d5fe6fd7"
         }
     },
     "description": "Network sniffer utility that shows the DNS queries sent on your system. ",
