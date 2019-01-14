@@ -1,15 +1,15 @@
 {
-    "version": "1.10",
+    "version": "1.11",
     "homepage": "https://www.nirsoft.net/utils/app_network_counter.html",
     "bin": "AppNetworkCounter.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip",
-            "hash": "b1f3e34cd3c177599493392ca12e7b5ee1fc1c3b5c6e46c3d5979ebcbb700ece"
+            "hash": "a6e357c1cfbc5999d653e4a9ff86b5fee1217b878a8c7ebac0e37a3f923d0e15"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip",
-            "hash": "f68a8af2796e42e992940210aed0862b9f8e008d024e00835ed09164667f00f2"
+            "hash": "9f872e3596341c42e057f776d8757afa345eeb7a2ca12029003bc14696369528"
         }
     },
     "description": "Displays number of TCP/UDP bytes and packets sent/received by every application",
