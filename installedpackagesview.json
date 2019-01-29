@@ -1,15 +1,15 @@
 {
-    "version": "1.02",
+    "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/installed_packages_view.html",
     "bin": "InstalledPackagesView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/installedpackagesview-x64.zip",
-            "hash": "d3976c5a64daec1a413f08ca506a87dec21a12620210d07cdd076233e3412ff5"
+            "hash": "cc8d04992d26de0a314edb16cb7fca1765fc44f7f1c325cbeafca23632b53dd0"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/installedpackagesview.zip",
-            "hash": "9e0ec11529f269bdd13c428ef9db788e0fa9aec6511f30d517ebed6084fd58e4"
+            "hash": "3b74e908765f629623ba7ceef2639889c6f2ddf401b04218c86006628ebd3ccf"
         }
     },
     "description": "Displays installed MSI packages on your system.",
