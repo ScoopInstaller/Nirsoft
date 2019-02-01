@@ -1,15 +1,15 @@
 {
-    "version": "1.61",
+    "version": "1.62",
     "homepage": "https://www.nirsoft.net/utils/network_latency_view.html",
     "bin": "NetworkLatencyView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networklatencyview-x64.zip",
-            "hash": "ae3ae4d9cc034b1c62f544e406c4f9e735bfdd8d8af1bb281be47c7d983bc2f3"
+            "hash": "665c3be9a89b6109d8b2545cdcb8bcc86ab7f43602cf8b67b6115d20bd2edd4c"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/networklatencyview.zip",
-            "hash": "52b4eaac182b469ba149960569ac76ed5176dad3a8c15a9800cdf52a815b659b"
+            "hash": "63c310b078a91882c55caf4f3c76e8f5f7d23582c352beb0fbbd049d64822c1c"
         }
     },
     "description": "Calculates the network latency (in milliseconds) for every new TCP connection.",
