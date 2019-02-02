@@ -20,8 +20,8 @@ i = 0
 for line in pads.splitlines():
     i += 1
     if i % 5 == 0:
-        print("Sleeping 30 seconds to not spam the server")
-        time.sleep(30)
+        print("Sleeping 5 seconds to not spam the server")
+        time.sleep(5)
     print("")
     print("Generating from " + line + " (" + str(i) + "/" + str(len(pads.splitlines())) + ")")
 
