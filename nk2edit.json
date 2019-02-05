@@ -1,15 +1,15 @@
 {
-    "version": "3.38",
+    "version": "3.39",
     "homepage": "https://www.nirsoft.net/utils/outlook_nk2_edit.html",
     "bin": "NK2Edit.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/nk2edit-x64.zip",
-            "hash": "b786a84e252102f3f2775b51ad08c65c407c61857889f601ef00a32dcf65a7df"
+            "hash": "f317cf15a49de16e10b8f13d99bae4519f750c63653016a18b3da2f8f3ce128e"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/nk2edit.zip",
-            "hash": "249ade19e2d2b9fb15da2494e72914ee3f8ef9abd47a80e9a361f25e964fab28"
+            "hash": "9149628681fa1a6375b38aa99c5fa7f258d2e7989ce42f43d6b19cadf1901076"
         }
     },
     "description": "Full NK2 (AutoComplete) editor for Microsoft Outlook",
