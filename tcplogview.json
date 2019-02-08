@@ -1,15 +1,15 @@
 {
-    "version": "1.30",
+    "version": "1.31",
     "homepage": "https://www.nirsoft.net/utils/tcp_log_view.html",
     "bin": "TcpLogView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/tcplogview-x64.zip",
-            "hash": "f6870aa211c9eeb2cacce17137dff20965632463ff95a20e3061897aa3ab5eaf"
+            "hash": "a7059f2a14694d6db8f8a93c4c399aa46e100f2cc33162c202bd1b0cc210ad50"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/tcplogview.zip",
-            "hash": "ccb96b26d63c7961e6dcce24ca35d6d3d330fbceacb88c1b9667cbc5ff8ea634"
+            "hash": "51127b3f2beba3f7b839db662d475596ff4b470affe90a1f899e78e056ee46f1"
         }
     },
     "description": "Monitors the opened TCP connections on your system.",
