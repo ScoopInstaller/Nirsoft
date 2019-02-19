@@ -1,9 +1,9 @@
 {
-    "version": "1.80",
+    "version": "1.85",
     "homepage": "https://www.nirsoft.net/utils/ipnetinfo.html",
     "url": "https://www.nirsoft.net/utils/ipnetinfo.zip",
     "bin": "ipnetinfo.exe",
-    "hash": "e8a68e2de88519bdba5a5d6440e37ece6f4d72fa1e2c7af0a132cab2c37e6d17",
+    "hash": "fd23d3849fbf267078aa196b94c5f61ada751efa53b0bcdd07dbf41c73094f68",
     "description": "Easily find all available information about IP address.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
