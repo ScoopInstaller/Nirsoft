@@ -1,15 +1,15 @@
 {
-    "version": "1.31",
+    "version": "1.35",
     "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
     "bin": "FullEventLogView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
-            "hash": "8fe5c25a55edfd43714986e8d4a329704ee3df2a627588e75f0b987f898367c2"
+            "hash": "0fabe35d9b0d2a3e27cbb57104aa18e373edf082f251f4952492c47a05ebb919"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/fulleventlogview.zip",
-            "hash": "152e5837b22fe623dee9d63bdec1b686594ee17b7637a39132fc555f77b844c9"
+            "hash": "c765656acbe717ed6c4d73ffa162f0e4803d40199127e44e8b01e14acc501ab2"
         }
     },
     "description": "Event log viewer for Windows 10/8/7/Vista.",
