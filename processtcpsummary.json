@@ -1,15 +1,15 @@
 {
-    "version": "1.01",
+    "version": "1.02",
     "homepage": "https://www.nirsoft.net/utils/process_tcp_summary.html",
     "bin": "ProcessTCPSummary.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/processtcpsummary-x64.zip",
-            "hash": "5d85c211e4352fbbc6d008cde504c460b00079c42052477ab9953c165b1ea6e9"
+            "hash": "6ee0f7748f9701c1ccd4dc6d9aa030a49034c59ceda40211cb449c1ae9897d1b"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/processtcpsummary.zip",
-            "hash": "635563fd14958e04e6b068014f6ca36ddb3a8ddacc4ee08a5baf017b7e6bc773"
+            "hash": "80456728566ca462f51b5556a4d25794b8d565949b916f6a019f6fac0235df02"
         }
     },
     "description": "Displays TCP connections summary",
