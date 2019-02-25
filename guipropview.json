@@ -1,15 +1,15 @@
 {
-    "version": "1.06",
+    "version": "1.07",
     "homepage": "https://www.nirsoft.net/utils/gui_prop_view.html",
     "bin": "GUIPropView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/guipropview-x64.zip",
-            "hash": "aa2d8a82cfd344a475af17514df4c82b7f6af0aa655c3cf0477901751b1abb8f"
+            "hash": "c238c21c35333d9c903e3bdb1a28dab403a0b19fa3b60cb5cddf923c19b48adb"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/guipropview.zip",
-            "hash": "cdaab15dbeb7330e5daae2b2b760a7a34d4711f470559b42298e1f7a1326bec4"
+            "hash": "43c228f7eff3ade317a9d12f3bfc361c1523e66b9fb61bcd09d7974e0221f705"
         }
     },
     "description": "Displays extensive information about all windows currently opened on your system",
