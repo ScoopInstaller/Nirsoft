@@ -1,9 +1,9 @@
 {
-    "version": "2.38",
+    "version": "2.40",
     "homepage": "https://www.nirsoft.net/utils/whois_this_domain.html",
     "url": "https://www.nirsoft.net/utils/whoistd.zip",
     "bin": "whoistd.exe",
-    "hash": "ab87d82182af3fc8c325511398cf8b22272780c59a8b6daa97edf1e80ccec19c",
+    "hash": "caa7e0b6b2944522eb2111afe3b23b3bf2c0670de57fb5826ebb28deb368448b",
     "description": "Get information about a registered domain from WHOIS server.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
