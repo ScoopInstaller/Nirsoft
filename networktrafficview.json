@@ -1,15 +1,15 @@
 {
-    "version": "2.16",
+    "version": "2.20",
     "homepage": "https://www.nirsoft.net/utils/network_traffic_view.html",
     "bin": "NetworkTrafficView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networktrafficview-x64.zip",
-            "hash": "ce68a5ae28b75f02380f11806d39edcf4ff419d87e4b26aa66521d17eac73072"
+            "hash": "2a3f06ea19f0544d006c77518fd287a2ddccce3e7a2ab28692fcfeab25d5ed85"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/networktrafficview.zip",
-            "hash": "5a257337fc1f2c897ee7ebc3a2650211119656ada5e55a88a53a07eb72231eef"
+            "hash": "dcaaec4d7568784beafdd21d40727e6336a9335a96be20006e6b5fc05ac4b787"
         }
     },
     "description": "Displays network traffic statistics on your network adapter",
