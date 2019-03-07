@@ -1,15 +1,15 @@
 {
-    "version": "1.97",
+    "version": "2.00",
     "homepage": "https://www.nirsoft.net/utils/shexview.html",
     "bin": "shexview.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shexview-x64.zip",
-            "hash": "a7116d5b8e66fe00fc076ec972832e643f8ba72457d54bb79cba07f9b9745c86"
+            "hash": "75a95c770d062c3f56325b9c1646b606d77f9d918247609676758cdfe44c790e"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/shexview.zip",
-            "hash": "a42f0a197c7e77c8d336168250e0d25c4c2c6a887f051e9ac1b98fb9cc2bba0e"
+            "hash": "2b8d9fd39909480de47563f6d232483ea95466f5d14c3e6614f37baf260504b9"
         }
     },
     "description": "Displays the details of shell extensions installed on your computer.",
