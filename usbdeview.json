@@ -1,15 +1,15 @@
 {
-    "version": "2.79",
+    "version": "2.80",
     "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
     "bin": "USBDeview.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",
-            "hash": "153eeb69668fe12da147ade723068b7c174496be3eed45e42dd25b900897345f"
+            "hash": "5cbf8c5879e52e6d9ff87990cd7c78f4991a45de6f5b3514566d611d1e05254f"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/usbdeview.zip",
-            "hash": "eefeaa7dc313b378b0df2032a01dcfe2ca2235e05b20485e72fd68f9a2cb36e9"
+            "hash": "18d10ce84e1c67c99e6fdfdf432d9d77f933e21d72a23b099183743bff3eba13"
         }
     },
     "description": "Lists all installed USB devices that you previously used.",
