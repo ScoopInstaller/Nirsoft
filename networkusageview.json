@@ -1,15 +1,15 @@
 {
-    "version": "1.12",
+    "version": "1.13",
     "homepage": "https://www.nirsoft.net/utils/network_usage_view.html",
     "bin": "NetworkUsageView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkusageview-x64.zip",
-            "hash": "c96c88f56a10554ab8717e80d5ae831ad5cf7875b72ebeedd89bc82fe4044ece"
+            "hash": "754eea3689c2ecd60bc4c989e9181cf6956777fdc3303a7582195e90e840e35e"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/networkusageview.zip",
-            "hash": "0425823901af49cdbfff38c571cca66b44eb26fa2b04887e0038acf6b278f2b4"
+            "hash": "bd731a452b7b564203db59d57e9658dac920deebaec2459d10d424958092a04a"
         }
     },
     "description": "Displays network usage information for Windows 8 and Windows 10",
