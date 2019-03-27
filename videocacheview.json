@@ -1,15 +1,15 @@
 {
-    "version": "3.00",
+    "version": "3.05",
     "homepage": "https://www.nirsoft.net/utils/video_cache_view.html",
     "bin": "VideoCacheView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/videocacheview-x64.zip",
-            "hash": "8a08f1c0b4e9c0f14d843314f47d3185a3507aa9bc31657092fc9384fd564e14"
+            "hash": "59bf17a6bae83b16f155d895bcf65735d02f1e44d9e39722a1699af4d4c19db0"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/videocacheview.zip",
-            "hash": "e78af6bc4e33c9aacc2f386cc844d9c2ac42e3474088ca5b5ce97670917a025a"
+            "hash": "beddf8fbd0eab7757baf2b8032f812b68b72247224b9ee028ba415583c69d4ca"
         }
     },
     "description": "Extract Web site video files from the cache of your Web browser",
