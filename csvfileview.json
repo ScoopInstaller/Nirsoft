@@ -1,15 +1,15 @@
 {
-    "version": "2.40",
+    "version": "2.41",
     "homepage": "https://www.nirsoft.net/utils/csv_file_view.html",
     "bin": "CSVFileView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/csvfileview-x64.zip",
-            "hash": "ed0c362ab20a1976aaa964557e616d97be1dc88adafe86c3079f463df154dd84"
+            "hash": "a202676839392106e598c28cf838411376b27f61bfdae3ba093d53f970222773"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/csvfileview.zip",
-            "hash": "be601cb41b97c013db3ca676dd2aaefded2bdfc2c54b7ae4090ca4e8da6023fb"
+            "hash": "dff6daf6d6b4bee1a0fb2fd589085ac5469e2f85f22edafe2054f6ee983d6648"
         }
     },
     "description": "CSV/Tab-delimited file viewer and converter",
