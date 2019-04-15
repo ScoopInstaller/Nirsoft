@@ -1,15 +1,15 @@
 {
-    "version": "1.40",
+    "version": "1.41",
     "homepage": "https://www.nirsoft.net/utils/shell_menu_view.html",
     "bin": "shmnview.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shmnview-x64.zip",
-            "hash": "5227288fe979a10035ef5f8a03575a9856754182f78d9a94abcfe7608f76258e"
+            "hash": "e5a5b7c4a6ce2772782243027c73974d9699f2ba1d3eab1f53bcff4096635b83"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/shmnview.zip",
-            "hash": "ee2a9df19673b30119e299847a20a6f82232600d6a7a72a329c54ca9173d9293"
+            "hash": "bd8d233e44155100677f855b61b867b596d2006bd65b4553da6ca5e38f70d483"
         }
     },
     "description": "Disable/enable static menu items in context menu of Explorer.",
