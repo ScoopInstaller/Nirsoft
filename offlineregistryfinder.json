@@ -1,15 +1,15 @@
 {
-    "version": "1.03",
+    "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/offline_registry_finder.html",
     "bin": "OfflineRegistryFinder.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/offlineregistryfinder-x64.zip",
-            "hash": "2cfc4cfd57928cc3ed7b5c245488ebecbed548f44a12e39bdb296284cfe0d165"
+            "hash": "87dd20b70f332bd74d5a827e568486c9ce907e2a34743ef3473ad7fdf3922dac"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/offlineregistryfinder.zip",
-            "hash": "6ddb68d355b5445285244c7f034f07159eec99ad0a90b4ff1a3ae884fa7da285"
+            "hash": "fb92ad17d4b6664f5e75e02941203d9a2d9868e6dc0665d32ab168d821b83e8a"
         }
     },
     "description": "Find data in external Registry files",
