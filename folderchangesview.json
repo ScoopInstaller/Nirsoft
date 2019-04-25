@@ -1,9 +1,9 @@
 {
-    "version": "2.26",
+    "version": "2.27",
     "homepage": "https://www.nirsoft.net/utils/folder_changes_view.html",
     "url": "https://www.nirsoft.net/utils/folderchangesview.zip",
     "bin": "FolderChangesView.exe",
-    "hash": "1930260618d8808b1dff1cd6c50d958987f86cdaf90f2dd5eaf70d647af33e81",
+    "hash": "3569cea65e0aefa331c04ae2ac008d71bb8f0fb37afa86303355e4eb64de010b",
     "description": "Monitor folder/drive changes.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
