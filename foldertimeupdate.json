@@ -1,15 +1,15 @@
 {
-    "version": "1.52",
+    "version": "1.55",
     "homepage": "https://www.nirsoft.net/utils/folder_time_update.html",
     "bin": "FolderTimeUpdate.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/foldertimeupdate-x64.zip",
-            "hash": "9c64d213cda99b2e216f6dcfbf809e7bb5a0fd86fa35be29279ba65bc29c8971"
+            "hash": "e3dbb6309eb68ae1092ea177dc2183a19e801d9276034a10afc27c7efc2a8749"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/foldertimeupdate.zip",
-            "hash": "8f38fefe70465848935612314a1abcde9cbf092276501887292f10f65eb4ef46"
+            "hash": "20e0f69638d2f0e1b0e8d745422ad8d6d46e03a5a605231afd8ae11c8ea9dae2"
         }
     },
     "description": "Updates the 'Modified Time' of folders.",
