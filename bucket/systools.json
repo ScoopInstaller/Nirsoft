@@ -1,0 +1,17 @@
+{
+    "version": "5.10",
+    "homepage": "https://www.nirsoft.net/system_tools.html",
+    "url": "https://www.nirsoft.net/packages/systools.zip",
+    "bin": "systools.exe",
+    "hash": "54f96e601267a42618688492bc174e7272564824e160aa7e0c4263ba9f74c8c1",
+    "description": "Package of system tools for Windows",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/systools.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/packages/systools.zip"
+    }
+}

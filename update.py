@@ -100,7 +100,7 @@ for line in pads.splitlines():
             manifest["url"] = download
             manifest["hash"] = "tbd"
 
-        with open(name + ".json", "w") as j:
+        with open("bucket/" + name + ".json", "w") as j:
             json.dump(manifest, j, indent=1)
 
     except Exception as e:

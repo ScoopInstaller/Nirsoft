@@ -1,0 +1,17 @@
+{
+    "version": "1.32",
+    "homepage": "https://www.nirsoft.net/utils/windows_log_on_times_view.html",
+    "url": "https://www.nirsoft.net/utils/winlogonview.zip",
+    "bin": "WinLogOnView.exe",
+    "hash": "aa9aa79db398eda41be5801cb219f48f7186107661d1b7dc42d86790daf39ef8",
+    "description": "Displays logon/logoff times on Windows Vista/7/8/2008",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/winlogonview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/winlogonview.zip"
+    }
+}

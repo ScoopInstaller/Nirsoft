@@ -1,0 +1,32 @@
+{
+    "version": "2.83",
+    "homepage": "https://www.nirsoft.net/utils/nircmd.html",
+    "bin": "nircmd.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/nircmd-x64.zip",
+            "hash": "d634e3c88d28504e12b0807021450fe5b82144c3300c9d3cf36e52af330f1c3f"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/nircmd.zip",
+            "hash": "ce8295cb6e225af2ae44d3416dda4e5a8e320f3801ba6361bc96e360bb66e88a"
+        }
+    },
+    "description": "Do many useful tasks from command-line.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/nircmd.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/nircmd-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/nircmd.zip"
+            }
+        }
+    }
+}

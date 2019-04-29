@@ -1,0 +1,17 @@
+{
+    "version": "1.32",
+    "homepage": "https://www.nirsoft.net/utils/computer_activity_view.html",
+    "url": "https://www.nirsoft.net/utils/lastactivityview.zip",
+    "bin": "LastActivityView.exe",
+    "hash": "8572b903d316b55e89fa7c129a7c8d0e1da597158fcde8a7210b2b1a6e34df17",
+    "description": "View the latest computer activity.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/lastactivityview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/lastactivityview.zip"
+    }
+}

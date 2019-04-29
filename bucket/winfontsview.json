@@ -1,0 +1,17 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/windows_fonts_viewer.html",
+    "url": "https://www.nirsoft.net/utils/winfontsview.zip",
+    "bin": "WinFontsView.exe",
+    "hash": "1752867afb28afbeec8a48135db1e1fbbd1e4a638ddea5fa4ad1fd487d108de2",
+    "description": "Display sample of all fonts installed on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/winfontsview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/winfontsview.zip"
+    }
+}
