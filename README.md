@@ -1,7 +1,7 @@
 # nirsoft-bucket
 [![Build status](https://ci.appveyor.com/api/projects/status/k8jx9v3nluqnpj4h?svg=true)](https://ci.appveyor.com/project/MCOfficer/scoop-nirsoft)
 
-Congratulations, You've made it all the way down to the README! Too bad there's nothing interesting here...
+A scoop bucket containing all 250+ programs from [nirsoft.net](https://www.nirsoft.net/).
 
 [Scoop](https://scoop.sh/) is a windows package manager similar to apt-get or homebrew.
 You can add this bucket to scoop using
