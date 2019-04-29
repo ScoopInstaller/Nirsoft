@@ -1,0 +1,17 @@
+{
+    "version": "1.26",
+    "homepage": "https://www.nirsoft.net/utils/seqdownload.html",
+    "url": "https://www.nirsoft.net/utils/seqdownload.zip",
+    "bin": "SeqDownload.exe",
+    "hash": "8af4d24f6d3d47c3b75a4a2e0385259049b22e8a1aac5ea688b5e4e6d11bfc33",
+    "description": "Download sequence of images from the Web, and create animation from them.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/seqdownload.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/seqdownload.zip"
+    }
+}

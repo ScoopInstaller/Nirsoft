@@ -1,0 +1,32 @@
+{
+    "version": "1.00",
+    "homepage": "https://www.nirsoft.net/utils/handle_counters_view.html",
+    "bin": "HandleCountersView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/handlecountersview-x64.zip",
+            "hash": "b997b945801d9fa2560d5cfacbc4938d0f3b4256ed2c3e700116da8b3fab4fea"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/handlecountersview.zip",
+            "hash": "5cae9480ff14197a67151e47eababe23f3f008c1844d297155bfc737bb768afc"
+        }
+    },
+    "description": "Shows handle counter for every process",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/handlecountersview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/handlecountersview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/handlecountersview.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/network_interfaces.html",
+    "bin": "NetworkInterfacesView.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/networkinterfacesview-x64.zip",
+            "hash": "593efa003816be33129266df8d7cab6ad9dd7d3f5948e7f062f2a84a47490e8b"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/networkinterfacesview.zip",
+            "hash": "ecbab01c3bb6abe67b8c72776dbefb538b1330459c9148bf3dec2049cc7dba49"
+        }
+    },
+    "description": "Displays the list of all network adapters/interfaces installed on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/networkinterfacesview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/networkinterfacesview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/networkinterfacesview.zip"
+            }
+        }
+    }
+}

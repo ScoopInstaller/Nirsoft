@@ -1,0 +1,32 @@
+{
+    "version": "1.60",
+    "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
+    "bin": "BulkFileChanger.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
+            "hash": "fe9e6f1446616c1f792a733ea83ce09dd507799c9a01385f1ef8cabea40afd99"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
+            "hash": "9ad29b8ed91424da56bdbbb67c2f9ca0366cd82295877a2ed2d0ef8bc368fa10"
+        }
+    },
+    "description": "Change date/time/attributes of multiple files.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/bulkfilechanger.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip"
+            }
+        }
+    }
+}

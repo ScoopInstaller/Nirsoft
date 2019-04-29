@@ -1,0 +1,17 @@
+{
+    "version": "1.81",
+    "homepage": "https://www.nirsoft.net/utils/domain_hosting_view.html",
+    "url": "https://www.nirsoft.net/utils/domainhostingview.zip",
+    "bin": "DomainHostingView.exe",
+    "hash": "7a7baf1f7c55cc81c11fc63c0bc2ddf356ec260daee2db5f9815afe12a400286",
+    "description": "Displays extensive information about a domain.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/domainhostingview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/domainhostingview.zip"
+    }
+}

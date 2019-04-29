@@ -1,0 +1,17 @@
+{
+    "version": "1.06",
+    "homepage": "https://www.nirsoft.net/utils/dpapi_data_decryptor.html",
+    "url": "https://www.nirsoft.net/toolsdownload/dataprotectiondecryptor.zip",
+    "bin": "dataprotectiondecryptor.exe",
+    "hash": "8da2f27bd00dabde4115ef10800ca4c6c0790ca2afa2281548348eea38dfd275",
+    "description": "Decrypt DPAPI-encrypted data of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/dataprotectiondecryptor.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/toolsdownload/dataprotectiondecryptor.zip"
+    }
+}

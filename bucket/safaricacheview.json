@@ -1,0 +1,17 @@
+{
+    "version": "1.11",
+    "homepage": "https://www.nirsoft.net/utils/safari_cache_view.html",
+    "url": "https://www.nirsoft.net/utils/safaricacheview.zip",
+    "bin": "SafariCacheView.exe",
+    "hash": "f4fb700d4aab6c28d96d247f7824446081903f8d502c2948f530f71ab600bd3e",
+    "description": "Cache viewer/extractor for Safari Web browser",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/safaricacheview.xml",
+        "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/safaricacheview.zip"
+    }
+}
