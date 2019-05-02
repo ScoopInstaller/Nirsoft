@@ -1,15 +1,15 @@
 {
-    "version": "2.51",
+    "version": "2.55",
     "homepage": "https://www.nirsoft.net/utils/cports.html",
     "bin": "cports.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/cports-x64.zip",
-            "hash": "5a22a6e8cf1633ad5b6ed42b91eb9501a72769a2c60cb23c4c3e2955e10e71d9"
+            "hash": "e55e8609cc6481a7d0635ba545c3c75d1e51cf96b260024460006857a3a20b1d"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/cports.zip",
-            "hash": "efdafc43f7d66a88df4d083fc0487efb6436eaa537d47f0a51ed63a5abe7cd4e"
+            "hash": "4f47d158d88907e468c129ecc1c411b5af0a9cdc913f506fea3a509895a70829"
         }
     },
     "description": "Displays the list of all currently opened TCP/UDP ports on your computer.",
