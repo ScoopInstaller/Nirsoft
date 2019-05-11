@@ -1,9 +1,9 @@
 {
-    "version": "1.41",
+    "version": "1.42",
     "homepage": "https://www.nirsoft.net/utils/mac_address_lookup_find.html",
     "url": "https://www.nirsoft.net/utils/macaddressview.zip",
     "bin": "MACAddressView.exe",
-    "hash": "b795ad4f4bdc102ee1ec2e05cba20dfd2479e4bfd9ef17d52edcac754a87c41c",
+    "hash": "0ad8b0fa3490525842c5be39f25781f43496d26de7a72844167e099f9eaf45dd",
     "description": "MAC address lookup tool",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
