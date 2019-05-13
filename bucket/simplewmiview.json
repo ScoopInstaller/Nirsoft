@@ -1,15 +1,15 @@
 {
-    "version": "1.35",
+    "version": "1.36",
     "homepage": "https://www.nirsoft.net/utils/simple_wmi_view.html",
     "bin": "SimpleWMIView.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip",
-            "hash": "431aaf33f17915c5bfb2813d2a30f177cf34c30659baba45db4f06b7741727cf"
+            "hash": "b7fc3e471fc46280c7b8419ef0455460c4d361bb10678c47ce685c2d764e32cd"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/simplewmiview.zip",
-            "hash": "8916e18749e7bf55b987529c46d008e2ccd30719016564796ea526ca0214327a"
+            "hash": "ac0d72a8fce5f1a7665d0d9e4b181b863cc16dd52b4fc17327d1c9419563b53f"
         }
     },
     "description": "Displays the result of WMI queries in a simple table",
