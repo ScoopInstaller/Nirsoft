@@ -1,15 +1,15 @@
 {
-    "version": "2.33",
+    "version": "2.35",
     "homepage": "https://www.nirsoft.net/utils/hash_my_files.html",
     "bin": "HashMyFiles.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip",
-            "hash": "3798add57e6026d44032b38362a8d5fb1e9c39f6d1879dc00a1d5c67ad7edfa4"
+            "hash": "18d61a7e0af7ea17dcfa823816d9c9488ea65d5577feda0ad3ef21ec4f826ad3"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/hashmyfiles.zip",
-            "hash": "8d86747ea87bc2c2e693a5c76ddf154ac4c40f06a9ed809b4e358543f3579d72"
+            "hash": "7911d62ec33fd72b9ed61f8227c13b06128452c6eadbaf10059b4971a9cff9e3"
         }
     },
     "description": "Calculate the MD5/SHA1 hashes of your files",
