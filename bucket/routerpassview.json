@@ -1,9 +1,9 @@
 {
-    "version": "1.80",
+    "version": "1.81",
     "homepage": "https://www.nirsoft.net/utils/router_password_recovery.html",
     "url": "https://www.nirsoft.net/toolsdownload/routerpassview.zip",
     "bin": "routerpassview.exe",
-    "hash": "d9fdfe8835366d232abd983a515fff8f253ace8d1e4073a47ed5b6a12c2d44cd",
+    "hash": "abcfb703c2a5ff905e35046a26a9b811ec4fdd7a0a6e8c8e8b668730ed7d3cea",
     "description": "Recover passwords from router config file.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
