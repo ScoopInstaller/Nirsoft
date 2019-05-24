@@ -1,9 +1,9 @@
 {
-    "version": "1.22",
+    "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/quick_set_dns.html",
     "url": "https://www.nirsoft.net/utils/quicksetdns.zip",
     "bin": "QuickSetDNS.exe",
-    "hash": "c51083661c146870f7074bde74a32be3b9b7e0b334de274cf2eb9be6b561355d",
+    "hash": "ffdff1b6fa71bed0c1a798427e28f536e8c06b41dd11afdea7e98a7de3816e44",
     "description": "Change the DNS servers that are used for your Internet connection.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
