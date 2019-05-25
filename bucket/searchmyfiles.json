@@ -1,15 +1,15 @@
 {
-    "version": "2.91",
+    "version": "2.92",
     "homepage": "https://www.nirsoft.net/utils/search_my_files.html",
     "bin": "SearchMyFiles.exe",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip",
-            "hash": "e83421979d347c0b9ccc843fe82c69cb6cb7c22149955bdf7284f4f9af074f5d"
+            "hash": "5e97904ba1541d0f126ac5e2f0f4c7ff1457c42e9ad1d46b8697a01a20b56d5d"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/searchmyfiles.zip",
-            "hash": "248089c8685af847adc34d857a1708305f491f3d84d7ee6b43e62673ba404d3f"
+            "hash": "f2311e48080a96731135594a0d74a1a2d721ac62fafadbec1464123a88099892"
         }
     },
     "description": "Alternative to the standard \"Search For Files And Folders\" module of Windows.",
