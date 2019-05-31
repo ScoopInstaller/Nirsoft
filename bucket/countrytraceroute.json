@@ -1,9 +1,9 @@
 {
-    "version": "1.28",
+    "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/country_traceroute.html",
     "url": "https://www.nirsoft.net/utils/countrytraceroute.zip",
     "bin": "CountryTraceRoute.exe",
-    "hash": "1ccc01bd1992fa0c9da37c02a9b28665d325a57478714c7fdbb6e24a4f16ca1e",
+    "hash": "3b1d896d4ac24a56ebfaa0c16a1c0a2bc28435e6def17bc576af4b7a53c2485a",
     "description": "Fast Traceroute utility with IP country information.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
