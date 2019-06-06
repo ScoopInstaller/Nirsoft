@@ -1,9 +1,9 @@
 {
-    "version": "1.40",
+    "version": "1.41",
     "homepage": "https://www.nirsoft.net/utils/computer_turned_on_times.html",
     "url": "https://www.nirsoft.net/utils/turnedontimesview.zip",
     "bin": "TurnedOnTimesView.exe",
-    "hash": "6249f7dc4519f0dffae411abf5976fbbf7e7751ecf14efcab1facdbbb2858720",
+    "hash": "e6e513d6e37fe2a704d929fb897b814760d33c1bb3b927855540ac195a26df4a",
     "description": "View the time/date ranges that your computer was turned on.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
