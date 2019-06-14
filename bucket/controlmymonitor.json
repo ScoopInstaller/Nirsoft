@@ -1,9 +1,9 @@
 {
-    "version": "1.15",
+    "version": "1.16",
     "homepage": "https://www.nirsoft.net/utils/control_my_monitor.html",
     "url": "https://www.nirsoft.net/utils/controlmymonitor.zip",
     "bin": "ControlMyMonitor.exe",
-    "hash": "34271f8081994bde2a0901736d4f2093b5472863eb0f02d8dd07d47487a090b2",
+    "hash": "edd8fa7f01760d5c6246564fdbbaed802b1037515d82705301c0f6623b37c162",
     "description": "View and modify the settings of your monitor.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
