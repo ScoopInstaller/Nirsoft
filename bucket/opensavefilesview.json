@@ -2,6 +2,12 @@
     "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/open_save_files_view.html",
     "bin": "OpenSaveFilesView.exe",
+    "shortcuts": [
+        [
+            "OpenSaveFilesView.exe",
+            "NirSoft\\OpenSaveFilesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/opensavefilesview-x64.zip",

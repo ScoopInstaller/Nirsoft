@@ -2,6 +2,12 @@
     "version": "1.55",
     "homepage": "https://www.nirsoft.net/utils/alternate_data_streams.html",
     "bin": "AlternateStreamView.exe",
+    "shortcuts": [
+        [
+            "AlternateStreamView.exe",
+            "NirSoft\\AlternateStreamView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/alternatestreamview-x64.zip",

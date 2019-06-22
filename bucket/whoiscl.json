@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/whoiscl.html",
     "url": "https://www.nirsoft.net/utils/whoiscl.zip",
     "bin": "WhoisCL.exe",
+    "shortcuts": [
+        [
+            "WhoisCL.exe",
+            "NirSoft\\WhoisCL"
+        ]
+    ],
     "hash": "cb042f522ca674288655739db24b389defac0d2f05bd5d7e915aefd3068e4d85",
     "description": "Get WHOIS information about a registered domain from command-line.",
     "license": "Freeware",

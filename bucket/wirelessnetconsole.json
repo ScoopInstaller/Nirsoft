@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/wireless_net_console.html",
     "url": "https://www.nirsoft.net/utils/wirelessnetconsole.zip",
     "bin": "WirelessNetConsole.exe",
+    "shortcuts": [
+        [
+            "WirelessNetConsole.exe",
+            "NirSoft\\WirelessNetConsole"
+        ]
+    ],
     "hash": "6b365808b7526bcfcee1cf870dd4d0602669695481ed70ed6edb2f4572abb78a",
     "description": "View wireless networks information (console application)",
     "license": "Freeware",

@@ -2,6 +2,12 @@
     "version": "2.17",
     "homepage": "https://www.nirsoft.net/utils/browsing_history_view.html",
     "bin": "BrowsingHistoryView.exe",
+    "shortcuts": [
+        [
+            "BrowsingHistoryView.exe",
+            "NirSoft\\BrowsingHistoryView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip",

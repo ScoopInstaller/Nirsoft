@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/ipnetinfo.html",
     "url": "https://www.nirsoft.net/utils/ipnetinfo.zip",
     "bin": "ipnetinfo.exe",
+    "shortcuts": [
+        [
+            "ipnetinfo.exe",
+            "NirSoft\\IPNetInfo"
+        ]
+    ],
     "hash": "fd23d3849fbf267078aa196b94c5f61ada751efa53b0bcdd07dbf41c73094f68",
     "description": "Easily find all available information about IP address.",
     "license": "Freeware",

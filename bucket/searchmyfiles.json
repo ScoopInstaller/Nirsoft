@@ -2,6 +2,12 @@
     "version": "2.92",
     "homepage": "https://www.nirsoft.net/utils/search_my_files.html",
     "bin": "SearchMyFiles.exe",
+    "shortcuts": [
+        [
+            "SearchMyFiles.exe",
+            "NirSoft\\SearchMyFiles"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip",

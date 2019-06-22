@@ -2,6 +2,12 @@
     "version": "1.03",
     "homepage": "https://www.nirsoft.net/utils/offline_registry_view.html",
     "bin": "OfflineRegistryView.exe",
+    "shortcuts": [
+        [
+            "OfflineRegistryView.exe",
+            "NirSoft\\OfflineRegistryView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/offlineregistryview-x64.zip",

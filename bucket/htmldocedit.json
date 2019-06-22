@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/html_doc_edit.html",
     "url": "https://www.nirsoft.net/utils/htmldocedit.zip",
     "bin": "HtmlDocEdit.exe",
+    "shortcuts": [
+        [
+            "HtmlDocEdit.exe",
+            "NirSoft\\HtmlDocEdit "
+        ]
+    ],
     "hash": "eed77808621fa1331ba194b1593bc18ec7a1628601282ff0a5163b02ce945cde",
     "description": "Simple HTML designer/editor",
     "license": "Freeware",

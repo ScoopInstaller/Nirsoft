@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/facebook_cache_viewer.html",
     "url": "https://www.nirsoft.net/utils/fbcacheview.zip",
     "bin": "FBCacheView.exe",
+    "shortcuts": [
+        [
+            "FBCacheView.exe",
+            "NirSoft\\FBCacheView"
+        ]
+    ],
     "hash": "daef5137af769e3908658c316870279aa0d4a56fdb5ab4b7138d506373cc590e",
     "description": "Shows Facebook images stored in the cache of your Web browser.",
     "license": "Freeware",

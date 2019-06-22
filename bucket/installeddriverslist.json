@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/installed_drivers_list.html",
     "bin": "InstalledDriversList.exe",
+    "shortcuts": [
+        [
+            "InstalledDriversList.exe",
+            "NirSoft\\InstalledDriversList"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/installeddriverslist-x64.zip",

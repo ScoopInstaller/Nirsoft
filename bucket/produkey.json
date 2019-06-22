@@ -2,6 +2,12 @@
     "version": "1.93",
     "homepage": "https://www.nirsoft.net/utils/product_cd_key_viewer.html",
     "bin": "ProduKey.exe",
+    "shortcuts": [
+        [
+            "ProduKey.exe",
+            "NirSoft\\ProduKey"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/produkey-x64.zip",

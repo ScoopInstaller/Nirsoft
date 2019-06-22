@@ -2,6 +2,12 @@
     "version": "1.61",
     "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
     "bin": "BulkFileChanger.exe",
+    "shortcuts": [
+        [
+            "BulkFileChanger.exe",
+            "NirSoft\\BulkFileChanger"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",

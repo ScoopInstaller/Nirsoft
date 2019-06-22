@@ -2,6 +2,12 @@
     "version": "1.76",
     "homepage": "https://www.nirsoft.net/utils/sysexp.html",
     "bin": "sysexp.exe",
+    "shortcuts": [
+        [
+            "sysexp.exe",
+            "NirSoft\\SysExporter"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/sysexp-x64.zip",

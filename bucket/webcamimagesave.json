@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/web_cam_image_capture.html",
     "url": "https://www.nirsoft.net/utils/webcamimagesave.zip",
     "bin": "WebCamImageSave.exe",
+    "shortcuts": [
+        [
+            "WebCamImageSave.exe",
+            "NirSoft\\WebCamImageSave"
+        ]
+    ],
     "hash": "afca2873b620ae7dce5d650318d4b1c6cdebe3c3fbf2170bb40b6bf8c9d1536f",
     "description": "Capture still images from your WebCam.",
     "license": "Freeware",

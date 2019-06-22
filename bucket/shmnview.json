@@ -2,6 +2,12 @@
     "version": "1.41",
     "homepage": "https://www.nirsoft.net/utils/shell_menu_view.html",
     "bin": "shmnview.exe",
+    "shortcuts": [
+        [
+            "shmnview.exe",
+            "NirSoft\\ShellMenuView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shmnview-x64.zip",

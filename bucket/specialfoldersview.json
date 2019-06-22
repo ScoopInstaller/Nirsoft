@@ -2,6 +2,12 @@
     "version": "1.26",
     "homepage": "https://www.nirsoft.net/utils/special_folders_view.html",
     "bin": "SpecialFoldersView.exe",
+    "shortcuts": [
+        [
+            "SpecialFoldersView.exe",
+            "NirSoft\\SpecialFoldersView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/specialfoldersview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
     "bin": "AppReadWriteCounter.exe",
+    "shortcuts": [
+        [
+            "AppReadWriteCounter.exe",
+            "NirSoft\\AppReadWriteCounter"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip",

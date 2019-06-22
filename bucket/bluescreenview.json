@@ -2,6 +2,12 @@
     "version": "1.55",
     "homepage": "https://www.nirsoft.net/utils/blue_screen_view.html",
     "bin": "BlueScreenView.exe",
+    "shortcuts": [
+        [
+            "BlueScreenView.exe",
+            "NirSoft\\BlueScreenView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/bluescreenview-x64.zip",

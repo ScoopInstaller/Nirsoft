@@ -2,6 +2,12 @@
     "version": "1.07",
     "homepage": "https://www.nirsoft.net/utils/advanced_run.html",
     "bin": "AdvancedRun.exe",
+    "shortcuts": [
+        [
+            "AdvancedRun.exe",
+            "NirSoft\\AdvancedRun"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/advancedrun-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.13",
     "homepage": "https://www.nirsoft.net/utils/network_usage_view.html",
     "bin": "NetworkUsageView.exe",
+    "shortcuts": [
+        [
+            "NetworkUsageView.exe",
+            "NirSoft\\NetworkUsageView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkusageview-x64.zip",

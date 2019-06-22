@@ -2,6 +2,12 @@
     "version": "1.01",
     "homepage": "https://www.nirsoft.net/utils/loaded_dll_view.html",
     "bin": "LoadedDllsView.exe",
+    "shortcuts": [
+        [
+            "LoadedDllsView.exe",
+            "NirSoft\\LoadedDllsView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/loadeddllsview-x64.zip",

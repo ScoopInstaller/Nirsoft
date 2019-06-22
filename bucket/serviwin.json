@@ -2,6 +2,12 @@
     "version": "1.71",
     "homepage": "https://www.nirsoft.net/utils/serviwin.html",
     "bin": "serviwin.exe",
+    "shortcuts": [
+        [
+            "serviwin.exe",
+            "NirSoft\\ServiWin"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/serviwin-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.47",
     "homepage": "https://www.nirsoft.net/utils/driverview.html",
     "bin": "DriverView.exe",
+    "shortcuts": [
+        [
+            "DriverView.exe",
+            "NirSoft\\DriverView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/driverview-x64.zip",

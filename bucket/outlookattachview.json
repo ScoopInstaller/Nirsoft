@@ -2,6 +2,12 @@
     "version": "3.16",
     "homepage": "https://www.nirsoft.net/utils/outlook_attachment.html",
     "bin": "OutlookAttachView.exe",
+    "shortcuts": [
+        [
+            "OutlookAttachView.exe",
+            "NirSoft\\OutlookAttachView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip",

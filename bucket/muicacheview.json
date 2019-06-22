@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/muicache_view.html",
     "url": "https://www.nirsoft.net/utils/muicacheview.zip",
     "bin": "MUICacheView.exe",
+    "shortcuts": [
+        [
+            "MUICacheView.exe",
+            "NirSoft\\MUICacheView"
+        ]
+    ],
     "hash": "d22499c5ad2fba84f9f82a3a0c05cc085321b5502968699a831aa96afaf669a0",
     "description": "Edit/delete MUICache items in your system",
     "license": "Freeware",

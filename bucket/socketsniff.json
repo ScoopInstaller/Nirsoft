@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/socket_sniffer.html",
     "url": "https://www.nirsoft.net/utils/socketsniff.zip",
     "bin": "SocketSniff.exe",
+    "shortcuts": [
+        [
+            "SocketSniff.exe",
+            "NirSoft\\SocketSniff"
+        ]
+    ],
     "hash": "2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc",
     "description": "Watch the Windows Sockets (WinSock) activity of the selected process.",
     "license": "Freeware",

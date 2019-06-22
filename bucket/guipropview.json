@@ -2,6 +2,12 @@
     "version": "1.07",
     "homepage": "https://www.nirsoft.net/utils/gui_prop_view.html",
     "bin": "GUIPropView.exe",
+    "shortcuts": [
+        [
+            "GUIPropView.exe",
+            "NirSoft\\GUIPropView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/guipropview-x64.zip",

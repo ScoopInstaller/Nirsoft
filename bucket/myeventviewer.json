@@ -2,6 +2,12 @@
     "version": "2.25",
     "homepage": "https://www.nirsoft.net/utils/my_event_viewer.html",
     "bin": "MyEventViewer.exe",
+    "shortcuts": [
+        [
+            "MyEventViewer.exe",
+            "NirSoft\\MyEventViewer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/myeventviewer-x64.zip",

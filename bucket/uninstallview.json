@@ -2,6 +2,12 @@
     "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
     "bin": "UninstallView.exe",
+    "shortcuts": [
+        [
+            "UninstallView.exe",
+            "NirSoft\\UninstallView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",

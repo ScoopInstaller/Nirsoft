@@ -2,6 +2,12 @@
     "version": "1.65",
     "homepage": "https://www.nirsoft.net/utils/network_latency_view.html",
     "bin": "NetworkLatencyView.exe",
+    "shortcuts": [
+        [
+            "NetworkLatencyView.exe",
+            "NirSoft\\NetworkLatencyView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networklatencyview-x64.zip",

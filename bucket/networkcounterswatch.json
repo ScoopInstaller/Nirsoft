@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/network_counters_watch.html",
     "url": "https://www.nirsoft.net/utils/networkcounterswatch.zip",
     "bin": "NetworkCountersWatch.exe",
+    "shortcuts": [
+        [
+            "NetworkCountersWatch.exe",
+            "NirSoft\\NetworkCountersWatch"
+        ]
+    ],
     "hash": "66815a2731b7b8556e10ca68126b65e3859c4dc5cf928b95a3dcd2fbbec59d5a",
     "description": "Displays system counters for every network interface on your system.",
     "license": "Freeware",

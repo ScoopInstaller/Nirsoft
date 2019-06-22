@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/user_profiles_view.html",
     "url": "https://www.nirsoft.net/utils/userprofilesview.zip",
     "bin": "UserProfilesView.exe",
+    "shortcuts": [
+        [
+            "UserProfilesView.exe",
+            "NirSoft\\UserProfilesView"
+        ]
+    ],
     "hash": "350bbfdd12ca9d8b7ecf59b92410424acf99197f0bd9d8b2451cd7026413e2a4",
     "description": "View user profiles information on your system.",
     "license": "Freeware",

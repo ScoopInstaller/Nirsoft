@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/network_route_view.html",
     "url": "https://www.nirsoft.net/utils/netrouteview.zip",
     "bin": "NetRouteView.exe",
+    "shortcuts": [
+        [
+            "NetRouteView.exe",
+            "NirSoft\\NetRouteView"
+        ]
+    ],
     "hash": "b48419a46a95156c12cdd64f84ed83252a87cf37470d5dc3c1dc9ab0fa3126f5",
     "description": "GUI alternative to the standard route utility of Windows.",
     "license": "Freeware",

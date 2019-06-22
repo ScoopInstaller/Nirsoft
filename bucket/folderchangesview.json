@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/folder_changes_view.html",
     "url": "https://www.nirsoft.net/utils/folderchangesview.zip",
     "bin": "FolderChangesView.exe",
+    "shortcuts": [
+        [
+            "FolderChangesView.exe",
+            "NirSoft\\FolderChangesView"
+        ]
+    ],
     "hash": "3569cea65e0aefa331c04ae2ac008d71bb8f0fb37afa86303355e4eb64de010b",
     "description": "Monitor folder/drive changes.",
     "license": "Freeware",

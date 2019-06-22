@@ -2,6 +2,12 @@
     "version": "1.26",
     "homepage": "https://www.nirsoft.net/utils/gdi_handles.html",
     "bin": "GDIView.exe",
+    "shortcuts": [
+        [
+            "GDIView.exe",
+            "NirSoft\\GDIView "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/gdiview-x64.zip",

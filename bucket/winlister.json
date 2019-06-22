@@ -2,6 +2,12 @@
     "version": "1.22",
     "homepage": "https://www.nirsoft.net/utils/winlister.html",
     "bin": "winlister.exe",
+    "shortcuts": [
+        [
+            "winlister.exe",
+            "NirSoft\\WinLister"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/winlister-x64.zip",

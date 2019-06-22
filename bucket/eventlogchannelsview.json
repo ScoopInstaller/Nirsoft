@@ -2,6 +2,12 @@
     "version": "1.19",
     "homepage": "https://www.nirsoft.net/utils/event_log_channels_view.html",
     "bin": "EventLogChannelsView.exe",
+    "shortcuts": [
+        [
+            "EventLogChannelsView.exe",
+            "NirSoft\\EventLogChannelsView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/eventlogchannelsview-x64.zip",

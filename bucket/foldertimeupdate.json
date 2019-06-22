@@ -2,6 +2,12 @@
     "version": "1.55",
     "homepage": "https://www.nirsoft.net/utils/folder_time_update.html",
     "bin": "FolderTimeUpdate.exe",
+    "shortcuts": [
+        [
+            "FolderTimeUpdate.exe",
+            "NirSoft\\FolderTimeUpdate"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/foldertimeupdate-x64.zip",

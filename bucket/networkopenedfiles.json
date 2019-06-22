@@ -2,6 +2,12 @@
     "version": "1.25",
     "homepage": "https://www.nirsoft.net/utils/network_opened_files.html",
     "bin": "NetworkOpenedFiles.exe",
+    "shortcuts": [
+        [
+            "NetworkOpenedFiles.exe",
+            "NirSoft\\NetworkOpenedFiles"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip",

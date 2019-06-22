@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/shadow_copy_view.html",
     "bin": "ShadowCopyView.exe",
+    "shortcuts": [
+        [
+            "ShadowCopyView.exe",
+            "NirSoft\\ShadowCopyView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shadowcopyview-x64.zip",

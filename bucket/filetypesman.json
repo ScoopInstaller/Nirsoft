@@ -2,6 +2,12 @@
     "version": "1.85",
     "homepage": "https://www.nirsoft.net/utils/file_types_manager.html",
     "bin": "FileTypesMan.exe",
+    "shortcuts": [
+        [
+            "FileTypesMan.exe",
+            "NirSoft\\FileTypesMan"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/filetypesman-x64.zip",

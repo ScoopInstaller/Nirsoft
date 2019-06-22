@@ -2,6 +2,12 @@
     "version": "1.33",
     "homepage": "https://www.nirsoft.net/utils/reg_file_from_application.html",
     "bin": "RegFromApp.exe",
+    "shortcuts": [
+        [
+            "RegFromApp.exe",
+            "NirSoft\\RegFromApp"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/regfromapp-x64.zip",

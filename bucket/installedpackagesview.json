@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/installed_packages_view.html",
     "bin": "InstalledPackagesView.exe",
+    "shortcuts": [
+        [
+            "InstalledPackagesView.exe",
+            "NirSoft\\InstalledPackagesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/installedpackagesview-x64.zip",

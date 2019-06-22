@@ -2,6 +2,12 @@
     "version": "1.20",
     "homepage": "https://www.nirsoft.net/utils/app_network_counter.html",
     "bin": "AppNetworkCounter.exe",
+    "shortcuts": [
+        [
+            "AppNetworkCounter.exe",
+            "NirSoft\\AppNetworkCounter"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.10",
     "homepage": "https://www.nirsoft.net/utils/app_audio_config.html",
     "bin": "AppAudioConfig.exe",
+    "shortcuts": [
+        [
+            "AppAudioConfig.exe",
+            "NirSoft\\AppAudioConfig"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appaudioconfig-x64.zip",

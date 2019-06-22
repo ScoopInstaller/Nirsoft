@@ -2,6 +2,12 @@
     "version": "1.14",
     "homepage": "https://www.nirsoft.net/utils/who_is_connected_sniffer.html",
     "bin": "WhoIsConnectedSniffer.exe",
+    "shortcuts": [
+        [
+            "WhoIsConnectedSniffer.exe",
+            "NirSoft\\WhoIsConnectedSniffer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer-x64.zip",

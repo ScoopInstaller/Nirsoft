@@ -2,6 +2,12 @@
     "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/registry_changes_view.html",
     "bin": "RegistryChangesView.exe",
+    "shortcuts": [
+        [
+            "RegistryChangesView.exe",
+            "NirSoft\\RegistryChangesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/registrychangesview-x64.zip",

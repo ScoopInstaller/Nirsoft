@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/download_speed_tester.html",
     "url": "https://www.nirsoft.net/utils/downtester.zip",
     "bin": "DownTester.exe",
+    "shortcuts": [
+        [
+            "DownTester.exe",
+            "NirSoft\\DownTester"
+        ]
+    ],
     "hash": "15d6a3ecea7ab676769042cfdb3cbbea197f81be63aec409e792dd2258642fe2",
     "description": "Test your Internet download speed.",
     "license": "Freeware",

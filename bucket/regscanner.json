@@ -2,6 +2,12 @@
     "version": "2.35",
     "homepage": "https://www.nirsoft.net/utils/regscanner.html",
     "bin": "RegScanner.exe",
+    "shortcuts": [
+        [
+            "RegScanner.exe",
+            "NirSoft\\RegScanner"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",

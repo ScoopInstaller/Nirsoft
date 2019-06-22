@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/offline_registry_finder.html",
     "bin": "OfflineRegistryFinder.exe",
+    "shortcuts": [
+        [
+            "OfflineRegistryFinder.exe",
+            "NirSoft\\OfflineRegistryFinder"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/offlineregistryfinder-x64.zip",

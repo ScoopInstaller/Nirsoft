@@ -2,6 +2,12 @@
     "version": "3.05",
     "homepage": "https://www.nirsoft.net/utils/video_cache_view.html",
     "bin": "VideoCacheView.exe",
+    "shortcuts": [
+        [
+            "VideoCacheView.exe",
+            "NirSoft\\VideoCacheView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/videocacheview-x64.zip",

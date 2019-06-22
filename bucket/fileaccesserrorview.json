@@ -2,6 +2,12 @@
     "version": "1.20",
     "homepage": "https://www.nirsoft.net/utils/file_access_error_view.html",
     "bin": "FileAccessErrorView.exe",
+    "shortcuts": [
+        [
+            "FileAccessErrorView.exe",
+            "NirSoft\\FileAccessErrorView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip",

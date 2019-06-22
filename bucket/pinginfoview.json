@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
     "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
     "bin": "PingInfoView.exe",
+    "shortcuts": [
+        [
+            "PingInfoView.exe",
+            "NirSoft\\PingInfoView "
+        ]
+    ],
     "hash": "8745badb7d641ff50948556d23b32e086f4df6fda033b935a905d2e9195e0f13",
     "description": "ping multiple host names and IP addresses.",
     "license": "Freeware",

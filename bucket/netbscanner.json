@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/netbios_scanner.html",
     "url": "https://www.nirsoft.net/utils/netbscanner.zip",
     "bin": "NetBScanner.exe",
+    "shortcuts": [
+        [
+            "NetBScanner.exe",
+            "NirSoft\\NetBScanner"
+        ]
+    ],
     "hash": "f4970e58d94ef7112924b16ae81187e18d9bad26d407e9b6a37172c5d5973c3c",
     "description": "Scans all computers in the IP addresses range you choose, using NetBIOS protocol",
     "license": "Freeware",

@@ -2,6 +2,12 @@
     "version": "2.83",
     "homepage": "https://www.nirsoft.net/utils/nircmd.html",
     "bin": "nircmd.exe",
+    "shortcuts": [
+        [
+            "nircmd.exe",
+            "NirSoft\\NirCmd"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/nircmd-x64.zip",

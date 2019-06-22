@@ -2,6 +2,12 @@
     "version": "1.27",
     "homepage": "https://www.nirsoft.net/utils/what_is_hang.html",
     "bin": "WhatIsHang.exe",
+    "shortcuts": [
+        [
+            "WhatIsHang.exe",
+            "NirSoft\\WhatIsHang"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whatishang-x64.zip",

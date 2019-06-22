@@ -2,6 +2,12 @@
     "version": "1.60",
     "homepage": "https://www.nirsoft.net/utils/registered_dll_view.html",
     "bin": "RegDllView.exe",
+    "shortcuts": [
+        [
+            "RegDllView.exe",
+            "NirSoft\\RegDllView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/regdllview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.86",
     "homepage": "https://www.nirsoft.net/utils/opened_files_view.html",
     "bin": "OpenedFilesView.exe",
+    "shortcuts": [
+        [
+            "OpenedFilesView.exe",
+            "NirSoft\\OpenedFilesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/ofview-x64.zip",

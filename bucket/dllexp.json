@@ -2,6 +2,12 @@
     "version": "1.66",
     "homepage": "https://www.nirsoft.net/utils/dll_export_viewer.html",
     "bin": "dllexp.exe",
+    "shortcuts": [
+        [
+            "dllexp.exe",
+            "NirSoft\\DLL Export Viewer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/dllexp-x64.zip",

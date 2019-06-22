@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/all_threads_view.html",
     "bin": "AllThreadsView.exe",
+    "shortcuts": [
+        [
+            "AllThreadsView.exe",
+            "NirSoft\\AllThreadsView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/allthreadsview-x64.zip",

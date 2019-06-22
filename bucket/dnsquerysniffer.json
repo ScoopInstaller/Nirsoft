@@ -2,6 +2,12 @@
     "version": "1.80",
     "homepage": "https://www.nirsoft.net/utils/dns_query_sniffer.html",
     "bin": "DNSQuerySniffer.exe",
+    "shortcuts": [
+        [
+            "DNSQuerySniffer.exe",
+            "NirSoft\\DNSQuerySniffer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/dnsquerysniffer-x64.zip",

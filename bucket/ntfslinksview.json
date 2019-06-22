@@ -2,6 +2,12 @@
     "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/ntfs_links_view.html",
     "bin": "NTFSLinksView.exe",
+    "shortcuts": [
+        [
+            "NTFSLinksView.exe",
+            "NirSoft\\NTFSLinksView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/ntfslinksview-x64.zip",

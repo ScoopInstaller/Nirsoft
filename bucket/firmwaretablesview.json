@@ -2,6 +2,12 @@
     "version": "1.01",
     "homepage": "https://www.nirsoft.net/utils/firmware_tables_view.html",
     "bin": "FirmwareTablesView.exe",
+    "shortcuts": [
+        [
+            "FirmwareTablesView.exe",
+            "NirSoft\\FirmwareTablesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/firmwaretablesview-x64.zip",

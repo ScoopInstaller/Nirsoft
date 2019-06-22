@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/jrview.html",
     "url": "https://www.nirsoft.net/utils/jrview.zip",
     "bin": "jrview.exe",
+    "shortcuts": [
+        [
+            "jrview.exe",
+            "NirSoft\\JRView"
+        ]
+    ],
     "hash": "ef9bbfbd17b7b9c7215b54b86597c5e345b44904d1ab7b55d1081796453619a1",
     "description": "Displays the installed Java Runtime  Environments.",
     "license": "Freeware",

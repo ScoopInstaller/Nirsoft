@@ -2,6 +2,12 @@
     "version": "1.25",
     "homepage": "https://www.nirsoft.net/utils/application_crash_report.html",
     "bin": "WinCrashReport.exe",
+    "shortcuts": [
+        [
+            "WinCrashReport.exe",
+            "NirSoft\\WinCrashReport"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wincrashreport-x64.zip",

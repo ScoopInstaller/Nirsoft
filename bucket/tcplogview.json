@@ -2,6 +2,12 @@
     "version": "1.31",
     "homepage": "https://www.nirsoft.net/utils/tcp_log_view.html",
     "bin": "TcpLogView.exe",
+    "shortcuts": [
+        [
+            "TcpLogView.exe",
+            "NirSoft\\TcpLogView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/tcplogview-x64.zip",

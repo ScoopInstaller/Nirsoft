@@ -2,6 +2,12 @@
     "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/network_interfaces.html",
     "bin": "NetworkInterfacesView.exe",
+    "shortcuts": [
+        [
+            "NetworkInterfacesView.exe",
+            "NirSoft\\NetworkInterfacesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkinterfacesview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "3.40",
     "homepage": "https://www.nirsoft.net/utils/outlook_nk2_edit.html",
     "bin": "NK2Edit.exe",
+    "shortcuts": [
+        [
+            "NK2Edit.exe",
+            "NirSoft\\NK2Edit"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/nk2edit-x64.zip",

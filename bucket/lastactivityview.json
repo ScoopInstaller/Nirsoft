@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/computer_activity_view.html",
     "url": "https://www.nirsoft.net/utils/lastactivityview.zip",
     "bin": "LastActivityView.exe",
+    "shortcuts": [
+        [
+            "LastActivityView.exe",
+            "NirSoft\\LastActivityView"
+        ]
+    ],
     "hash": "8572b903d316b55e89fa7c129a7c8d0e1da597158fcde8a7210b2b1a6e34df17",
     "description": "View the latest computer activity.",
     "license": "Freeware",

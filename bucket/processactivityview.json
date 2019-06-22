@@ -2,6 +2,12 @@
     "version": "1.16",
     "homepage": "https://www.nirsoft.net/utils/process_activity_view.html",
     "bin": "ProcessActivityView.exe",
+    "shortcuts": [
+        [
+            "ProcessActivityView.exe",
+            "NirSoft\\ProcessActivityView "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/processactivityview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.10",
     "homepage": "https://www.nirsoft.net/utils/shman.html",
     "bin": "shman.exe",
+    "shortcuts": [
+        [
+            "shman.exe",
+            "NirSoft\\ShortcutsMan"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shman-x64.zip",

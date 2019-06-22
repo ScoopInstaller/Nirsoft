@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/simple_program_debugger.html",
     "bin": "SimpleProgramDebugger.exe",
+    "shortcuts": [
+        [
+            "SimpleProgramDebugger.exe",
+            "NirSoft\\SimpleProgramDebugger"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip",

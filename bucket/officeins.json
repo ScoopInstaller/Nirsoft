@@ -2,6 +2,12 @@
     "version": "1.20",
     "homepage": "https://www.nirsoft.net/utils/officeins.html",
     "bin": "OfficeIns.exe",
+    "shortcuts": [
+        [
+            "OfficeIns.exe",
+            "NirSoft\\OfficeIns"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/officeins-x64.zip",

@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/ip_country_info_offline.html",
     "url": "https://www.nirsoft.net/utils/ipinfooffline.zip",
     "bin": "IPInfoOffline.exe",
+    "shortcuts": [
+        [
+            "IPInfoOffline.exe",
+            "NirSoft\\IPInfoOffline"
+        ]
+    ],
     "hash": "8a1bd09c8df532ec41db6953d56e1f31fd9ba7b585e6fc12856f8b4e79332c72",
     "description": "view country information about IP addresses.",
     "license": "Freeware",

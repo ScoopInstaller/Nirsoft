@@ -2,6 +2,12 @@
     "version": "1.16",
     "homepage": "https://www.nirsoft.net/utils/web_browser_addons_view.html",
     "bin": "BrowserAddonsView.exe",
+    "shortcuts": [
+        [
+            "BrowserAddonsView.exe",
+            "NirSoft\\BrowserAddonsView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browseraddonsview-x64.zip",

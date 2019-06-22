@@ -2,6 +2,12 @@
     "version": "1.56",
     "homepage": "https://www.nirsoft.net/utils/mzcv.html",
     "bin": "mzcv.exe",
+    "shortcuts": [
+        [
+            "mzcv.exe",
+            "NirSoft\\MZCookiesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mzcv-x64.zip",

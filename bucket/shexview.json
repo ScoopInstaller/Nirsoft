@@ -2,6 +2,12 @@
     "version": "2.01",
     "homepage": "https://www.nirsoft.net/utils/shexview.html",
     "bin": "shexview.exe",
+    "shortcuts": [
+        [
+            "shexview.exe",
+            "NirSoft\\ShellExView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shexview-x64.zip",

@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/winsock_service_providers.html",
     "url": "https://www.nirsoft.net/utils/winsockservicesview.zip",
     "bin": "WinsockServicesView.exe",
+    "shortcuts": [
+        [
+            "WinsockServicesView.exe",
+            "NirSoft\\WinsockServicesView"
+        ]
+    ],
     "hash": "135131357d35cd429bc9a06408b810082e1db3ec910f3314e3c5377142d219b9",
     "description": "View/Disable/Enable Winsock service providers installed on your system.",
     "license": "Freeware",

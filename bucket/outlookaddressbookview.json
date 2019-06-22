@@ -2,6 +2,12 @@
     "version": "2.19",
     "homepage": "https://www.nirsoft.net/utils/outlook_address_book_view.html",
     "bin": "OutlookAddressBookView.exe",
+    "shortcuts": [
+        [
+            "OutlookAddressBookView.exe",
+            "NirSoft\\OutlookAddressBookView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip",

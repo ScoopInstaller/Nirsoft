@@ -2,6 +2,12 @@
     "version": "1.50",
     "homepage": "https://www.nirsoft.net/utils/task_scheduler_view.html",
     "bin": "TaskSchedulerView.exe",
+    "shortcuts": [
+        [
+            "TaskSchedulerView.exe",
+            "NirSoft\\TaskSchedulerView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip",

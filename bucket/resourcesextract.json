@@ -2,6 +2,12 @@
     "version": "1.18",
     "homepage": "https://www.nirsoft.net/utils/resources_extract.html",
     "bin": "ResourcesExtract.exe",
+    "shortcuts": [
+        [
+            "ResourcesExtract.exe",
+            "NirSoft\\ResourcesExtract"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/resourcesextract-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/heap_memory_view.html",
     "bin": "HeapMemView.exe",
+    "shortcuts": [
+        [
+            "HeapMemView.exe",
+            "NirSoft\\HeapMemView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/heapmemview-x64.zip",

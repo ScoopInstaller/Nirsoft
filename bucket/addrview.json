@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/addrview.html",
     "url": "https://www.nirsoft.net/utils/addrview.zip",
     "bin": "AddrView.exe",
+    "shortcuts": [
+        [
+            "AddrView.exe",
+            "NirSoft\\AddrView"
+        ]
+    ],
     "hash": "806883045b6b510625d05ae965222b80c451a0b18ce30343ec9607cca10d4017",
     "description": "Extract URL addresses from HTML pages.",
     "license": "Freeware",

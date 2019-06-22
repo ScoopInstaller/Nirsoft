@@ -2,6 +2,12 @@
     "version": "1.32",
     "homepage": "https://www.nirsoft.net/utils/bullets_password_view.html",
     "bin": "BulletsPassView.exe",
+    "shortcuts": [
+        [
+            "BulletsPassView.exe",
+            "NirSoft\\BulletsPassView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/bulletspassview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.22",
     "homepage": "https://www.nirsoft.net/utils/rtmp_dump_helper.html",
     "bin": "RTMPDumpHelper.exe",
+    "shortcuts": [
+        [
+            "RTMPDumpHelper.exe",
+            "NirSoft\\RTMPDumpHelper"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/rtmpdumphelper-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/event_log_sources_view.html",
     "bin": "EventLogSourcesView.exe",
+    "shortcuts": [
+        [
+            "EventLogSourcesView.exe",
+            "NirSoft\\EventLogSourcesView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/eventlogsourcesview-x64.zip",

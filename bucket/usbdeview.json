@@ -2,6 +2,12 @@
     "version": "2.80",
     "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
     "bin": "USBDeview.exe",
+    "shortcuts": [
+        [
+            "USBDeview.exe",
+            "NirSoft\\USBDeview "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",

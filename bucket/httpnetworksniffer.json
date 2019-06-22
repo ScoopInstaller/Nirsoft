@@ -2,6 +2,12 @@
     "version": "1.63",
     "homepage": "https://www.nirsoft.net/utils/http_network_sniffer.html",
     "bin": "HTTPNetworkSniffer.exe",
+    "shortcuts": [
+        [
+            "HTTPNetworkSniffer.exe",
+            "NirSoft\\HTTPNetworkSniffer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/httpnetworksniffer-x64.zip",

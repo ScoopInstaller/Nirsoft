@@ -2,6 +2,12 @@
     "version": "1.59",
     "homepage": "https://www.nirsoft.net/utils/wifi_channel_monitor.html",
     "bin": "WifiChannelMonitor.exe",
+    "shortcuts": [
+        [
+            "WifiChannelMonitor.exe",
+            "NirSoft\\WifiChannelMonitor"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wifichannelmonitor-x64.zip",

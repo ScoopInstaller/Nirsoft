@@ -2,6 +2,12 @@
     "version": "1.31",
     "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
     "bin": "FileActivityWatch.exe",
+    "shortcuts": [
+        [
+            "FileActivityWatch.exe",
+            "NirSoft\\FileActivityWatch"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",

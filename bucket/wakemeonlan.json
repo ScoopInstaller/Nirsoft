@@ -2,6 +2,12 @@
     "version": "1.84",
     "homepage": "https://www.nirsoft.net/utils/wake_on_lan.html",
     "bin": "WakeMeOnLan.exe",
+    "shortcuts": [
+        [
+            "WakeMeOnLan.exe",
+            "NirSoft\\WakeMeOnLan"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wakemeonlan-x64.zip",

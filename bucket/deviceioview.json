@@ -2,6 +2,12 @@
     "version": "1.06",
     "homepage": "https://www.nirsoft.net/utils/device_io_view.html",
     "bin": "DeviceIOView.exe",
+    "shortcuts": [
+        [
+            "DeviceIOView.exe",
+            "NirSoft\\DeviceIOView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/deviceioview-x64.zip",

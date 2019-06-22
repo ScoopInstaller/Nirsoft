@@ -2,6 +2,12 @@
     "version": "2.60",
     "homepage": "https://www.nirsoft.net/utils/cports.html",
     "bin": "cports.exe",
+    "shortcuts": [
+        [
+            "cports.exe",
+            "NirSoft\\CurrPorts "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/cports-x64.zip",

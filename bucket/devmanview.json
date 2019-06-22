@@ -2,6 +2,12 @@
     "version": "1.56",
     "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
     "bin": "DevManView.exe",
+    "shortcuts": [
+        [
+            "DevManView.exe",
+            "NirSoft\\DevManView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/devmanview-x64.zip",

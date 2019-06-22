@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/time_zones_view.html",
     "url": "https://www.nirsoft.net/utils/timezonesview.zip",
     "bin": "TimeZonesView.exe",
+    "shortcuts": [
+        [
+            "TimeZonesView.exe",
+            "NirSoft\\TimeZonesView"
+        ]
+    ],
     "hash": "9f3b5abef89b03e291816a51efa96090f31a047e25a2751bd565598717207571",
     "description": "Displays all world time zones.",
     "license": "Freeware",

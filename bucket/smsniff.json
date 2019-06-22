@@ -2,6 +2,12 @@
     "version": "2.29",
     "homepage": "https://www.nirsoft.net/utils/smsniff.html",
     "bin": "smsniff.exe",
+    "shortcuts": [
+        [
+            "smsniff.exe",
+            "NirSoft\\SmartSniff "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/smsniff-x64.zip",

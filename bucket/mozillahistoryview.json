@@ -2,6 +2,12 @@
     "version": "1.65",
     "homepage": "https://www.nirsoft.net/utils/mozilla_history_view.html",
     "bin": "MozillaHistoryView.exe",
+    "shortcuts": [
+        [
+            "MozillaHistoryView.exe",
+            "NirSoft\\MZHistoryView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mozillahistoryview-x64.zip",

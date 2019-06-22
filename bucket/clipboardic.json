@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/clipboardic.html",
     "url": "https://www.nirsoft.net/utils/clipboardic.zip",
     "bin": "Clipboardic.exe",
+    "shortcuts": [
+        [
+            "Clipboardic.exe",
+            "NirSoft\\Clipboardic"
+        ]
+    ],
     "hash": "1a061abef1c8899cd199ae426ef35659e2ce219e0acddb427c74c52c517ef7dc",
     "description": "Small and simple clipboard manager.",
     "license": "Freeware",

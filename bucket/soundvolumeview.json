@@ -2,6 +2,12 @@
     "version": "1.86",
     "homepage": "https://www.nirsoft.net/utils/sound_volume_view.html",
     "bin": "SoundVolumeView.exe",
+    "shortcuts": [
+        [
+            "SoundVolumeView.exe",
+            "NirSoft\\SoundVolumeView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/soundvolumeview-x64.zip",

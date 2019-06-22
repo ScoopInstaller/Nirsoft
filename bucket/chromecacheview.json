@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/chrome_cache_view.html",
     "url": "https://www.nirsoft.net/utils/chromecacheview.zip",
     "bin": "ChromeCacheView.exe",
+    "shortcuts": [
+        [
+            "ChromeCacheView.exe",
+            "NirSoft\\ChromeCacheView"
+        ]
+    ],
     "hash": "e0df3b099f8ae34b55f5ca10de8eb7b2f3b588acab4815ede370671c6ac76c05",
     "description": "Chrome Browser Cache Viewer",
     "license": "Freeware",

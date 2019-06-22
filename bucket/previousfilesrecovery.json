@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/previous_files_recovery.html",
     "bin": "PreviousFilesRecovery.exe",
+    "shortcuts": [
+        [
+            "PreviousFilesRecovery.exe",
+            "NirSoft\\PreviousFilesRecovery"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/previousfilesrecovery-x64.zip",

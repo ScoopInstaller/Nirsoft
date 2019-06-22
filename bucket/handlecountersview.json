@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/handle_counters_view.html",
     "bin": "HandleCountersView.exe",
+    "shortcuts": [
+        [
+            "HandleCountersView.exe",
+            "NirSoft\\HandleCountersView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/handlecountersview-x64.zip",

@@ -2,6 +2,12 @@
     "version": "2.41",
     "homepage": "https://www.nirsoft.net/utils/csv_file_view.html",
     "bin": "CSVFileView.exe",
+    "shortcuts": [
+        [
+            "CSVFileView.exe",
+            "NirSoft\\CSVFileView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/csvfileview-x64.zip",

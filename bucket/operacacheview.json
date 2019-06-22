@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/opera_cache_view.html",
     "url": "https://www.nirsoft.net/utils/operacacheview.zip",
     "bin": "OperaCacheView.exe",
+    "shortcuts": [
+        [
+            "OperaCacheView.exe",
+            "NirSoft\\OperaCacheView"
+        ]
+    ],
     "hash": "b205f7d66e4fdb7e2c3af7ab3903cb6cfa15467f0913a30f49a93acea971780e",
     "description": "Cache viewer for Opera Web browser.",
     "license": "Freeware",

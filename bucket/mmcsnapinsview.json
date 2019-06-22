@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/mmc_snapins_view.html",
     "bin": "MMCSnapInsView.exe",
+    "shortcuts": [
+        [
+            "MMCSnapInsView.exe",
+            "NirSoft\\MMCSnapInsView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mmcsnapinsview-x64.zip",

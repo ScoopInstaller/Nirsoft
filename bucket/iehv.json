@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/iehv.html",
     "url": "https://www.nirsoft.net/utils/iehv.zip",
     "bin": "iehv.exe",
+    "shortcuts": [
+        [
+            "iehv.exe",
+            "NirSoft\\IEHistoryView"
+        ]
+    ],
     "hash": "7bdab7e43af86d5f8e43854a290073033b2b97c83f0d240a526660f643c94351",
     "description": "Displays the list of Web sites that you visited with IE Web browser.",
     "license": "Freeware",

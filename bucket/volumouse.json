@@ -2,6 +2,12 @@
     "version": "2.03",
     "homepage": "https://www.nirsoft.net/utils/volumouse.html",
     "bin": "volumouse.exe",
+    "shortcuts": [
+        [
+            "volumouse.exe",
+            "NirSoft\\Volumouse"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/volumouse-x64.zip",

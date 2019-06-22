@@ -2,6 +2,12 @@
     "version": "2.35",
     "homepage": "https://www.nirsoft.net/utils/hash_my_files.html",
     "bin": "HashMyFiles.exe",
+    "shortcuts": [
+        [
+            "HashMyFiles.exe",
+            "NirSoft\\HashMyFiles"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip",

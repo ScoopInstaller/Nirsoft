@@ -2,6 +2,12 @@
     "version": "1.51",
     "homepage": "https://www.nirsoft.net/utils/web_site_sniffer.html",
     "bin": "WebSiteSniffer.exe",
+    "shortcuts": [
+        [
+            "WebSiteSniffer.exe",
+            "NirSoft\\WebSiteSniffer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/websitesniffer-x64.zip",

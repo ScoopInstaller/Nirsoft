@@ -2,6 +2,12 @@
     "version": "1.46",
     "homepage": "https://www.nirsoft.net/utils/drive_letter_view.html",
     "bin": "DriveLetterView.exe",
+    "shortcuts": [
+        [
+            "DriveLetterView.exe",
+            "NirSoft\\DriveLetterView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/driveletterview-x64.zip",

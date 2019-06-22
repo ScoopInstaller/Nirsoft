@@ -2,6 +2,12 @@
     "version": "1.37",
     "homepage": "https://www.nirsoft.net/utils/run_as_date.html",
     "bin": "RunAsDate.exe",
+    "shortcuts": [
+        [
+            "RunAsDate.exe",
+            "NirSoft\\RunAsDate"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/runasdate-x64.zip",

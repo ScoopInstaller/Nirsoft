@@ -2,6 +2,12 @@
     "version": "1.00",
     "homepage": "https://www.nirsoft.net/utils/wireless_key_dump.html",
     "bin": "WirelessKeyDump.exe",
+    "shortcuts": [
+        [
+            "WirelessKeyDump.exe",
+            "NirSoft\\WirelessKeyDump"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wirelesskeydump-x64.zip",

@@ -2,6 +2,12 @@
     "version": "1.95",
     "homepage": "https://www.nirsoft.net/utils/multi_monitor_tool.html",
     "bin": "MultiMonitorTool.exe",
+    "shortcuts": [
+        [
+            "MultiMonitorTool.exe",
+            "NirSoft\\MultiMonitorTool "
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/multimonitortool-x64.zip",

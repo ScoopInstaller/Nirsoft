@@ -3,6 +3,12 @@
     "homepage": "https://www.nirsoft.net/utils/bluetoothcl.html",
     "url": "https://www.nirsoft.net/utils/bluetoothcl.zip",
     "bin": "BluetoothCL.exe",
+    "shortcuts": [
+        [
+            "BluetoothCL.exe",
+            "NirSoft\\BluetoothCL"
+        ]
+    ],
     "hash": "025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f",
     "description": "Show bluetooth devices  list",
     "license": "Freeware",

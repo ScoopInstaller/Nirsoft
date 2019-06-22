@@ -2,6 +2,12 @@
     "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/web_cookies_sniffer.html",
     "bin": "WebCookiesSniffer.exe",
+    "shortcuts": [
+        [
+            "WebCookiesSniffer.exe",
+            "NirSoft\\WebCookiesSniffer"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/webcookiessniffer-x64.zip",

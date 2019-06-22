@@ -2,6 +2,12 @@
     "version": "1.35",
     "homepage": "https://www.nirsoft.net/utils/what_run_in_startup.html",
     "bin": "WhatInStartup.exe",
+    "shortcuts": [
+        [
+            "WhatInStartup.exe",
+            "NirSoft\\WhatInStartup"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whatinstartup-x64.zip",

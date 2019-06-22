@@ -2,6 +2,12 @@
     "version": "1.36",
     "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
     "bin": "FullEventLogView.exe",
+    "shortcuts": [
+        [
+            "FullEventLogView.exe",
+            "NirSoft\\FullEventLogView"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
