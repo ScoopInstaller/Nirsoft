@@ -29,13 +29,10 @@ for line in pads.splitlines():
         padfile = requests.get(line).text
         root = ET.fromstring(padfile)
 
-        version = root.find("Program_Info").find("Program_Version").text
+        info = root.find("Program_Info")
+        version = info.find("Program_Version").text
+        full_name = info.find("Program_Name").text
 
-        description = ""
-        try:
-            description = root.find("Program_Descriptions").find("English").find("Char_Desc_80").text
-        except AttributeError:
-            pass
         web_info = root.find("Web_Info")
         website = web_info.find("Application_URLs").find("Application_Info_URL").text.replace("http:", "https:")
         download = web_info.find("Download_URLs").find("Primary_Download_URL").text.replace("http:", "https:")
@@ -45,6 +42,15 @@ for line in pads.splitlines():
         bin = probe_for_exe(download)
         if not bin:
             print("No executable found! Skipping")
+
+        description = ""
+        shortcut = "NirSoft\\" + full_name
+        try:
+            descriptions = root.find("Program_Descriptions").find("English")
+            description = descriptions.find("Char_Desc_80").text
+            # shortcut += " - " + descriptions.find("Char_Desc_45").text # Disabled for now, see lukesampson/scoop#3526
+        except AttributeError:
+            pass
 
         print("Checking 64-bit download url")
         r = requests.head(download64)
@@ -58,6 +64,9 @@ for line in pads.splitlines():
             "homepage": website,
             "url": download,
             "bin": bin,
+            "shortcuts": [
+                [ bin, shortcut ]
+            ],
             "hash": "tbd",
             "architecture": "",
             "description": description,
