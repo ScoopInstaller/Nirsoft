@@ -1,9 +1,9 @@
 {
-    "version": "3.50",
+    "version": "3.55",
     "homepage": "https://www.nirsoft.net/utils/dialupass.html",
     "url": "https://www.nirsoft.net/toolsdownload/dialupass.zip",
     "bin": "dialupass.exe",
-    "hash": "b2327ef21fcc08acd49a4673c2f6f8ef2e3236aa06273251a3a88fdd3e76ad5e",
+    "hash": "195f676f6d0e89994c3031a399726a9f4976e8d41b65cce5397cf03ecc245362",
     "description": "Recovers Dial-Up passwords in all versions of Windows.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
