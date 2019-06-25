@@ -74,7 +74,7 @@ for line in pads.splitlines():
             "notes": "If this application is useful to you, please consider donating to nirsoft.",
             "checkver": {
                 "url": "https://www.nirsoft.net/pad/" + name + ".xml",
-                "re": "(?:<Program_Version>)(.*)(?:</Program_Version>)"
+                "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
             },
             "autoupdate": {
                 "url": download
