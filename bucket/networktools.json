@@ -1,0 +1,17 @@
+{
+    "version": "6.30",
+    "homepage": "https://www.nirsoft.net/network_tools.html",
+    "url": "https://www.nirsoft.net/packages/networktools.zip",
+    "bin": "networktools.exe",
+    "hash": "c142e4afdeb2bc1d59f70204768218bd9bc7fd95c34d7f09acef55e063f5df8c",
+    "description": "Package of network monitoring tools for Windows",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/networktools.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/packages/networktools.zip"
+    }
+}

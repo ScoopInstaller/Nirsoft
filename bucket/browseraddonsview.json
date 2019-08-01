@@ -1,0 +1,38 @@
+{
+    "version": "1.16",
+    "homepage": "https://www.nirsoft.net/utils/web_browser_addons_view.html",
+    "bin": "BrowserAddonsView.exe",
+    "shortcuts": [
+        [
+            "BrowserAddonsView.exe",
+            "NirSoft\\BrowserAddonsView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/browseraddonsview-x64.zip",
+            "hash": "2319ce5554a4dc7a6cdfe21bc2e02d0d36744439d721ba4229678f9660515518"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/browseraddonsview.zip",
+            "hash": "1afef9fb7050d1f3c40b8976ba314079ccd2ae864a7b5865c65a42d4acc0aa68"
+        }
+    },
+    "description": "Displays the details of all Web browser addons/plugins installed in your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/browseraddonsview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/browseraddonsview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/browseraddonsview.zip"
+            }
+        }
+    }
+}

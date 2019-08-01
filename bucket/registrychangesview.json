@@ -1,0 +1,38 @@
+{
+    "version": "1.20",
+    "homepage": "https://www.nirsoft.net/utils/registry_changes_view.html",
+    "bin": "RegistryChangesView.exe",
+    "shortcuts": [
+        [
+            "RegistryChangesView.exe",
+            "NirSoft\\RegistryChangesView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/registrychangesview-x64.zip",
+            "hash": "caa1573ae066d1b1882d7b94f3ab648a18752474f272f0dabf902e9df9155a46"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/registrychangesview.zip",
+            "hash": "39a361d63abf877bc5774b0e3ee1fb39e2ebb827ac8a731058da21899d71ed75"
+        }
+    },
+    "description": "Compares 2 snapshots of Windows Registry.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/registrychangesview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/registrychangesview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/registrychangesview.zip"
+            }
+        }
+    }
+}

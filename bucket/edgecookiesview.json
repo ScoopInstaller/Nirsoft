@@ -1,0 +1,23 @@
+{
+    "version": "1.16",
+    "homepage": "https://www.nirsoft.net/utils/edge_cookies_view.html",
+    "url": "https://www.nirsoft.net/utils/edgecookiesview.zip",
+    "bin": "EdgeCookiesView.exe",
+    "shortcuts": [
+        [
+            "EdgeCookiesView.exe",
+            "NirSoft\\EdgeCookiesView"
+        ]
+    ],
+    "hash": "74d6dab45ee19f5c83685e844a6df469689b94892a2efe86511499b8487ce131",
+    "description": "Display cookies from new versions of MS-Edge",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/edgecookiesview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/edgecookiesview.zip"
+    }
+}

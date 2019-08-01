@@ -1,0 +1,38 @@
+{
+    "version": "1.07",
+    "homepage": "https://www.nirsoft.net/utils/gui_prop_view.html",
+    "bin": "GUIPropView.exe",
+    "shortcuts": [
+        [
+            "GUIPropView.exe",
+            "NirSoft\\GUIPropView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/guipropview-x64.zip",
+            "hash": "c238c21c35333d9c903e3bdb1a28dab403a0b19fa3b60cb5cddf923c19b48adb"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/guipropview.zip",
+            "hash": "43c228f7eff3ade317a9d12f3bfc361c1523e66b9fb61bcd09d7974e0221f705"
+        }
+    },
+    "description": "Displays extensive information about all windows currently opened on your system",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/guipropview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/guipropview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/guipropview.zip"
+            }
+        }
+    }
+}

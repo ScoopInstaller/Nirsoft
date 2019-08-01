@@ -1,0 +1,38 @@
+{
+    "version": "1.95",
+    "homepage": "https://www.nirsoft.net/utils/multi_monitor_tool.html",
+    "bin": "MultiMonitorTool.exe",
+    "shortcuts": [
+        [
+            "MultiMonitorTool.exe",
+            "NirSoft\\MultiMonitorTool "
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/multimonitortool-x64.zip",
+            "hash": "128949125987ba5264d7e99f6baa50d2c0a500e88c22c62101db0210da1cba4e"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/multimonitortool.zip",
+            "hash": "5c448b256a11c6e2280b05626ebe8cc9fa67307895d0121260e8b3f379b98fe2"
+        }
+    },
+    "description": "Enable,disable,and set the primary monitor in Multi-Monitor system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/multimonitortool.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/multimonitortool-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/multimonitortool.zip"
+            }
+        }
+    }
+}

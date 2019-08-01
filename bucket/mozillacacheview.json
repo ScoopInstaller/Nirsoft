@@ -1,0 +1,23 @@
+{
+    "version": "1.81",
+    "homepage": "https://www.nirsoft.net/utils/mozilla_cache_viewer.html",
+    "url": "https://www.nirsoft.net/utils/mozillacacheview.zip",
+    "bin": "MozillaCacheView.exe",
+    "shortcuts": [
+        [
+            "MozillaCacheView.exe",
+            "NirSoft\\MZCacheView"
+        ]
+    ],
+    "hash": "0af82e8000371171b6e40a07e9c3424256650baae617ad108d248ddcf2dc01de",
+    "description": "List all files currently stored in the cache of Firefox/Mozilla browser.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/mozillacacheview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/mozillacacheview.zip"
+    }
+}

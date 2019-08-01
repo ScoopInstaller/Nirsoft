@@ -1,0 +1,38 @@
+{
+    "version": "2.35",
+    "homepage": "https://www.nirsoft.net/utils/regscanner.html",
+    "bin": "RegScanner.exe",
+    "shortcuts": [
+        [
+            "RegScanner.exe",
+            "NirSoft\\RegScanner"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",
+            "hash": "22a430123b5a58914b1aa56ae9965f345793bc25b3661fcc01dcfc9079aacaa1"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/regscanner.zip",
+            "hash": "0340b021d9069ddb93d09235647f101e878e790b3f1e799045bf83b0c2bf3776"
+        }
+    },
+    "description": "Scan and find values in the Registry",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/regscanner.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/regscanner-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/regscanner.zip"
+            }
+        }
+    }
+}

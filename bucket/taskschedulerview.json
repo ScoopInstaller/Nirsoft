@@ -1,0 +1,38 @@
+{
+    "version": "1.50",
+    "homepage": "https://www.nirsoft.net/utils/task_scheduler_view.html",
+    "bin": "TaskSchedulerView.exe",
+    "shortcuts": [
+        [
+            "TaskSchedulerView.exe",
+            "NirSoft\\TaskSchedulerView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip",
+            "hash": "529f366d16b778ced7e4718d9395b351bcbf5d583c8f332a249a18497747545f"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/taskschedulerview.zip",
+            "hash": "7d831240ff3bedcee240dcd5a70727e05acf74bb53139b10dcbf9b0e2814af71"
+        }
+    },
+    "description": "View/Disable/Enable tasks from the Task Scheduler of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/taskschedulerview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/taskschedulerview.zip"
+            }
+        }
+    }
+}

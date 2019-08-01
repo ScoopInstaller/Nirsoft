@@ -1,0 +1,38 @@
+{
+    "version": "1.56",
+    "homepage": "https://www.nirsoft.net/utils/mzcv.html",
+    "bin": "mzcv.exe",
+    "shortcuts": [
+        [
+            "mzcv.exe",
+            "NirSoft\\MZCookiesView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/mzcv-x64.zip",
+            "hash": "47c5d3f569a79e93ed64f30fd3a284a46fc27fb247bf202c47a43ed1611cd33f"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/mzcv.zip",
+            "hash": "e6f6b04b1631fbf2558aca551be1eff7dbd55a6f6e89e17fef3f7276eb54340e"
+        }
+    },
+    "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/mzcv.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/mzcv-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/mzcv.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "version": "1.01",
+    "homepage": "https://www.nirsoft.net/utils/app_compatibility_view.html",
+    "bin": "AppCompatibilityView.exe",
+    "shortcuts": [
+        [
+            "AppCompatibilityView.exe",
+            "NirSoft\\AppCompatibilityView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/appcompatibilityview-x64.zip",
+            "hash": "e4ef12d8f3eb405bd938b98fad78f3b6a23d043941ff70a426a503136ec9810d"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/appcompatibilityview.zip",
+            "hash": "3a540d61e8c184f887361b1fae8908cc35c765e5868d3f6e66d969c69d8c19ca"
+        }
+    },
+    "description": "List of all programs that run with different compatibility setting",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/appcompatibilityview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/appcompatibilityview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/appcompatibilityview.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "version": "2.20",
+    "homepage": "https://www.nirsoft.net/utils/browsing_history_view.html",
+    "bin": "BrowsingHistoryView.exe",
+    "shortcuts": [
+        [
+            "BrowsingHistoryView.exe",
+            "NirSoft\\BrowsingHistoryView"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip",
+            "hash": "34ac98974cfa29ded1b23356562eba942599b97e014b4c117e52fd0b0a314724"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/browsinghistoryview.zip",
+            "hash": "3d9e3d1099aa053be4dea10d1aca8f540244a1be33efe640b9882070f6077638"
+        }
+    },
+    "description": "View browsing history of popular Web browsers ",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/browsinghistoryview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/browsinghistoryview.zip"
+            }
+        }
+    }
+}
