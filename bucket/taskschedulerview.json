@@ -1,5 +1,5 @@
 {
-    "version": "1.50",
+    "version": "1.51",
     "homepage": "https://www.nirsoft.net/utils/task_scheduler_view.html",
     "bin": "TaskSchedulerView.exe",
     "shortcuts": [
@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip",
-            "hash": "529f366d16b778ced7e4718d9395b351bcbf5d583c8f332a249a18497747545f"
+            "hash": "1d2be542ba5a4400b824a0d7168a94aa9e6011d4a13ad156052a089c33daf7e7"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/taskschedulerview.zip",
-            "hash": "7d831240ff3bedcee240dcd5a70727e05acf74bb53139b10dcbf9b0e2814af71"
+            "hash": "afebe6c5b3c278d4f962f01a0d58c684e7d4ec7d7b2cc8bdc54859b477c76623"
         }
     },
     "description": "View/Disable/Enable tasks from the Task Scheduler of Windows.",
