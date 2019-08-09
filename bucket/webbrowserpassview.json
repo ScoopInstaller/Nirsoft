@@ -1,9 +1,9 @@
 {
-    "version": "1.90",
+    "version": "1.91",
     "homepage": "https://www.nirsoft.net/utils/web_browser_password.html",
     "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip",
     "bin": "webbrowserpassview.exe",
-    "hash": "eda1aabf2c6e658590567104e160363c839e75d46c8cc0d96aaad4ebb287f377",
+    "hash": "b2718454915a028748b6492f29d08f64efb78c33fc251e44304f218a552e6526",
     "description": "Recover lost passwords from your Web browser.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
