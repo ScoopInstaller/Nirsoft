@@ -1,5 +1,5 @@
 {
-    "version": "2.35",
+    "version": "2.36",
     "homepage": "https://www.nirsoft.net/utils/hash_my_files.html",
     "bin": "HashMyFiles.exe",
     "shortcuts": [
