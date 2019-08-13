@@ -1,5 +1,5 @@
 {
-    "version": "1.56",
+    "version": "1.57",
     "homepage": "https://www.nirsoft.net/utils/mzcv.html",
     "bin": "mzcv.exe",
     "shortcuts": [
@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mzcv-x64.zip",
-            "hash": "47c5d3f569a79e93ed64f30fd3a284a46fc27fb247bf202c47a43ed1611cd33f"
+            "hash": "3b3f925dbc8655bbcf267ea9f92ea9d402e0967ea09ede1af9e1382aad514263"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/mzcv.zip",
-            "hash": "e6f6b04b1631fbf2558aca551be1eff7dbd55a6f6e89e17fef3f7276eb54340e"
+            "hash": "b92499b05cfb61d5dc7a01fa4280a4b977317b12820201f836b77fc8c99dc49a"
         }
     },
     "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
