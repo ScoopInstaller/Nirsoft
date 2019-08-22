@@ -1,5 +1,5 @@
 {
-    "version": "1.36",
+    "version": "1.37",
     "homepage": "https://www.nirsoft.net/utils/chrome_history_view.html",
     "url": "https://www.nirsoft.net/utils/chromehistoryview.zip",
     "bin": "ChromeHistoryView.exe",
@@ -9,7 +9,7 @@
             "NirSoft\\ChromeHistoryView "
         ]
     ],
-    "hash": "a2161a23cdcc92293301402b267e60ff638f83e129a2ad3c1684609c0323d2e6",
+    "hash": "e005986b348edec6032a97ba205c5caa31504baeaab990697b7dd5052cec2df3",
     "description": "View the browsing history of Chrome Web browser",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
