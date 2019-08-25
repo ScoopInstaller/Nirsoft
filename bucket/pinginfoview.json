@@ -1,23 +1,27 @@
 {
-    "version": "1.86",
-    "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
-    "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
-    "bin": "PingInfoView.exe",
-    "shortcuts": [
-        [
-            "PingInfoView.exe",
-            "NirSoft\\PingInfoView "
-        ]
-    ],
-    "hash": "f2dc5bb40f6c58d6b9f3d900f4f846b9f961d96f50392e42bef009ede4104ea6",
-    "description": "ping multiple host names and IP addresses.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/pinginfoview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/pinginfoview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
+ "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
+ "bin": "PingInfoView.exe",
+ "shortcuts": [
+  [
+   "PingInfoView.exe",
+   "NirSoft\\PingInfoView "
+  ]
+ ],
+ "persist": [
+  "pinginfoview_lng.ini",
+  "pinginfoview.cfg"
+ ],
+ "hash": "tbd",
+ "description": "ping multiple host names and IP addresses.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/pinginfoview.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/pinginfoview.zip"
+ }
 }

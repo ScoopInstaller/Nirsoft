@@ -1,23 +1,27 @@
 {
-    "version": "1.41",
-    "homepage": "https://www.nirsoft.net/utils/computer_turned_on_times.html",
-    "url": "https://www.nirsoft.net/utils/turnedontimesview.zip",
-    "bin": "TurnedOnTimesView.exe",
-    "shortcuts": [
-        [
-            "TurnedOnTimesView.exe",
-            "NirSoft\\TurnedOnTimesView"
-        ]
-    ],
-    "hash": "e6e513d6e37fe2a704d929fb897b814760d33c1bb3b927855540ac195a26df4a",
-    "description": "View the time/date ranges that your computer was turned on.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/turnedontimesview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/turnedontimesview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/computer_turned_on_times.html",
+ "url": "https://www.nirsoft.net/utils/turnedontimesview.zip",
+ "bin": "TurnedOnTimesView.exe",
+ "shortcuts": [
+  [
+   "TurnedOnTimesView.exe",
+   "NirSoft\\TurnedOnTimesView"
+  ]
+ ],
+ "persist": [
+  "turnedontimesview_lng.ini",
+  "turnedontimesview.cfg"
+ ],
+ "hash": "tbd",
+ "description": "View the time/date ranges that your computer was turned on.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/turnedontimesview.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/turnedontimesview.zip"
+ }
 }

@@ -1,23 +1,27 @@
 {
-    "version": "1.56",
-    "homepage": "https://www.nirsoft.net/utils/dns_records_viewer.html",
-    "url": "https://www.nirsoft.net/utils/dnsdataview.zip",
-    "bin": "DNSDataView.exe",
-    "shortcuts": [
-        [
-            "DNSDataView.exe",
-            "NirSoft\\DNSDataView"
-        ]
-    ],
-    "hash": "9a09a09f23a48ad91a7e8b494915b26635728b62b8f2a85c8c7a22e314e0c2e3",
-    "description": "Retrieve the DNS records (MX, NS, A, SOA) of the specified domains. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/dnsdataview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/dnsdataview.zip"
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/dns_records_viewer.html",
+ "url": "https://www.nirsoft.net/utils/dnsdataview.zip",
+ "bin": "DNSDataView.exe",
+ "shortcuts": [
+  [
+   "DNSDataView.exe",
+   "NirSoft\\DNSDataView"
+  ]
+ ],
+ "persist": [
+  "dnsdataview_lng.ini",
+  "dnsdataview.cfg"
+ ],
+ "hash": "tbd",
+ "description": "Retrieve the DNS records (MX, NS, A, SOA) of the specified domains. ",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/dnsdataview.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "url": "https://www.nirsoft.net/utils/dnsdataview.zip"
+ }
 }

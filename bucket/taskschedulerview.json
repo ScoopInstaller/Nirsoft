@@ -1,38 +1,42 @@
 {
-    "version": "1.51",
-    "homepage": "https://www.nirsoft.net/utils/task_scheduler_view.html",
-    "bin": "TaskSchedulerView.exe",
-    "shortcuts": [
-        [
-            "TaskSchedulerView.exe",
-            "NirSoft\\TaskSchedulerView"
-        ]
-    ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip",
-            "hash": "1d2be542ba5a4400b824a0d7168a94aa9e6011d4a13ad156052a089c33daf7e7"
-        },
-        "32bit": {
-            "url": "https://www.nirsoft.net/utils/taskschedulerview.zip",
-            "hash": "afebe6c5b3c278d4f962f01a0d58c684e7d4ec7d7b2cc8bdc54859b477c76623"
-        }
-    },
-    "description": "View/Disable/Enable tasks from the Task Scheduler of Windows.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/taskschedulerview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip"
-            },
-            "32bit": {
-                "url": "https://www.nirsoft.net/utils/taskschedulerview.zip"
-            }
-        }
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/task_scheduler_view.html",
+ "bin": "TaskSchedulerView.exe",
+ "shortcuts": [
+  [
+   "TaskSchedulerView.exe",
+   "NirSoft\\TaskSchedulerView"
+  ]
+ ],
+ "persist": [
+  "taskschedulerview_lng.ini",
+  "taskschedulerview.cfg"
+ ],
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/taskschedulerview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "View/Disable/Enable tasks from the Task Scheduler of Windows.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/taskschedulerview.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/taskschedulerview-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/taskschedulerview.zip"
+   }
+  }
+ }
 }

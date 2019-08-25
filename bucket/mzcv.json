@@ -1,38 +1,42 @@
 {
-    "version": "1.57",
-    "homepage": "https://www.nirsoft.net/utils/mzcv.html",
-    "bin": "mzcv.exe",
-    "shortcuts": [
-        [
-            "mzcv.exe",
-            "NirSoft\\MZCookiesView"
-        ]
-    ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.nirsoft.net/utils/mzcv-x64.zip",
-            "hash": "3b3f925dbc8655bbcf267ea9f92ea9d402e0967ea09ede1af9e1382aad514263"
-        },
-        "32bit": {
-            "url": "https://www.nirsoft.net/utils/mzcv.zip",
-            "hash": "b92499b05cfb61d5dc7a01fa4280a4b977317b12820201f836b77fc8c99dc49a"
-        }
-    },
-    "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/mzcv.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.nirsoft.net/utils/mzcv-x64.zip"
-            },
-            "32bit": {
-                "url": "https://www.nirsoft.net/utils/mzcv.zip"
-            }
-        }
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/mzcv.html",
+ "bin": "mzcv.exe",
+ "shortcuts": [
+  [
+   "mzcv.exe",
+   "NirSoft\\MZCookiesView"
+  ]
+ ],
+ "persist": [
+  "mzcv_lng.ini",
+  "mzcv.cfg"
+ ],
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/mzcv-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/mzcv.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/mzcv.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/mzcv-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/mzcv.zip"
+   }
+  }
+ }
 }

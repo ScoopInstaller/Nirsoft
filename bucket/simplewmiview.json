@@ -1,38 +1,42 @@
 {
-    "version": "1.38",
-    "homepage": "https://www.nirsoft.net/utils/simple_wmi_view.html",
-    "bin": "SimpleWMIView.exe",
-    "shortcuts": [
-        [
-            "SimpleWMIView.exe",
-            "NirSoft\\SimpleWMIView"
-        ]
-    ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip",
-            "hash": "0a1725b3110430b8aefc6b6cc69daa0ba377376b345cd74a67ba19f104f256df"
-        },
-        "32bit": {
-            "url": "https://www.nirsoft.net/utils/simplewmiview.zip",
-            "hash": "d3e6a843289d21598d218f726a394f4561ffbceebd4b3945dfe16a22744b5c82"
-        }
-    },
-    "description": "Displays the result of WMI queries in a simple table",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/simplewmiview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip"
-            },
-            "32bit": {
-                "url": "https://www.nirsoft.net/utils/simplewmiview.zip"
-            }
-        }
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/simple_wmi_view.html",
+ "bin": "SimpleWMIView.exe",
+ "shortcuts": [
+  [
+   "SimpleWMIView.exe",
+   "NirSoft\\SimpleWMIView"
+  ]
+ ],
+ "persist": [
+  "simplewmiview_lng.ini",
+  "simplewmiview.cfg"
+ ],
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/simplewmiview.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Displays the result of WMI queries in a simple table",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/simplewmiview.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/simplewmiview-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/simplewmiview.zip"
+   }
+  }
+ }
 }

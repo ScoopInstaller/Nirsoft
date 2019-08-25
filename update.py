@@ -69,6 +69,10 @@ if __name__ == '__main__':
                 "shortcuts": [
                     [ bin, shortcut ]
                 ],
+                "persist": [
+                    name + "_lng.ini",
+                    name + ".cfg"
+                ],
                 "hash": "tbd",
                 "architecture": "",
                 "description": description,

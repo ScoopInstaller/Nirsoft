@@ -1,38 +1,42 @@
 {
-    "version": "2.36",
-    "homepage": "https://www.nirsoft.net/utils/regscanner.html",
-    "bin": "RegScanner.exe",
-    "shortcuts": [
-        [
-            "RegScanner.exe",
-            "NirSoft\\RegScanner"
-        ]
-    ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",
-            "hash": "3ca0668bec2b0a723ad70207bd10ae620cebdf5acd27b0aed832a915a418055e"
-        },
-        "32bit": {
-            "url": "https://www.nirsoft.net/utils/regscanner.zip",
-            "hash": "102192c6ee791ee7b3bfb8f4fefd1cb5709175c57848e3eef9ba2e5468e068b0"
-        }
-    },
-    "description": "Scan and find values in the Registry",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/regscanner.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.nirsoft.net/utils/regscanner-x64.zip"
-            },
-            "32bit": {
-                "url": "https://www.nirsoft.net/utils/regscanner.zip"
-            }
-        }
-    }
+ "version": "0",
+ "homepage": "https://www.nirsoft.net/utils/regscanner.html",
+ "bin": "RegScanner.exe",
+ "shortcuts": [
+  [
+   "RegScanner.exe",
+   "NirSoft\\RegScanner"
+  ]
+ ],
+ "persist": [
+  "regscanner_lng.ini",
+  "regscanner.cfg"
+ ],
+ "architecture": {
+  "64bit": {
+   "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",
+   "hash": "tbd"
+  },
+  "32bit": {
+   "url": "https://www.nirsoft.net/utils/regscanner.zip",
+   "hash": "tbd"
+  }
+ },
+ "description": "Scan and find values in the Registry",
+ "license": "Freeware",
+ "notes": "If this application is useful to you, please consider donating to nirsoft.",
+ "checkver": {
+  "url": "https://www.nirsoft.net/pad/regscanner.xml",
+  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+ },
+ "autoupdate": {
+  "architecture": {
+   "64bit": {
+    "url": "https://www.nirsoft.net/utils/regscanner-x64.zip"
+   },
+   "32bit": {
+    "url": "https://www.nirsoft.net/utils/regscanner.zip"
+   }
+  }
+ }
 }
