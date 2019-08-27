@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
- "bin": "DevManView.exe",
- "shortcuts": [
-  [
-   "DevManView.exe",
-   "NirSoft\\DevManView"
-  ]
- ],
- "persist": [
-  "devmanview_lng.ini",
-  "devmanview.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/devmanview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/devmanview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Alternative to the standard Device Manager of Windows.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/devmanview.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/devmanview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/devmanview.zip"
-   }
-  }
- }
+    "version": "1.56",
+    "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
+    "bin": "DevManView.exe",
+    "shortcuts": [
+        [
+            "DevManView.exe",
+            "NirSoft\\DevManView"
+        ]
+    ],
+    "persist": [
+        "devmanview_lng.ini",
+        "devmanview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/devmanview-x64.zip",
+            "hash": "2608d1373069ecee11b635293b13419dbb7644435a0cc47cdb398c3dd0496809"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/devmanview.zip",
+            "hash": "991a790b16a9d5830a7427ca3b534581b57c2d505fbafda466b94de5717cf2c4"
+        }
+    },
+    "description": "Alternative to the standard Device Manager of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/devmanview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/devmanview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/devmanview.zip"
+            }
+        }
+    }
 }

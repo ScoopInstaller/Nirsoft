@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
- "bin": "BulkFileChanger.exe",
- "shortcuts": [
-  [
-   "BulkFileChanger.exe",
-   "NirSoft\\BulkFileChanger"
-  ]
- ],
- "persist": [
-  "bulkfilechanger_lng.ini",
-  "bulkfilechanger.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Change date/time/attributes of multiple files.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/bulkfilechanger.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip"
-   }
-  }
- }
+    "version": "1.65",
+    "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
+    "bin": "BulkFileChanger.exe",
+    "shortcuts": [
+        [
+            "BulkFileChanger.exe",
+            "NirSoft\\BulkFileChanger"
+        ]
+    ],
+    "persist": [
+        "bulkfilechanger_lng.ini",
+        "bulkfilechanger.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
+            "hash": "504761c11f575c9faed0687c8e28651372e7ffe839403ddd3d835dec682e128f"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
+            "hash": "e8695a82f2ae9a87394e59f6e14cc54cb59d4b781a054a50661d91b2eb5baf99"
+        }
+    },
+    "description": "Change date/time/attributes of multiple files.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/bulkfilechanger.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip"
+            }
+        }
+    }
 }

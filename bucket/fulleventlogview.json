@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
- "bin": "FullEventLogView.exe",
- "shortcuts": [
-  [
-   "FullEventLogView.exe",
-   "NirSoft\\FullEventLogView"
-  ]
- ],
- "persist": [
-  "fulleventlogview_lng.ini",
-  "fulleventlogview.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/fulleventlogview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Event log viewer for Windows 10/8/7/Vista.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/fulleventlogview.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/fulleventlogview.zip"
-   }
-  }
- }
+    "version": "1.37",
+    "homepage": "https://www.nirsoft.net/utils/full_event_log_view.html",
+    "bin": "FullEventLogView.exe",
+    "shortcuts": [
+        [
+            "FullEventLogView.exe",
+            "NirSoft\\FullEventLogView"
+        ]
+    ],
+    "persist": [
+        "fulleventlogview_lng.ini",
+        "fulleventlogview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip",
+            "hash": "9b9f3d66ae2706973d1e7411fd6f91ac0957c9c0e4aaaa0d9d55c196d35b8a66"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/fulleventlogview.zip",
+            "hash": "29a38ca3a8aa784e530500acdcb2f8bd798bb8d77fe5783c2d90d9a23c0fd1bf"
+        }
+    },
+    "description": "Event log viewer for Windows 10/8/7/Vista.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/fulleventlogview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/fulleventlogview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/fulleventlogview.zip"
+            }
+        }
+    }
 }

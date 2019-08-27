@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/app_network_counter.html",
- "bin": "AppNetworkCounter.exe",
- "shortcuts": [
-  [
-   "AppNetworkCounter.exe",
-   "NirSoft\\AppNetworkCounter"
-  ]
- ],
- "persist": [
-  "appnetworkcounter_lng.ini",
-  "appnetworkcounter.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays number of TCP/UDP bytes and packets sent/received by every application",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/appnetworkcounter.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip"
-   }
-  }
- }
+    "version": "1.20",
+    "homepage": "https://www.nirsoft.net/utils/app_network_counter.html",
+    "bin": "AppNetworkCounter.exe",
+    "shortcuts": [
+        [
+            "AppNetworkCounter.exe",
+            "NirSoft\\AppNetworkCounter"
+        ]
+    ],
+    "persist": [
+        "appnetworkcounter_lng.ini",
+        "appnetworkcounter.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip",
+            "hash": "c5a860750d10659bc4ee027bc94a80e248cf88b652c4818dc075438bebb927fd"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip",
+            "hash": "276e0a3baccd41056730cb68cc70878aa53986b5091d0bbdfa2f0fbff3ff2212"
+        }
+    },
+    "description": "Displays number of TCP/UDP bytes and packets sent/received by every application",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/appnetworkcounter.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/appnetworkcounter.zip"
+            }
+        }
+    }
 }

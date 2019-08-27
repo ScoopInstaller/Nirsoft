@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/search_my_files.html",
- "bin": "SearchMyFiles.exe",
- "shortcuts": [
-  [
-   "SearchMyFiles.exe",
-   "NirSoft\\SearchMyFiles"
-  ]
- ],
- "persist": [
-  "searchmyfiles_lng.ini",
-  "searchmyfiles.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/searchmyfiles.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Alternative to the standard \"Search For Files And Folders\" module of Windows.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/searchmyfiles.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/searchmyfiles.zip"
-   }
-  }
- }
+    "version": "3.01",
+    "homepage": "https://www.nirsoft.net/utils/search_my_files.html",
+    "bin": "SearchMyFiles.exe",
+    "shortcuts": [
+        [
+            "SearchMyFiles.exe",
+            "NirSoft\\SearchMyFiles"
+        ]
+    ],
+    "persist": [
+        "searchmyfiles_lng.ini",
+        "searchmyfiles.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip",
+            "hash": "4a78aad1d776bae5d791667f7083351e386a09a981b0dc4697af65170212756a"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/searchmyfiles.zip",
+            "hash": "a3351869963a5c1f92d14f8e6964ca9b18e00fa15ea9c74f11c08a209279f78f"
+        }
+    },
+    "description": "Alternative to the standard \"Search For Files And Folders\" module of Windows.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/searchmyfiles.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/searchmyfiles.zip"
+            }
+        }
+    }
 }

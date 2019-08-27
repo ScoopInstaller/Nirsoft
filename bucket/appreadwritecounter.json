@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
- "bin": "AppReadWriteCounter.exe",
- "shortcuts": [
-  [
-   "AppReadWriteCounter.exe",
-   "NirSoft\\AppReadWriteCounter"
-  ]
- ],
- "persist": [
-  "appreadwritecounter_lng.ini",
-  "appreadwritecounter.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays read/write operations of every application running on your system.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/appreadwritecounter.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip"
-   }
-  }
- }
+    "version": "1.15",
+    "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
+    "bin": "AppReadWriteCounter.exe",
+    "shortcuts": [
+        [
+            "AppReadWriteCounter.exe",
+            "NirSoft\\AppReadWriteCounter"
+        ]
+    ],
+    "persist": [
+        "appreadwritecounter_lng.ini",
+        "appreadwritecounter.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip",
+            "hash": "768730073f2a5c4be6ff33a69b2b1ad7b1903108185d50226b088a8e073b1bb5"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip",
+            "hash": "6722fa4841da060f44448d018b3da02e853ad06524ffda7e5e2af31c47d3e367"
+        }
+    },
+    "description": "Displays read/write operations of every application running on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/appreadwritecounter.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip"
+            }
+        }
+    }
 }

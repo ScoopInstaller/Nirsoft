@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
- "bin": "UninstallView.exe",
- "shortcuts": [
-  [
-   "UninstallView.exe",
-   "NirSoft\\UninstallView"
-  ]
- ],
- "persist": [
-  "uninstallview_lng.ini",
-  "uninstallview.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/uninstallview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Shows installed programs on your system and allows you to uninstall them.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/uninstallview.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/uninstallview.zip"
-   }
-  }
- }
+    "version": "1.31",
+    "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
+    "bin": "UninstallView.exe",
+    "shortcuts": [
+        [
+            "UninstallView.exe",
+            "NirSoft\\UninstallView"
+        ]
+    ],
+    "persist": [
+        "uninstallview_lng.ini",
+        "uninstallview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",
+            "hash": "8ef78db367222e0fa5aeb644702d48c3d62e7a995bab2067dfdd9db7939cc5f7"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/uninstallview.zip",
+            "hash": "ebc476ba2d09e863c4a637b4e59b54fe612d283830786bdeaf445684120146d9"
+        }
+    },
+    "description": "Shows installed programs on your system and allows you to uninstall them.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/uninstallview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/uninstallview.zip"
+            }
+        }
+    }
 }

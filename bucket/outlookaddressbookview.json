@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/outlook_address_book_view.html",
- "bin": "OutlookAddressBookView.exe",
- "shortcuts": [
-  [
-   "OutlookAddressBookView.exe",
-   "NirSoft\\OutlookAddressBookView"
-  ]
- ],
- "persist": [
-  "outlookaddressbookview_lng.ini",
-  "outlookaddressbookview.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/outlookaddressbookview.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays the details of all recipients stored in the address books of Outlook",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/outlookaddressbookview.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/outlookaddressbookview.zip"
-   }
-  }
- }
+    "version": "2.19",
+    "homepage": "https://www.nirsoft.net/utils/outlook_address_book_view.html",
+    "bin": "OutlookAddressBookView.exe",
+    "shortcuts": [
+        [
+            "OutlookAddressBookView.exe",
+            "NirSoft\\OutlookAddressBookView"
+        ]
+    ],
+    "persist": [
+        "outlookaddressbookview_lng.ini",
+        "outlookaddressbookview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip",
+            "hash": "b9ca98d6506860ef160779b44ba34fd7c28dbd7555a323f67328412c5d7cd592"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/outlookaddressbookview.zip",
+            "hash": "50df7be39e4ee30116a73ecc330c11adbe2cf35a27e8eb0c09c1fde40d78eaf0"
+        }
+    },
+    "description": "Displays the details of all recipients stored in the address books of Outlook",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/outlookaddressbookview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/outlookaddressbookview.zip"
+            }
+        }
+    }
 }

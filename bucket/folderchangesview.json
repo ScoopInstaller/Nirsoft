@@ -1,27 +1,27 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/folder_changes_view.html",
- "url": "https://www.nirsoft.net/utils/folderchangesview.zip",
- "bin": "FolderChangesView.exe",
- "shortcuts": [
-  [
-   "FolderChangesView.exe",
-   "NirSoft\\FolderChangesView"
-  ]
- ],
- "persist": [
-  "folderchangesview_lng.ini",
-  "folderchangesview.cfg"
- ],
- "hash": "tbd",
- "description": "Monitor folder/drive changes.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/folderchangesview.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "url": "https://www.nirsoft.net/utils/folderchangesview.zip"
- }
+    "version": "2.28",
+    "homepage": "https://www.nirsoft.net/utils/folder_changes_view.html",
+    "url": "https://www.nirsoft.net/utils/folderchangesview.zip",
+    "bin": "FolderChangesView.exe",
+    "shortcuts": [
+        [
+            "FolderChangesView.exe",
+            "NirSoft\\FolderChangesView"
+        ]
+    ],
+    "persist": [
+        "folderchangesview_lng.ini",
+        "folderchangesview.cfg"
+    ],
+    "hash": "e45f598ccafed8951cb0ef0a432d4de5995674b9bd0e4828279e357745d2d5b6",
+    "description": "Monitor folder/drive changes.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/folderchangesview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/folderchangesview.zip"
+    }
 }

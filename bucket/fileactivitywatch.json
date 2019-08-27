@@ -1,42 +1,42 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
- "bin": "FileActivityWatch.exe",
- "shortcuts": [
-  [
-   "FileActivityWatch.exe",
-   "NirSoft\\FileActivityWatch"
-  ]
- ],
- "persist": [
-  "fileactivitywatch_lng.ini",
-  "fileactivitywatch.cfg"
- ],
- "architecture": {
-  "64bit": {
-   "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",
-   "hash": "tbd"
-  },
-  "32bit": {
-   "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
-   "hash": "tbd"
-  }
- },
- "description": "Displays information about read/write/delete operations on your system.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/fileactivitywatch.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "architecture": {
-   "64bit": {
-    "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip"
-   },
-   "32bit": {
-    "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip"
-   }
-  }
- }
+    "version": "1.31",
+    "homepage": "https://www.nirsoft.net/utils/file_activity_watch.html",
+    "bin": "FileActivityWatch.exe",
+    "shortcuts": [
+        [
+            "FileActivityWatch.exe",
+            "NirSoft\\FileActivityWatch"
+        ]
+    ],
+    "persist": [
+        "fileactivitywatch_lng.ini",
+        "fileactivitywatch.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip",
+            "hash": "b0da9b5cf391298fd108c0a83395a9ac5f816fbb9761452ce046520fe8fae499"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip",
+            "hash": "6e8e177e3c660545ec070ffc73f8be3cb71bd999c50b2437773f3a11fc473a6b"
+        }
+    },
+    "description": "Displays information about read/write/delete operations on your system.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/fileactivitywatch.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/fileactivitywatch.zip"
+            }
+        }
+    }
 }

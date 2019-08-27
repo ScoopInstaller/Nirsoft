@@ -1,27 +1,27 @@
 {
- "version": "0",
- "homepage": "https://www.nirsoft.net/utils/country_traceroute.html",
- "url": "https://www.nirsoft.net/utils/countrytraceroute.zip",
- "bin": "CountryTraceRoute.exe",
- "shortcuts": [
-  [
-   "CountryTraceRoute.exe",
-   "NirSoft\\CountryTraceRoute"
-  ]
- ],
- "persist": [
-  "countrytraceroute_lng.ini",
-  "countrytraceroute.cfg"
- ],
- "hash": "tbd",
- "description": "Fast Traceroute utility with IP country information.",
- "license": "Freeware",
- "notes": "If this application is useful to you, please consider donating to nirsoft.",
- "checkver": {
-  "url": "https://www.nirsoft.net/pad/countrytraceroute.xml",
-  "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
- },
- "autoupdate": {
-  "url": "https://www.nirsoft.net/utils/countrytraceroute.zip"
- }
+    "version": "1.30",
+    "homepage": "https://www.nirsoft.net/utils/country_traceroute.html",
+    "url": "https://www.nirsoft.net/utils/countrytraceroute.zip",
+    "bin": "CountryTraceRoute.exe",
+    "shortcuts": [
+        [
+            "CountryTraceRoute.exe",
+            "NirSoft\\CountryTraceRoute"
+        ]
+    ],
+    "persist": [
+        "countrytraceroute_lng.ini",
+        "countrytraceroute.cfg"
+    ],
+    "hash": "3b1d896d4ac24a56ebfaa0c16a1c0a2bc28435e6def17bc576af4b7a53c2485a",
+    "description": "Fast Traceroute utility with IP country information.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/countrytraceroute.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/countrytraceroute.zip"
+    }
 }
