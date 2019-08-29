@@ -1,5 +1,5 @@
 {
-    "version": "2.36",
+    "version": "2.40",
     "homepage": "https://www.nirsoft.net/utils/regscanner.html",
     "bin": "RegScanner.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",
-            "hash": "3ca0668bec2b0a723ad70207bd10ae620cebdf5acd27b0aed832a915a418055e"
+            "hash": "6d9539063159db406b3419679ead0e1a8e5da27a160255e0e2e0fe6254f6bf41"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/regscanner.zip",
-            "hash": "102192c6ee791ee7b3bfb8f4fefd1cb5709175c57848e3eef9ba2e5468e068b0"
+            "hash": "03287764b61f5a4e894269a20a1579cf87a025bf953986316bd274371bb40dd8"
         }
     },
     "description": "Scan and find values in the Registry",
