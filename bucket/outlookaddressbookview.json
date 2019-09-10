@@ -1,5 +1,5 @@
 {
-    "version": "2.19",
+    "version": "2.20",
     "homepage": "https://www.nirsoft.net/utils/outlook_address_book_view.html",
     "bin": "OutlookAddressBookView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip",
-            "hash": "b9ca98d6506860ef160779b44ba34fd7c28dbd7555a323f67328412c5d7cd592"
+            "hash": "19cdc9e4ef283e19f34b31bad5ed06a42fb1d0e69831cf8409ad7aabc3b62280"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/outlookaddressbookview.zip",
-            "hash": "50df7be39e4ee30116a73ecc330c11adbe2cf35a27e8eb0c09c1fde40d78eaf0"
+            "hash": "3073ed9f321ba6aa1825a62cd94a105632515b8283065abb75cf01fbaff69424"
         }
     },
     "description": "Displays the details of all recipients stored in the address books of Outlook",
