@@ -1,5 +1,5 @@
 {
-    "version": "1.07",
+    "version": "1.10",
     "homepage": "https://www.nirsoft.net/utils/advanced_run.html",
     "bin": "AdvancedRun.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/advancedrun-x64.zip",
-            "hash": "0ede9acd6cbf524904a9133db733b0af8870a94cacafddf7caaa2b0ba19cfa43"
+            "hash": "9e541267b9a722fbeb2765992c7494f75c4f80e16929e360991fe2e424bbeee3"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/advancedrun.zip",
-            "hash": "c27ab0127059573b20aadafe839a832e3407ebdbf5d79613d531f2d14f5d5e1c"
+            "hash": "788d3faa45f4a8c206ca30573b9b955cd5f9d42633e7072e8de781bcdba18fe5"
         }
     },
     "description": "Run a program with different settings that you choose.",
