@@ -1,5 +1,5 @@
 {
-    "version": "2.21",
+    "version": "2.25",
     "homepage": "https://www.nirsoft.net/utils/browsing_history_view.html",
     "bin": "BrowsingHistoryView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip",
-            "hash": "b0c8d76e842ade47ab4b5365d83ecbc84bda2769d1788cac597f5c5626b4cc47"
+            "hash": "070d8280bb8276cb7fdc7906a96d7b067adc8fb7333773d112fda1ccb2ac7870"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/browsinghistoryview.zip",
-            "hash": "d62b7b43506cefa6e3f8893dedfea5e13b3e4f0e8edf4384921cbbd28f2be338"
+            "hash": "a220efb1ff4686b8660c36dc172d5d93388c0b11f76c6abb3db535d4f915f2e5"
         }
     },
     "description": "View browsing history of popular Web browsers ",
