@@ -1,5 +1,5 @@
 {
-    "version": "1.84",
+    "version": "1.85",
     "homepage": "https://www.nirsoft.net/utils/wake_on_lan.html",
     "bin": "WakeMeOnLan.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wakemeonlan-x64.zip",
-            "hash": "b6e3287a367961e383b2bd4f0c0729489daac70c1bcbdc2d7457548a3152fbfc"
+            "hash": "35e8c09ee1215f61c379c1703a1af2796445c8cc0f10184c208c1f63b0cc6e3d"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/wakemeonlan.zip",
-            "hash": "cae287f2c2e8b1f70749cfbd8c12ed678b637288b5adc9ea2d24b4a8a6b3cce0"
+            "hash": "9213f6b6299477b25ada1f73e9ee5576c9aa8bdf112d0e35b0f598c748aecce7"
         }
     },
     "description": "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet",
