@@ -1,5 +1,5 @@
 {
-    "version": "1.14",
+    "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/who_is_connected_sniffer.html",
     "bin": "WhoIsConnectedSniffer.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer-x64.zip",
-            "hash": "5f56ba5c69b99e4e451c5361301470aae4cb2e6bfdbd16f36eb26658457c2514"
+            "hash": "d08ad377e852854b0d08d907df5733c0ad138437d107b1ba8d69f548eba0af75"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer.zip",
-            "hash": "361ee94e3b7549a5f859efac42980c5d0fc0e780ca6ce8b8119b33da53df7808"
+            "hash": "facb01d1f9acadafc0219aaed4f8fabab4ce7d0bcfd16621bf99fd078fb4aa92"
         }
     },
     "description": "Shows who connects to your network by listening to network packets.",
