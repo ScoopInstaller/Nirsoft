@@ -1,5 +1,5 @@
 {
-    "version": "1.56",
+    "version": "1.60",
     "homepage": "https://www.nirsoft.net/utils/dns_records_viewer.html",
     "url": "https://www.nirsoft.net/utils/dnsdataview.zip",
     "bin": "DNSDataView.exe",
@@ -13,7 +13,7 @@
         "dnsdataview_lng.ini",
         "dnsdataview.cfg"
     ],
-    "hash": "9a09a09f23a48ad91a7e8b494915b26635728b62b8f2a85c8c7a22e314e0c2e3",
+    "hash": "2b542a34da9500cfd30841c828a5ca87f837132a24e6d59302f5b60b142288dc",
     "description": "Retrieve the DNS records (MX, NS, A, SOA) of the specified domains. ",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
