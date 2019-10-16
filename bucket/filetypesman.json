@@ -1,5 +1,5 @@
 {
-    "version": "1.85",
+    "version": "1.86",
     "homepage": "https://www.nirsoft.net/utils/file_types_manager.html",
     "bin": "FileTypesMan.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/filetypesman-x64.zip",
-            "hash": "5f422bc4aec8f5af962ac7c9c8d540f2198b330d454559f639673a9e4e1e9e7f"
+            "hash": "3b3930ec9dff2eb32c264e175ceb984bc71a7982e7f8425b7dae5376ad410f8d"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/filetypesman.zip",
-            "hash": "6d0b3e09a766d9aab4e97ce6eae6bb6820245664e70db458d9135ee8d98c1a3c"
+            "hash": "5998c1edd08173fc46b3754ebb1a6cecd75828057cc0952eb354076e8004bd0d"
         }
     },
     "description": "Alternative to the 'File Types' manager of Windows.",
