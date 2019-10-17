@@ -1,9 +1,9 @@
 {
-    "version": "4.45",
+    "version": "4.46",
     "homepage": "https://www.nirsoft.net/outlook_office_software.html",
     "url": "https://www.nirsoft.net/packages/outlooktools.zip",
     "bin": "outlooktools.exe",
-    "hash": "1cad56844f20f09ec574761c9346feeab316b618281ee2a2bb086303f05f595e",
+    "hash": "1a95f3c1f634c23617b892c0537d0fa298e0ce040b58e03b2572d0cbcf14f349",
     "description": "5 Tools for Microsoft Outlook",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
