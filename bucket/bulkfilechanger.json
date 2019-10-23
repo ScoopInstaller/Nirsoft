@@ -1,5 +1,5 @@
 {
-    "version": "1.65",
+    "version": "1.70",
     "homepage": "https://www.nirsoft.net/utils/bulk_file_changer.html",
     "bin": "BulkFileChanger.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip",
-            "hash": "504761c11f575c9faed0687c8e28651372e7ffe839403ddd3d835dec682e128f"
+            "hash": "8c36a197a7a0fd5d77980d7c0230aaec1854efae6efcf9d4462d324cefdd0c28"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/bulkfilechanger.zip",
-            "hash": "e8695a82f2ae9a87394e59f6e14cc54cb59d4b781a054a50661d91b2eb5baf99"
+            "hash": "a3a07c76b1331081cff6ffc7fb44b2c1e300b9ab9825773e51a3eb59547de37e"
         }
     },
     "description": "Change date/time/attributes of multiple files.",
