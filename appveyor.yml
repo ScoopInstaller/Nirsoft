@@ -11,7 +11,7 @@ environment:
   SCOOP_HELPERS: C:\projects\helpers
   matrix:
     - PowerShell: 5
-    - PowerShell: 6
+    - PowerShell: 6.2
 cache:
   - '%USERPROFILE%\Documents\WindowsPowerShell\Modules -> appveyor.yml'
 init:
