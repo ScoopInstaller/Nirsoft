@@ -1,5 +1,5 @@
 # nirsoft-bucket
-[![Build status](https://ci.appveyor.com/api/projects/status/k8jx9v3nluqnpj4h?svg=true)](https://ci.appveyor.com/project/MCOfficer/scoop-nirsoft)
+[![Build status](https://ci.appveyor.com/api/projects/status/cdl4l7497plbsyy9?svg=true)](https://ci.appveyor.com/project/MCOfficer/scoop-nirsoft)
 
 A scoop bucket containing all 250+ programs from [nirsoft.net](https://www.nirsoft.net/).
 
