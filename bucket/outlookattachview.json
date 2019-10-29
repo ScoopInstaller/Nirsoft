@@ -1,5 +1,5 @@
 {
-    "version": "3.26",
+    "version": "3.30",
     "homepage": "https://www.nirsoft.net/utils/outlook_attachment.html",
     "bin": "OutlookAttachView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip",
-            "hash": "e394f6b33706286e07e69c9792fb8feceaa966c50976ba34ba31570c8b27fe91"
+            "hash": "c5410af29521e970f7b9c7f3bd251837efa71e1d6ebed4b32dcf6ed7222a79a6"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/outlookattachview.zip",
-            "hash": "90ce54480bc988e7716bb82153974da6e2db09236bcdce9997d74a6895a6281a"
+            "hash": "a756fa56c3cbfe4e6ab2b062439e0103a259c8000d745c2a80584bf2b454f136"
         }
     },
     "description": "Extract multiple attachments from Outlook.",
