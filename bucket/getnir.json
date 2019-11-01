@@ -1,5 +1,5 @@
 {
-    "version": "1.00",
+    "version": "0",
     "homepage": "https://www.nirsoft.net/utils/get_nir_command_line_tool.html",
     "url": "https://www.nirsoft.net/utils/getnir.zip",
     "bin": "GetNir.exe",
