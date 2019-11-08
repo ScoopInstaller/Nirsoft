@@ -1,5 +1,5 @@
 {
-    "version": "1.15",
+    "version": "1.20",
     "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
     "bin": "AppReadWriteCounter.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip",
-            "hash": "768730073f2a5c4be6ff33a69b2b1ad7b1903108185d50226b088a8e073b1bb5"
+            "hash": "7b0f635be8bf2d1ba7ec0f49d2974b32e566bea9581137d9cffe3a7035784d6c"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/appreadwritecounter.zip",
-            "hash": "6722fa4841da060f44448d018b3da02e853ad06524ffda7e5e2af31c47d3e367"
+            "hash": "e961530b09d72164308363b3225b4b9f63e76689e674c710509c5947e3df9b1b"
         }
     },
     "description": "Displays read/write operations of every application running on your system.",
