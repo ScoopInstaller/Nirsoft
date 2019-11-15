@@ -1,5 +1,5 @@
 {
-    "version": "1.25",
+    "version": "1.26",
     "homepage": "https://www.nirsoft.net/utils/network_opened_files.html",
     "bin": "NetworkOpenedFiles.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip",
-            "hash": "2054376e5c64cdf690d8b80d9fa08c570382170bc88e8e6af4e2c87b7a05f556"
+            "hash": "db0ade0d030da70a396076aef57121b7f4b0fa8de62b88bc050987a9cbef8c49"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/networkopenedfiles.zip",
-            "hash": "3a7420784dc6781d61254cd875ce3634c0dd0eaa2cc693dd99e045d507946e95"
+            "hash": "b63b4c45baa329ca430b4cfcc0e66db6b3dd3ab7a147390d287b81705dec227a"
         }
     },
     "description": "Displays the files that are currently opened by other computers on your network.",
