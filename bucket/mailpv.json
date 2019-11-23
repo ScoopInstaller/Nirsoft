@@ -1,9 +1,9 @@
 {
-    "version": "1.86",
+    "version": "1.90",
     "homepage": "https://www.nirsoft.net/utils/mailpv.html",
     "url": "https://www.nirsoft.net/toolsdownload/mailpv.zip",
     "bin": "mailpv.exe",
-    "hash": "f6ec2fb60d5fb109b56c39d637599f3dd71f96e27ae4d33e46557c2d02a88504",
+    "hash": "e1d424ac6fbed3cdbfeba09206245ec9a0121bf7fffad17cc90d8f5443f68731",
     "description": "Recovers email passwords",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
