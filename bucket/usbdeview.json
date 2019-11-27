@@ -1,5 +1,5 @@
 {
-    "version": "2.81",
+    "version": "2.85",
     "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
     "bin": "USBDeview.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",
-            "hash": "fcf00832048dcc3bcb30dce7c71c6291d3847af4dfc1fa15d51d427ad61f2d46"
+            "hash": "3a56cd50fdca36bb5c06d4bd950d359a8c34fb9629f0053b6fd7807fd7395775"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/usbdeview.zip",
-            "hash": "81c73d1199c163bd815cc5614fb1b14c5bcd424de5999944697cdf4fe0d57887"
+            "hash": "b328d594fa26da7b278198a939138a7f6995cd2b915d6fbbe20a925267f5410a"
         }
     },
     "description": "Lists all installed USB devices that you previously used.",
