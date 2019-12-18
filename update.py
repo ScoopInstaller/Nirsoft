@@ -8,13 +8,20 @@ import time
 from traceback import print_exc
 
 
+HEADERS = {"Referer": "https://github.com/MCOfficer/scoop-nirsoft"}
+
+
 def probe_for_exe(url):
     print("Downloading " + url + "...")
-    r = requests.get(url)
+    r = requests.get(
+        url, headers=HEADERS)
+    r.raise_for_status()
     with ZipFile(BytesIO(r.content)) as z:
         for name in z.namelist():
             if name.endswith(".exe"):
                 return name
+
+
 if __name__ == '__main__':
     print("Fetching Padfile links")
     pads = requests.get("https://www.nirsoft.net/pad/pad-links.txt").text
@@ -26,7 +33,8 @@ if __name__ == '__main__':
             print("Sleeping 5 seconds to not spam the server")
             time.sleep(5)
         print("")
-        print("Generating from " + line + " (" + str(i) + "/" + str(len(pads.splitlines())) + ")")
+        print("Generating from " + line + " (" + str(i) +
+              "/" + str(len(pads.splitlines())) + ")")
 
         try:
             padfile = requests.get(line).text
@@ -37,8 +45,10 @@ if __name__ == '__main__':
             full_name = info.find("Program_Name").text
 
             web_info = root.find("Web_Info")
-            website = web_info.find("Application_URLs").find("Application_Info_URL").text.replace("http:", "https:")
-            download = web_info.find("Download_URLs").find("Primary_Download_URL").text.replace("http:", "https:")
+            website = web_info.find("Application_URLs").find(
+                "Application_Info_URL").text.replace("http:", "https:")
+            download = web_info.find("Download_URLs").find(
+                "Primary_Download_URL").text.replace("http:", "https:")
             download64 = download.replace(".zip", "-x64.zip")
             name = os.path.splitext(os.path.basename(line))[0]
 
@@ -49,17 +59,17 @@ if __name__ == '__main__':
             description = ""
             shortcut = "NirSoft\\" + full_name
             try:
-                descriptions = root.find("Program_Descriptions").find("English")
+                descriptions = root.find(
+                    "Program_Descriptions").find("English")
                 description = descriptions.find("Char_Desc_80").text
             except AttributeError:
                 pass
 
             print("Checking 64-bit download url")
-            r = requests.head(download64)
+            r = requests.head(download64, headers=HEADERS)
             x64 = bool(r.ok)
             if not x64:
                 print("64-bit download unavailable")
-
 
             manifest = {
                 "version": "0",
@@ -67,7 +77,7 @@ if __name__ == '__main__':
                 "url": download,
                 "bin": bin,
                 "shortcuts": [
-                    [ bin, shortcut ]
+                    [bin, shortcut]
                 ],
                 "persist": [
                     name + "_lng.ini",
@@ -102,8 +112,8 @@ if __name__ == '__main__':
                 }
                 manifest["architecture"] = {
                     "64bit": {
-                    "url": download64,
-                    "hash": "tbd"
+                        "url": download64,
+                        "hash": "tbd"
                     },
                     "32bit": {
                         "url": download,
