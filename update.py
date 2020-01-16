@@ -6,6 +6,7 @@ from zipfile import ZipFile
 from io import BytesIO
 import time
 from traceback import print_exc
+import subprocess
 
 
 HEADERS = {"Referer": "https://github.com/MCOfficer/scoop-nirsoft"}
@@ -130,3 +131,6 @@ if __name__ == '__main__':
 
         except Exception as e:
             print_exc()
+
+    print("Running checkver -u") 
+    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-u"])
