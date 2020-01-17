@@ -73,7 +73,7 @@ if __name__ == '__main__':
                 print("64-bit download unavailable")
 
             manifest = {
-                "version": "0",
+                "version": version,
                 "homepage": website,
                 "url": download,
                 "bin": bin,
@@ -133,4 +133,4 @@ if __name__ == '__main__':
             print_exc()
 
     print("Running checkver -u") 
-    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-u"])
+    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
