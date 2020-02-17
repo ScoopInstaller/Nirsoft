@@ -30,9 +30,6 @@ if __name__ == '__main__':
     i = 0
     for line in pads.splitlines():
         i += 1
-        if i % 5 == 0:
-            print("Sleeping 5 seconds to not spam the server")
-            time.sleep(5)
         print("")
         print("Generating from " + line + " (" + str(i) +
               "/" + str(len(pads.splitlines())) + ")")
@@ -132,5 +129,5 @@ if __name__ == '__main__':
         except Exception as e:
             print_exc()
 
-    print("Running checkver -u") 
+    print("Running checkver -u")
     subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
