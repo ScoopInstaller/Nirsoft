@@ -129,5 +129,6 @@ if __name__ == '__main__':
         except Exception as e:
             print_exc()
 
-    print("Running checkver -u")
+    print("")
+    print("Running checkver -f")
     subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
