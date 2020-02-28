@@ -12,7 +12,6 @@ services:
       GIT_USERNAME: "MCOfficer"
       GIT_EMAIL: "mcofficer@gmx.de"
       BUCKET: "MCOfficer/scoop-nirsoft"
-      CRONTAB: "*/3 * * * *"
 volumes:
   ssh:
   logs:
