@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  bucket:
+    image: r15ch13/excavator:latest
+    deploy:
+      mode: global # creates only one container
+    volumes:
+      - ssh:/root/.ssh
+      - logs:/root/log
+    environment:
+      GIT_USERNAME: "MCOfficer"
+      GIT_EMAIL: "mcofficer@gmx.de"
+      BUCKET: "MCOfficer/scoop-nirsoft"
+      CRONTAB: "*/3 * * * *"
+volumes:
+  ssh:
+  logs:
