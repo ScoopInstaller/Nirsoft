@@ -1,5 +1,5 @@
 {
-    "version": "1.11",
+    "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/exif_data_view.html",
     "url": "https://www.nirsoft.net/utils/exifdataview.zip",
     "bin": "ExifDataView.exe",
@@ -13,7 +13,7 @@
         "exifdataview_lng.ini",
         "exifdataview.cfg"
     ],
-    "hash": "f244a806e8ef8e1a85df67dfa96e40bbf4cf9196905ebcf18d4a81c91aa69261",
+    "hash": "0f45ca559056837401f3934a39db0b74ba24ecfde97dc6bc2e7211f2ae9e7e47",
     "description": "Displays the Exif data stored inside .jpg image files",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
