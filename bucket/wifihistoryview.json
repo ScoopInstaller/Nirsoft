@@ -1,5 +1,5 @@
 {
-    "version": "1.63",
+    "version": "1.64",
     "homepage": "https://www.nirsoft.net/utils/wifi_history_view.html",
     "url": "https://www.nirsoft.net/utils/wifihistoryview.zip",
     "bin": "WifiHistoryView.exe",
@@ -13,7 +13,7 @@
         "wifihistoryview_lng.ini",
         "wifihistoryview.cfg"
     ],
-    "hash": "4aaa7474039a57272283d3efc3ddac8d131d0328b939cf268aa8c13a63372f8c",
+    "hash": "87c022924763ec5c2cd74eb793684c7cb4e070bc7aa0fee08257c2b9ea08f9d0",
     "description": "Displays the history of connections to wireless networks on your computer. ",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
