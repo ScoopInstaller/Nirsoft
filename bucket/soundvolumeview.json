@@ -1,5 +1,5 @@
 {
-    "version": "2.30",
+    "version": "2.35",
     "homepage": "https://www.nirsoft.net/utils/sound_volume_view.html",
     "bin": "SoundVolumeView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/soundvolumeview-x64.zip",
-            "hash": "11bbb1948819e8f2c79421f7743f13870fcd724d28c96b60e5f5400c6f975035"
+            "hash": "5baf9b23139a3f8d317e30e857db44926b13838b20804f8a323edc94d22bd3ce"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/soundvolumeview.zip",
-            "hash": "bc537095a91a9a78fe594fd39649672988959f09fb6d46df6f3dea1226d93ebd"
+            "hash": "b5f7313c8374759ce7cfd683de14ca9aad4441174a6b1a1749144994e98e0b7d"
         }
     },
     "description": "View/change sound levels & save/load sound level profiles on Windows Vista/7/8",
