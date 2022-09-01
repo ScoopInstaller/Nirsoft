@@ -1,5 +1,5 @@
 {
-    "version": "1.10",
+    "version": "1.11",
     "homepage": "https://www.nirsoft.net/utils/usb_drive_log.html",
     "url": "https://www.nirsoft.net/utils/usbdrivelog.zip",
     "bin": "USBDriveLog.exe",
@@ -13,7 +13,7 @@
         "usbdrivelog_lng.ini",
         "usbdrivelog.cfg"
     ],
-    "hash": "f272ba79f7ea12c249be839dd826b7e0b52d8baa633b4bce2563b207088647d9",
+    "hash": "b1af5ed5ae029eb50302b5cdf9b2b4ddd72fb5cd60d5129be541954a3630abc4",
     "description": "USB Drive Log For Windows 10",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
