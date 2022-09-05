@@ -1,5 +1,5 @@
 {
-    "version": "2.03",
+    "version": "2.10",
     "homepage": "https://www.nirsoft.net/utils/volumouse.html",
     "bin": "volumouse.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/volumouse-x64.zip",
-            "hash": "1e2ffa45d062316a95b23d5219f6dc962eb22206169a95fb102d515cd3d542a2"
+            "hash": "e9dce5eff147c14de2b27018500ae5a34852d34d102e6fa65d2fdb7e61c554f3"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/volumouse.zip",
-            "hash": "a73ea9f6ad492f83660c192a8fb97d31b4e5a773981c2527fa6ab0d47bafe08a"
+            "hash": "61123b37d2a264fc29ac78ad5929ce32fdd255cd8c66acb1d8f43096d82dcbb4"
         }
     },
     "description": "Adjust the volume of your speaker with the wheel of your mouse.",
