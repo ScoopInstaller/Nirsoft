@@ -1,5 +1,5 @@
 {
-    "version": "2.26",
+    "version": "2.27",
     "homepage": "https://www.nirsoft.net/utils/outlook_statistics.html",
     "bin": "OutlookStatView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookstatview-x64.zip",
-            "hash": "cc8aa3c7f3eeeedc717783c3b1957a61280966c5ff3f584639c0aedca808c570"
+            "hash": "101c0dfb1986b57c93ecb57d9706cc09628a39c62b7f17e25794d6135fef5cba"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/outlookstatview.zip",
-            "hash": "f2be9246fbd5caba6058575e648b12a2a490204034080d8abb3126c807bca075"
+            "hash": "28450d1ee1c761c85aa5a6c2edb702b5c59ce1e8aa4160a0c6b19db59ab15b27"
         }
     },
     "description": "Display a general statistics of your Outlook emails.",
