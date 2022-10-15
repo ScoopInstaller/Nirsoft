@@ -1,5 +1,5 @@
 {
-    "version": "1.27",
+    "version": "1.30",
     "homepage": "https://www.nirsoft.net/utils/disk_counters_view.html",
     "url": "https://www.nirsoft.net/utils/diskcountersview.zip",
     "bin": "DiskCountersView.exe",
@@ -13,7 +13,7 @@
         "diskcountersview_lng.ini",
         "diskcountersview.cfg"
     ],
-    "hash": "3b56062d89de1dc141ea873fd407aed0988d8b11d6d1e45e344d38aa971419dc",
+    "hash": "916de66eaee1fed9ce1b337683dc94d3929cf12c53dd4a6d33c4db8470770c0e",
     "description": "Show disk drive read/write counters.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
