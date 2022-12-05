@@ -1,5 +1,5 @@
 {
-    "version": "1.07",
+    "version": "1.10",
     "homepage": "https://www.nirsoft.net/utils/net_connect_choose.html",
     "url": "https://www.nirsoft.net/utils/netconnectchoose.zip",
     "bin": "NetConnectChoose.exe",
@@ -13,7 +13,7 @@
         "netconnectchoose_lng.ini",
         "netconnectchoose.cfg"
     ],
-    "hash": "ca779ca6d600963f135918fa49591645e1041d41b192051466dee774adfcdce1",
+    "hash": "a2c9735688b3d763508d5b5012309604ffd365d09f3f2a99e72bc4aff906b132",
     "description": "Set default Internet connection and view general connection information.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
