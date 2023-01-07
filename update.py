@@ -1,5 +1,6 @@
 """update.py"""
 # pylint: disable=C0103 # Constant name "description" doesn't conform to UPPER_CASE naming style (invalid-name)
+# pylint: disable=W0703 # Catching too general exception Exception (broad-except)
 
 import json
 import os
@@ -35,17 +36,41 @@ if __name__ == "__main__":
         print("")
         print("Generating from " + line + " (" + str(i) + "/" + str(len(pads.splitlines())) + ")")
 
+        version = ""
+        full_name = ""
+        website = ""
+        download = ""
+        description = ""
+
         try:
             padfile = requests.get(line, timeout=60).text
             root = ET.fromstring(padfile)
 
-            info = root.find("Program_Info")
-            version = info.find("Program_Version").text  # type: ignore
-            full_name = info.find("Program_Name").text  # type: ignore
-
+            try:
+                info = root.find("Program_Info")
+            except Exception:
+                pass
+            try:
+                version = info.find("Program_Version").text  # type: ignore
+            except Exception:
+                pass
+            try:
+                full_name = str(info.find("Program_Name").text)  # type: ignore
+            except Exception:
+                pass
             web_info = root.find("Web_Info")
-            website = web_info.find("Application_URLs").find("Application_Info_URL").text.replace("http:", "https:")  # type: ignore
-            download = web_info.find("Download_URLs").find("Primary_Download_URL").text.replace("http:", "https:")  # type: ignore
+            try:
+                website = str(web_info.find("Application_URLs").find("Application_Info_URL").text)  # type: ignore
+            except Exception:
+                pass
+            website = website.replace("http:", "https:")
+            try:
+                download = str(web_info.find("Download_URLs").find("Primary_Download_URL").text)  # type: ignore
+            except Exception:
+                pass
+
+            download = download.replace("http:", "https:")
+
             download64 = download.replace(".zip", "-x64.zip")
             name = os.path.splitext(os.path.basename(line))[0]
 
@@ -54,7 +79,7 @@ if __name__ == "__main__":
                 print("No executable found! Skipping")
                 continue
 
-            shortcut = "NirSoft\\" + full_name  # type: ignore
+            shortcut = "NirSoft\\" + full_name
             try:
                 descriptions = root.find("Program_Descriptions").find("English")  # type: ignore
                 description = descriptions.find("Char_Desc_80").text  # type: ignore
@@ -101,7 +126,6 @@ if __name__ == "__main__":
             with open("bucket/" + name + ".json", "w", encoding="utf-8", newline="\n") as j:
                 json.dump(manifest, j, indent=1)
 
-        # pylint: disable=W0703 # Catching too general exception Exception (broad-except)
         except Exception:
             print_exc()
 
