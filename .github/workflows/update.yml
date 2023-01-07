@@ -2,9 +2,9 @@
 name: update
 
 on:
-  # schedule:
-  # # run every six hours
-  #  - cron: '0 */6 * * *'
+  schedule:
+    # run every six hours
+    - cron: '0 */6 * * *'
 
   workflow_dispatch:
     inputs:
@@ -56,8 +56,8 @@ jobs:
             fi
           done < <(git diff --name-only)
 
-      # - name: run ad-m/github-push-action@v0.6.0
-      #   uses: ad-m/github-push-action@v0.6.0
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: master
+      - name: run ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
