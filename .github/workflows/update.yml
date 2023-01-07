@@ -2,9 +2,9 @@
 name: update
 
 on:
-  schedule:
-    # run every six hours
-    # - cron: '0 */6 * * *'
+  # schedule:
+  # # run every six hours
+  #  - cron: '0 */6 * * *'
 
   workflow_dispatch:
     inputs:
