@@ -131,7 +131,10 @@ if __name__ == "__main__":
                 manifest["autoupdate"] = {
                     "architecture": {"64bit": {"url": download64}, "32bit": {"url": download}},
                 }
-                manifest["architecture"] = {"64bit": {"url": download64, "hash": hash64}, "32bit": {"url": download, "hash": hash32}}
+                manifest["architecture"] = {
+                    "64bit": {"url": download64, "hash": hash64},
+                    "32bit": {"url": download, "hash": hash32},
+                }
             else:
                 manifest.pop("architecture")
                 manifest["url"] = download
