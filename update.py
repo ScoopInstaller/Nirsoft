@@ -9,7 +9,7 @@ from traceback import print_exc
 import subprocess
 
 
-HEADERS = {"Referer": "https://github.com/MCOfficer/scoop-nirsoft"}
+HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
 
 
 def probe_for_exe(url):
@@ -130,5 +130,6 @@ if __name__ == '__main__':
             print_exc()
 
     print("")
-    print("Running checkver -f")
-    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
+    # handled now by GitHub action:
+    # print("Running checkver -f")
+    # subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
