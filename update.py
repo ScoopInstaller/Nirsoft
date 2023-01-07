@@ -92,6 +92,20 @@ if __name__ == "__main__":
             if not x64:
                 print("64-bit download unavailable")
 
+            json_file = "bucket/" + name + ".json"
+            existing = {}
+            if os.path.isfile(json_file):
+                print(f"Reading {json_file}")
+                with open(json_file, "r", encoding="utf-8") as j:
+                    existing = json.load(j)
+
+            hash_ = existing.get("hash", "tbd")
+            architecture = existing.get("architecture", {})
+            bit32 = architecture.get("32bit", {})
+            bit64 = architecture.get("64bit", {})
+            hash32 = bit32.get("hash", "tbd")
+            hash64 = bit64.get("hash", "tbd")
+
             manifest = {
                 "version": version,
                 "homepage": website,
@@ -99,7 +113,7 @@ if __name__ == "__main__":
                 "bin": exe,
                 "shortcuts": [[exe, shortcut]],
                 "persist": [name + "_lng.ini", name + ".cfg"],
-                "hash": "tbd",
+                "hash": hash_,
                 "architecture": "",
                 "description": description,
                 "license": "Freeware",
@@ -117,13 +131,14 @@ if __name__ == "__main__":
                 manifest["autoupdate"] = {
                     "architecture": {"64bit": {"url": download64}, "32bit": {"url": download}},
                 }
-                manifest["architecture"] = {"64bit": {"url": download64, "hash": "tbd"}, "32bit": {"url": download, "hash": "tbd"}}
+                manifest["architecture"] = {"64bit": {"url": download64, "hash": hash64}, "32bit": {"url": download, "hash": hash32}}
             else:
                 manifest.pop("architecture")
                 manifest["url"] = download
-                manifest["hash"] = "tbd"
+                manifest["hash"] = hash32
 
-            with open("bucket/" + name + ".json", "w", encoding="utf-8", newline="\n") as j:
+            print(f"Writing {json_file}")
+            with open(json_file, "w", encoding="utf-8", newline="\n") as j:
                 json.dump(manifest, j, indent=1)
 
         except Exception:
