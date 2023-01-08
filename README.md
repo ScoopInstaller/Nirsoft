@@ -11,4 +11,4 @@ You can add this bucket to scoop using
 ```
 scoop bucket add nirsoft-alternative https://github.com/ScoopInstaller/Nirsoft.git
 ```
-Special thanks to @MCOfficer for developing this bucket!
+Special thanks to [@MCOfficer](https://github.com/MCOfficer) for developing this bucket!
