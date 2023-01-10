@@ -7,23 +7,23 @@ on:
     - cron: '0 3 * * *'
 
   workflow_dispatch:
-    # inputs:
-    #   apps:
-    #     description: "Enter apps to process (default is '*')"
-    #     required: false
-    #     default: '*'
-    #   dry:
-    #     description: "Enter 'dry' to do a dry run"
-    #     required: false
-    #     default: ''
-    #   force:
-    #     description: "Enter 'force' if you want to force a refresh"
-    #     required: false
-    #    default: 'force'
-    #   options:
-    #     description: "Enter options"
-    #     required: false
-    #     default: ''
+    inputs:
+      apps:
+        description: "Enter apps to process (default is '*')"
+        required: false
+        default: '*'
+      dry:
+        description: "Enter 'dry' to do a dry run"
+        required: false
+        default: ''
+      #   force:
+      #     description: "Enter 'force' if you want to force a refresh"
+      #     required: false
+      #    default: 'force'
+      options:
+        description: "Enter options"
+        required: false
+        default: ''
 
 jobs:
   update:
@@ -45,14 +45,13 @@ jobs:
       - name: run python update.py
         run: python update.py ${{ github.event.inputs.options }}
 
-      # handle in update.py now:
-      # - name: run foosel/scoop-checkver-action@main
-      #   uses: foosel/scoop-checkver-action@main
-      #   with:
-      #     bucket: bucket
-      #     apps: ${{ github.event.inputs.apps }}
-      #     dry: ${{ github.event.inputs.dry }}
-      #     force: force
+      - name: run foosel/scoop-checkver-action@main
+        uses: foosel/scoop-checkver-action@main
+        with:
+          bucket: bucket
+          apps: ${{ github.event.inputs.apps }}
+          dry: ${{ github.event.inputs.dry }}
+          force: force
 
       - name: Commit changes
         run: |
@@ -69,7 +68,7 @@ jobs:
               git add "$file"
               git commit -m "$message"
             fi
-          done < <(git diff --name-only)
+          done < <(git diff -u -w --name-only)
 
       - name: run ad-m/github-push-action@v0.6.0
         uses: ad-m/github-push-action@v0.6.0
