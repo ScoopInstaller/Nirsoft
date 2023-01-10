@@ -13,7 +13,7 @@
         "wirelessnetconsole_lng.ini",
         "wirelessnetconsole.cfg"
     ],
-    "hash": "6b365808b7526bcfcee1cf870dd4d0602669695481ed70ed6edb2f4572abb78a",
+    "hash": "",
     "description": "View wireless networks information (console application)",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
