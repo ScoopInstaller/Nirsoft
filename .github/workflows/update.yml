@@ -16,10 +16,10 @@ on:
         description: "Enter 'dry' to do a dry run"
         required: false
         default: ''
-      force:
-        description: "Enter 'force' if you want to force a refresh"
-        required: false
-        default: 'force'
+      # force:
+      #   description: "Enter 'force' if you want to force a refresh"
+      #   required: false
+      #  default: 'force'
       options:
         description: "Enter options"
         required: false
@@ -51,7 +51,7 @@ jobs:
           bucket: bucket
           apps: ${{ github.event.inputs.apps }}
           dry: ${{ github.event.inputs.dry }}
-          force: ${{ github.event.inputs.force }}
+          force: force
 
       - name: Commit changes
         run: |
