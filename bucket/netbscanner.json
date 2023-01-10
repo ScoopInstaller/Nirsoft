@@ -13,7 +13,7 @@
         "netbscanner_lng.ini",
         "netbscanner.cfg"
     ],
-    "hash": "f4970e58d94ef7112924b16ae81187e18d9bad26d407e9b6a37172c5d5973c3c",
+    "hash": "",
     "description": "Scans all computers in the IP addresses range you choose, using NetBIOS protocol",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
