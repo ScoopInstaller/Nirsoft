@@ -13,7 +13,7 @@
         "whoiscl_lng.ini",
         "whoiscl.cfg"
     ],
-    "hash": "cb042f522ca674288655739db24b389defac0d2f05bd5d7e915aefd3068e4d85",
+    "hash": "",
     "description": "Get WHOIS information about a registered domain from command-line.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
