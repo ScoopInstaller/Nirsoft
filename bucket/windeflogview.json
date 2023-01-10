@@ -13,7 +13,7 @@
         "windeflogview_lng.ini",
         "windeflogview.cfg"
     ],
-    "hash": "",
+    "hash": "ce35a1d59b6ddca602456ef52da460d2047190d732876cda401940c0b6ff9780",
     "description": "Windows Defender Log Viewer",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
