@@ -99,12 +99,12 @@ if __name__ == "__main__":
                 with open(json_file, "r", encoding="utf-8") as j:
                     existing = json.load(j)
 
-            hash_ = existing.get("hash", "tbd")
+            hash_ = existing.get("hash", "")
             architecture = existing.get("architecture", {})
             bit32 = architecture.get("32bit", {})
             bit64 = architecture.get("64bit", {})
-            hash32 = bit32.get("hash", "tbd")
-            hash64 = bit64.get("hash", "tbd")
+            hash32 = bit32.get("hash", "")
+            hash64 = bit64.get("hash", "")
 
             manifest = {
                 "version": version,
@@ -149,5 +149,7 @@ if __name__ == "__main__":
 
     print("")
     # handled now by GitHub action:
-    # print("Running checkver -f")
-    # subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
+    print("Running checkver -f")
+    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
+    print("Running formatjson")
+    subprocess.run(["powershell", "-Command", r".\bin\formatjson.ps1"])
