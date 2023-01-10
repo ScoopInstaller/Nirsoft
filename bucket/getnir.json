@@ -13,7 +13,7 @@
         "getnir_lng.ini",
         "getnir.cfg"
     ],
-    "hash": "f50dd73972c8295fb9b58296955cbfdc8c2025992fed83c0c96fd1ce1b71632c",
+    "hash": "",
     "description": "Command line tool to extract values from tab-delimited and comma-delimited data",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
