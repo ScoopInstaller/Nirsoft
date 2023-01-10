@@ -45,13 +45,14 @@ jobs:
       - name: run python update.py
         run: python update.py ${{ github.event.inputs.options }}
 
-      - name: run foosel/scoop-checkver-action@main
-        uses: foosel/scoop-checkver-action@main
-        with:
-          bucket: bucket
-          apps: ${{ github.event.inputs.apps }}
-          dry: ${{ github.event.inputs.dry }}
-          force: force
+      # handle in update.py now:
+      # - name: run foosel/scoop-checkver-action@main
+      #   uses: foosel/scoop-checkver-action@main
+      #   with:
+      #     bucket: bucket
+      #     apps: ${{ github.event.inputs.apps }}
+      #     dry: ${{ github.event.inputs.dry }}
+      #     force: force
 
       - name: Commit changes
         run: |
