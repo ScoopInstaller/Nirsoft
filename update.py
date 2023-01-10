@@ -25,6 +25,16 @@ def probe_for_exe(url):
                 return filename
     return ""
 
+def run(cmd):
+    with subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:  # nosec
+        (_out, _err) = process.communicate()
+        rv = process.wait()
+        out = _out.decode("utf-8", "backslashreplace")
+        err = _err.decode("utf-8", "backslashreplace")
+    print("rv=%d", rv)
+    print(out)
+    print(err)
+    return rv    
 
 if __name__ == "__main__":
     print("Fetching Padfile links")
@@ -149,7 +159,9 @@ if __name__ == "__main__":
 
     print("")
     # handled now by GitHub action:
-    print("Running checkver -f")
-    subprocess.run(["powershell", "-Command", r".\bin\checkver.ps1", "-f"])
-    print("Running formatjson")
-    subprocess.run(["powershell", "-Command", r".\bin\formatjson.ps1"])
+    cmd = "pwsh -Command ./bin/checkver.ps1 -f"
+    print(f"Running {cmd}")
+    run(cmd)
+    cmd = "pwsh -Command ./bin/formatjson.ps1"
+    print(f"Running {cmd}")
+    run(cmd)
