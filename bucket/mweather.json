@@ -13,7 +13,7 @@
         "mweather_lng.ini",
         "mweather.cfg"
     ],
-    "hash": "4afd59c78e272e25437d69efad4722806206d924c16c360c53d8e3eeaacea935",
+    "hash": "",
     "description": "Decode METAR weather reports, and display them in a simple weather report table.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
