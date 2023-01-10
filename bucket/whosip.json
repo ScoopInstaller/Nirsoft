@@ -13,7 +13,7 @@
         "whosip_lng.ini",
         "whosip.cfg"
     ],
-    "hash": "a84ac36ffd1a6e0d7c28aa00c2d1f27c511443741047dca9977747afba0fe92b",
+    "hash": "",
     "description": "find all available information about an IP address from command-line.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
