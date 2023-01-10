@@ -13,7 +13,7 @@
         "dotnetresourcesextract_lng.ini",
         "dotnetresourcesextract.cfg"
     ],
-    "hash": "",
+    "hash": "5375bd9fbb7dd9d84fc2584ccee12280402585b7f9de30fe38fe453019fb3a93",
     "description": "Extract embedded resources from .NET applications.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
