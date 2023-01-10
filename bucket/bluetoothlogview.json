@@ -13,7 +13,7 @@
         "bluetoothlogview_lng.ini",
         "bluetoothlogview.cfg"
     ],
-    "hash": "baaf54b422aa8a5c5dd6a21e842f40c04186fd5a33bf6c126538009ffc3f31c9",
+    "hash": "",
     "description": "Creates a log of Bluetooth activity in your area.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
