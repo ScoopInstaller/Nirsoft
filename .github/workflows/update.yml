@@ -7,23 +7,23 @@ on:
     - cron: '0 3 * * *'
 
   workflow_dispatch:
-    inputs:
-      apps:
-        description: "Enter apps to process (default is '*')"
-        required: false
-        default: '*'
-      dry:
-        description: "Enter 'dry' to do a dry run"
-        required: false
-        default: ''
-      # force:
-      #   description: "Enter 'force' if you want to force a refresh"
-      #   required: false
-      #  default: 'force'
-      options:
-        description: "Enter options"
-        required: false
-        default: ''
+    # inputs:
+    #   apps:
+    #     description: "Enter apps to process (default is '*')"
+    #     required: false
+    #     default: '*'
+    #   dry:
+    #     description: "Enter 'dry' to do a dry run"
+    #     required: false
+    #     default: ''
+    #   force:
+    #     description: "Enter 'force' if you want to force a refresh"
+    #     required: false
+    #    default: 'force'
+    #   options:
+    #     description: "Enter options"
+    #     required: false
+    #     default: ''
 
 jobs:
   update:
