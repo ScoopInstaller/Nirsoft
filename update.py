@@ -109,12 +109,12 @@ if __name__ == "__main__":
                 with open(json_file, "r", encoding="utf-8") as j:
                     existing = json.load(j)
 
-            hash_ = existing.get("hash", "")
+            hash_ = existing.get("hash", "tbd")
             architecture = existing.get("architecture", {})
             bit32 = architecture.get("32bit", {})
             bit64 = architecture.get("64bit", {})
-            hash32 = bit32.get("hash", "")
-            hash64 = bit64.get("hash", "")
+            hash32 = bit32.get("hash", "tbd")
+            hash64 = bit64.get("hash", "tbd")
 
             manifest = {
                 "version": version,
@@ -157,7 +157,7 @@ if __name__ == "__main__":
         except Exception:
             print_exc()
 
-    # print("")
+    print("")
     # handled now by GitHub action:
     # cmd = "pwsh -Command ./bin/checkver.ps1 -f"
     # print(f"Running {cmd}")
