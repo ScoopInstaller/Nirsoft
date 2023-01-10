@@ -157,11 +157,11 @@ if __name__ == "__main__":
         except Exception:
             print_exc()
 
-    print("")
+    # print("")
     # handled now by GitHub action:
-    cmd = "pwsh -Command ./bin/checkver.ps1 -f"
-    print(f"Running {cmd}")
-    run(cmd)
-    cmd = "pwsh -Command ./bin/formatjson.ps1"
-    print(f"Running {cmd}")
-    run(cmd)
+    # cmd = "pwsh -Command ./bin/checkver.ps1 -f"
+    # print(f"Running {cmd}")
+    # run(cmd)
+    # cmd = "pwsh -Command ./bin/formatjson.ps1"
+    # print(f"Running {cmd}")
+    # run(cmd)
