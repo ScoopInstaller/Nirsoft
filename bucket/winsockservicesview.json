@@ -13,7 +13,7 @@
         "winsockservicesview_lng.ini",
         "winsockservicesview.cfg"
     ],
-    "hash": "135131357d35cd429bc9a06408b810082e1db3ec910f3314e3c5377142d219b9",
+    "hash": "",
     "description": "View/Disable/Enable Winsock service providers installed on your system.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
