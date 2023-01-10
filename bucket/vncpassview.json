@@ -13,7 +13,7 @@
         "vncpassview_lng.ini",
         "vncpassview.cfg"
     ],
-    "hash": "a598f49d5b6c06097550952aef7260f226227cf64a982c8fedb605f8f30039b4",
+    "hash": "",
     "description": "Recover the passwords stored by the VNC tool.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
