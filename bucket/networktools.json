@@ -13,7 +13,7 @@
         "networktools_lng.ini",
         "networktools.cfg"
     ],
-    "hash": "69ee961b969d89f332ce055c5ab5928c88656d231a85bf9e404d997fd4e2586a",
+    "hash": "",
     "description": "Package of network monitoring tools for Windows",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
