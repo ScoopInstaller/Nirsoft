@@ -13,7 +13,7 @@
         "tabletextcompare_lng.ini",
         "tabletextcompare.cfg"
     ],
-    "hash": "9450b1ebea00d1ec6e868e740e8c35fc7a8aff0cdd0ee05da7066e95f2ace88e",
+    "hash": "",
     "description": "Compare tab-delimited or comma-delimited (csv) files.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
