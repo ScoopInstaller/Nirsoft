@@ -13,7 +13,7 @@
         "gacview_lng.ini",
         "gacview.cfg"
     ],
-    "hash": "f8f6b2033681aee70136ca8880197b84b08e119da0518625b42ec38ec6380045",
+    "hash": "",
     "description": "Alternative to the standard .NET assembly viewer on Windows Explorer.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
