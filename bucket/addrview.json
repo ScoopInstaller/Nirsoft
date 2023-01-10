@@ -13,7 +13,7 @@
         "addrview_lng.ini",
         "addrview.cfg"
     ],
-    "hash": "806883045b6b510625d05ae965222b80c451a0b18ce30343ec9607cca10d4017",
+    "hash": "",
     "description": "Extract URL addresses from HTML pages.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
