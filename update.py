@@ -127,7 +127,7 @@ if __name__ == "__main__":
                 "architecture": "",
                 "description": description,
                 "license": "Freeware",
-                "notes": "If this application is useful to you, please consider donating to nirsoft.",
+                "notes": "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html",
                 "checkver": {
                     "url": "https://www.nirsoft.net/pad/" + name + ".xml",
                     "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version",
