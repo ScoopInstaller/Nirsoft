@@ -68,7 +68,7 @@ jobs:
               git add "$file"
               git commit -m "$message"
             fi
-          done < <(git diff --ignore-all-space --name-only)
+          done < <(git diff --ignore-all-space --name-only --no-color)
 
       - name: run ad-m/github-push-action@v0.6.0
         uses: ad-m/github-push-action@v0.6.0
