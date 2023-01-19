@@ -1,5 +1,5 @@
 {
-    "version": "1.60",
+    "version": "1.61",
     "homepage": "https://www.nirsoft.net/utils/ip_country_info_offline.html",
     "url": "https://www.nirsoft.net/utils/ipinfooffline.zip",
     "bin": "IPInfoOffline.exe",
@@ -13,7 +13,7 @@
         "ipinfooffline_lng.ini",
         "ipinfooffline.cfg"
     ],
-    "hash": "a99ef1491cea76e6d7d63e41ff27f9c54fd96ca77ec903895f4f7cc8883734c9",
+    "hash": "6a66338dc4e41d715fc52bd940ea1ed40a36ebba284470a8994e0790083b72da",
     "description": "view country information about IP addresses.",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html",
