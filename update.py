@@ -164,10 +164,10 @@ if __name__ == "__main__":
 
             if os.path.isfile(json_file):
                 with open(json_file, "r", encoding="utf-8") as j:
-                    old = json.loads(j)
+                    old = json.dumps(json.load(j))
                     new = json.dumps(manifest)
-                    old = re.sub(r"\s+", "", old)
-                    new = re.sub(r"\s+", "", new)
+                    old = re.sub(r"\s+", " ", old) # ignore whitespace differences
+                    new = re.sub(r"\s+", " ", new)
                     # don't rewrite the file if nothing changed
                     if old == new:
                         print(f"Skipping writing {json_file}: no changes")
