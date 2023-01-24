@@ -101,7 +101,7 @@ if __name__ == "__main__":
             x64 = bool(r.ok)
             if not x64:
                 print("64-bit download not found")
-            els:
+            else:
                 print(f"64-bit download found: {download64}")
 
             json_file = "bucket/" + name + ".json"
