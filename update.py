@@ -2,31 +2,62 @@
 # pylint: disable=C0103 # Constant name "description" doesn't conform to UPPER_CASE naming style (invalid-name)
 # pylint: disable=W0703 # Catching too general exception Exception (broad-except)
 
+import codecs
+import hashlib
 import json
 import os
 import re
+import subprocess
+import time
 import xml.etree.ElementTree as ET
+import zipfile
 from io import BytesIO
 from traceback import print_exc
-from zipfile import ZipFile
 
 import requests
 
 HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
 
+NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 
-def probe_for_exe(url):
-    """probe_for_exe"""
+REFERER = "https://www.nirsoft.net/"
+SECONDS_BETWEEN_MANIFESTS = 10
+
+
+def get(url: str) -> bytes:
+    """get"""
     print("Downloading " + url + "...")
-    req = requests.get(url, headers=HEADERS, timeout=60)
+    headers={'referer': REFERER}
+    req = requests.get(url, headers=headers, timeout=60)
     req.raise_for_status()
-    with ZipFile(BytesIO(req.content)) as z:
-        for filename in z.namelist():
-            if filename.endswith(".exe"):
-                return filename
+    return req.content
+
+
+def probe_for_exe(_data: bytes) -> str:
+    """probe_for_exe"""
+    try:
+        with zipfile.ZipFile(BytesIO(_data)) as z:
+            for filename in z.namelist():
+                if filename.endswith(".exe"):
+                    return filename
+    except zipfile.BadZipFile as exc:
+        encoded = codecs.encode(_data[:2], "hex")
+        print(f"{exc}: expected 504b, found {encoded!r}:")
+        utf8 = _data.decode("utf-8", "backslashreplace")
+        print(utf8[:256])
+
     return ""
 
-def run(cmd):
+
+def sha256sum(_data: bytes) -> str:
+    """sha256sum"""
+    sha256 = hashlib.sha256()
+    sha256.update(_data)
+    return sha256.hexdigest()
+
+
+def run(cmd: str) -> int:
+    """run"""
     with subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:  # nosec
         (_out, _err) = process.communicate()
         rv = process.wait()
@@ -35,11 +66,15 @@ def run(cmd):
     print("rv=%d", rv)
     print(out)
     print(err)
-    return rv    
+    return rv
+
 
 if __name__ == "__main__":
     print("Fetching Padfile links")
     pads = requests.get("https://www.nirsoft.net/pad/pad-links.txt", timeout=60).text
+
+    if os.environ.get("CI", False):
+        print(f"Sleeping {SECONDS_BETWEEN_MANIFESTS} seconds between manifests")
 
     i = 0
     for line in pads.splitlines():
@@ -85,7 +120,8 @@ if __name__ == "__main__":
             download64 = download.replace(".zip", "-x64.zip")
             name = os.path.splitext(os.path.basename(line))[0]
 
-            exe = probe_for_exe(download)
+            data = get(download)
+            exe = probe_for_exe(data)
             if not exe:
                 print("No executable found! Skipping")
                 continue
@@ -118,15 +154,15 @@ if __name__ == "__main__":
             hash32 = bit32.get("hash", "tbd")
             hash64 = bit64.get("hash", "tbd")
 
-            if os.path.isfile(json_file):
-                if not x64:
-                    if hash_ == "tbd":
-                        print("file exists and hash_ =tbd")
-                else:
-                    if hash32 == "tbd":
-                        print("file exists and hash32=tbd")
-                    if hash64 == "tbd":
-                        print("file exists and hash64=tbd")
+            rehash = version != existing.get("version", "n/a")
+            if not x64:
+                if rehash or hash_ == "tbd":
+                    hash_ = sha256sum(data)
+            else:
+                if rehash or hash32 == "tbd":
+                    hash32 = sha256sum(data)
+                if rehash or hash64 == "tbd":
+                    hash64 = sha256sum(get(download64))
 
             manifest = {
                 "version": version,
@@ -139,7 +175,7 @@ if __name__ == "__main__":
                 "architecture": "",
                 "description": description,
                 "license": "Freeware",
-                "notes": "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html",
+                "notes": NOTES,
                 "checkver": {
                     "url": "https://www.nirsoft.net/pad/" + name + ".xml",
                     "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version",
@@ -166,7 +202,7 @@ if __name__ == "__main__":
                 with open(json_file, "r", encoding="utf-8") as j:
                     old = json.dumps(json.load(j))
                     new = json.dumps(manifest)
-                    old = re.sub(r"\s+", " ", old) # ignore whitespace differences
+                    old = re.sub(r"\s+", " ", old)  # ignore whitespace differences
                     new = re.sub(r"\s+", " ", new)
                     # don't rewrite the file if nothing changed
                     if old == new:
@@ -179,6 +215,9 @@ if __name__ == "__main__":
 
         except Exception:
             print_exc()
+
+        if os.environ.get("CI", False):
+            time.sleep(SECONDS_BETWEEN_MANIFESTS)
 
     print("")
     # handled now by GitHub action:
