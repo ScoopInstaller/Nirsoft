@@ -4,6 +4,7 @@
 
 import json
 import os
+import re
 import xml.etree.ElementTree as ET
 from io import BytesIO
 from traceback import print_exc
@@ -96,11 +97,12 @@ if __name__ == "__main__":
             except AttributeError:
                 description = ""
 
-            print("Checking 64-bit download url")
             r = requests.head(download64, headers=HEADERS, timeout=60)
             x64 = bool(r.ok)
             if not x64:
-                print("64-bit download unavailable")
+                print("64-bit download not found")
+            els:
+                print(f"64-bit download found: {download64}")
 
             json_file = "bucket/" + name + ".json"
             existing = {}
@@ -115,6 +117,16 @@ if __name__ == "__main__":
             bit64 = architecture.get("64bit", {})
             hash32 = bit32.get("hash", "tbd")
             hash64 = bit64.get("hash", "tbd")
+
+            if os.path.isfile(json_file):
+                if not x64:
+                    if hash_ == "tbd":
+                        print("file exists and hash_ =tbd")
+                else:
+                    if hash32 == "tbd":
+                        print("file exists and hash32=tbd")
+                    if hash64 == "tbd":
+                        print("file exists and hash64=tbd")
 
             manifest = {
                 "version": version,
@@ -148,11 +160,22 @@ if __name__ == "__main__":
             else:
                 manifest.pop("architecture")
                 manifest["url"] = download
-                manifest["hash"] = hash32
+                manifest["hash"] = hash_
+
+            if os.path.isfile(json_file):
+                with open(json_file, "r", encoding="utf-8") as j:
+                    old = json.loads(j)
+                    new = json.dumps(manifest)
+                    old = re.sub(r"\s+", "", old)
+                    new = re.sub(r"\s+", "", new)
+                    # don't rewrite the file if nothing changed
+                    if old == new:
+                        print(f"Skipping writing {json_file}: no changes")
+                        continue
 
             print(f"Writing {json_file}")
             with open(json_file, "w", encoding="utf-8", newline="\n") as j:
-                json.dump(manifest, j, indent=1)
+                json.dump(manifest, j, indent=4)
 
         except Exception:
             print_exc()
