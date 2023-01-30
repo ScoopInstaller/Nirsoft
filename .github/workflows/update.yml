@@ -8,22 +8,22 @@ on:
 
   workflow_dispatch:
     inputs:
-      apps:
-        description: "Enter apps to process (default is '*')"
-        required: false
-        default: '*'
-      dry:
-        description: "Enter 'dry' to do a dry run"
-        required: false
-        default: ''
+      # apps:
+      #  description: "Enter apps to process (default is '*')"
+      #  required: false
+      #  default: '*'
+      # dry:
+      #  description: "Enter 'dry' to do a dry run"
+      #  required: false
+      #  default: ''
       #   force:
       #     description: "Enter 'force' if you want to force a refresh"
       #     required: false
       #    default: 'force'
-      options:
-        description: "Enter options"
-        required: false
-        default: ''
+      # options:
+      #  description: "Enter options"
+      #  required: false
+      #  default: ''
 
 jobs:
   update:
@@ -32,10 +32,18 @@ jobs:
       - name: run actions/checkout@v3
         uses: actions/checkout@v3
 
+      - name: Cache zips
+        id: cache-zips
+        uses: actions/cache@v3
+        with:
+          path: ~/cache
+          key: cache-key-${{ hashFiles('ziplist.txt') }}
+
       - name: run actions/setup-python@v4
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+          cache: 'pip'
 
       - name: run pip install -r requirements.txt
         run: |
@@ -45,13 +53,19 @@ jobs:
       - name: run python update.py
         run: python update.py ${{ github.event.inputs.options }}
 
-      - name: run foosel/scoop-checkver-action@main
-        uses: foosel/scoop-checkver-action@main
-        with:
-          bucket: bucket
-          apps: ${{ github.event.inputs.apps }}
-          dry: ${{ github.event.inputs.dry }}
-          force: force
+      - name: save ziplist.txt
+        run: |
+          cd cache
+          ls -ltr
+          sha256sum * >../ziplist.txt
+
+      # - name: run foosel/scoop-checkver-action@main
+      #  uses: foosel/scoop-checkver-action@main
+      #  with:
+      #    bucket: bucket
+      #    apps: ${{ github.event.inputs.apps }}
+      #    dry: ${{ github.event.inputs.dry }}
+      #    force: force
 
       - name: Commit changes
         run: |
@@ -67,6 +81,11 @@ jobs:
               message="$manifest: Update to version $version"
               git add "$file"
               git commit -m "$message"
+              continue
+            fi
+            if [[ $file =~ ziplist\.txt$ ]]; then
+              git add "$file"
+              git commit -m "Update ziplist.txt"
             fi
           done < <(git diff --ignore-all-space --name-only --no-color)
 
