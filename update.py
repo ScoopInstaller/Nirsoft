@@ -4,6 +4,7 @@
 
 import codecs
 import hashlib
+import io
 import json
 import os
 import re
@@ -16,13 +17,17 @@ from traceback import print_exc
 
 import requests
 
+CACHE_DIR = "cache"
 HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
-
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
-
 REFERER = "https://www.nirsoft.net/"
 SECONDS_BETWEEN_MANIFESTS = 10
 
+def save(filename: str, data: bytes) -> None:
+    """save"""
+    print(f"Saving {filename} ({len(data)} bytes)")
+    with io.open(filename, "wb") as fh:
+        fh.write(data)
 
 def get(url: str) -> bytes:
     """get"""
@@ -70,6 +75,10 @@ def run(cmd: str) -> int:
 
 
 if __name__ == "__main__":
+    
+    if not os.path.isdir(CACHE_DIR):
+        os.makedirs(CACHE_DIR)
+
     print("Fetching Padfile links")
     pads = requests.get("https://www.nirsoft.net/pad/pad-links.txt", timeout=60).text
 
@@ -116,11 +125,22 @@ if __name__ == "__main__":
                 pass
 
             download = download.replace("http:", "https:")
-
+            zip = os.path.basename(download)
+            zippath = os.path.join(CACHE_DIR, zip)
+            
             download64 = download.replace(".zip", "-x64.zip")
+            zip64 = os.path.basename(download64)
+            zippath64 = os.path.join(CACHE_DIR, zip64)
             name = os.path.splitext(os.path.basename(line))[0]
 
             data = get(download)
+            if not os.path.isfile(zippath64):
+                save(zippath, data)
+            
+            if not os.path.isfile(zippath64):
+                data64 = get(download64)
+                save(zippath64, data64)
+            
             exe = probe_for_exe(data)
             if not exe:
                 print("No executable found! Skipping")
