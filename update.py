@@ -16,18 +16,17 @@ from traceback import print_exc
 
 import requests
 
-HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
-
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 
 REFERER = "https://www.nirsoft.net/"
+
 SECONDS_BETWEEN_MANIFESTS = 10
 
 
 def get(url: str) -> bytes:
     """get"""
     print("Downloading " + url + "...")
-    headers={'referer': REFERER}
+    headers={'Referer': REFERER}
     req = requests.get(url, headers=headers, timeout=60)
     req.raise_for_status()
     return req.content
@@ -133,7 +132,8 @@ if __name__ == "__main__":
             except AttributeError:
                 description = ""
 
-            r = requests.head(download64, headers=HEADERS, timeout=60)
+            headers={'Referer': REFERER}
+            r = requests.head(download64, headers=headers, timeout=60)
             x64 = bool(r.ok)
             if not x64:
                 print("64-bit download not found")
