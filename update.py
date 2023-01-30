@@ -63,6 +63,7 @@ def sha256sum(_data: bytes) -> str:
 
 def run(cmd: str) -> int:
     """run"""
+    print(f"Running: {cmd}")
     with subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:  # nosec
         (_out, _err) = process.communicate()
         rv = process.wait()
@@ -239,7 +240,10 @@ if __name__ == "__main__":
         if os.environ.get("CI", False):
             time.sleep(SECONDS_BETWEEN_MANIFESTS)
 
+    cmd = f"sha256sum {CACHE_DIR}/*.zip >ziplist.txt"
+    run(cmd)
     print("")
+    
     # handled now by GitHub action:
     # cmd = "pwsh -Command ./bin/checkver.ps1 -f"
     # print(f"Running {cmd}")
