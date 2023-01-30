@@ -8,22 +8,22 @@ on:
 
   workflow_dispatch:
     inputs:
-      apps:
-        description: "Enter apps to process (default is '*')"
-        required: false
-        default: '*'
-      dry:
-        description: "Enter 'dry' to do a dry run"
-        required: false
-        default: ''
+      # apps:
+      #  description: "Enter apps to process (default is '*')"
+      #  required: false
+      #  default: '*'
+      # dry:
+      #  description: "Enter 'dry' to do a dry run"
+      #  required: false
+      #  default: ''
       #   force:
       #     description: "Enter 'force' if you want to force a refresh"
       #     required: false
       #    default: 'force'
-      options:
-        description: "Enter options"
-        required: false
-        default: ''
+      # options:
+      #  description: "Enter options"
+      #  required: false
+      #  default: ''
 
 jobs:
   update:
@@ -58,13 +58,13 @@ jobs:
           ls -ltr cache
           sha256sum cache/*.zip >ziplist.txt
 
-      - name: run foosel/scoop-checkver-action@main
-        uses: foosel/scoop-checkver-action@main
-        with:
-          bucket: bucket
-          apps: ${{ github.event.inputs.apps }}
-          dry: ${{ github.event.inputs.dry }}
-          force: force
+      # - name: run foosel/scoop-checkver-action@main
+      #  uses: foosel/scoop-checkver-action@main
+      #  with:
+      #    bucket: bucket
+      #    apps: ${{ github.event.inputs.apps }}
+      #    dry: ${{ github.event.inputs.dry }}
+      #    force: force
 
       - name: Commit changes
         run: |
