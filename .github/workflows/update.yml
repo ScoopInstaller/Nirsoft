@@ -53,6 +53,11 @@ jobs:
       - name: run python update.py
         run: python update.py ${{ github.event.inputs.options }}
 
+      - name: save ziplist.txt
+        run: |
+          ls -ltr cache
+          sha256sum cache/*.zip >ziplist.txt
+
       - name: run foosel/scoop-checkver-action@main
         uses: foosel/scoop-checkver-action@main
         with:
