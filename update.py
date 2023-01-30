@@ -26,7 +26,7 @@ REFERER = "https://www.nirsoft.net/"
 SECONDS_BETWEEN_MANIFESTS = 10
 
 
-def is_newer(url: string, filename: str) -> bool:
+def is_newer(url: str, filename: str) -> bool:
     """is_newer"""
     if not os.path.isfile(filename):
         return True
@@ -47,21 +47,21 @@ def load(filename: str) -> bytes:
         return data
 
 
-def save(filename: str, data: bytes) -> None:
+def save(filename: str, _data: bytes) -> None:
     """save"""
     print(f"Saving {filename} ({len(data)} bytes)")
     with io.open(filename, "wb") as fh:
-        fh.write(data)
+        fh.write(_data)
 
 
 def get_zip_data(url: str, filename: str) -> bytes:
     """get_zip_data"""
     if is_newer(url, filename):
-        data = get(url)
-        save(filename, data)
+        _data = get(url)
+        save(filename, _data)
     else:
-        data = load(filename)
-    return data
+        _data = load(filename)
+    return _data
 
 
 def get(url: str) -> bytes:
