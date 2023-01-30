@@ -271,8 +271,8 @@ if __name__ == "__main__":
         if os.environ.get("CI", False):
             time.sleep(SECONDS_BETWEEN_MANIFESTS)
 
-    cmd = f"sha256sum {CACHE_DIR}/*.zip >ziplist.txt"
-    run(cmd)
+    # cmd = f"sha256sum {CACHE_DIR}/*.zip >ziplist.txt"
+    # run(cmd)
     print("")
     
     # handled now by GitHub action:
