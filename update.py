@@ -43,13 +43,13 @@ def load(filename: str) -> bytes:
     print(f"Loading {filename}", end="")
     with io.open(filename, "rb") as fh:
         data = fh.read()
-        print(f" ({len(bytes)} bytes)")
+        print(f" ({len(data)} bytes)")
         return data
 
 
 def save(filename: str, _data: bytes) -> None:
     """save"""
-    print(f"Saving {filename} ({len(data)} bytes)")
+    print(f"Saving {filename} ({len(_data)} bytes)")
     with io.open(filename, "wb") as fh:
         fh.write(_data)
 
@@ -66,7 +66,7 @@ def get_zip_data(url: str, filename: str) -> bytes:
 
 def get(url: str) -> bytes:
     """get"""
-    print("Downloading " + url + "...")
+    print(f"Downloading {url}...")
     headers={'referer': REFERER}
     req = requests.get(url, headers=headers, timeout=60)
     req.raise_for_status()
