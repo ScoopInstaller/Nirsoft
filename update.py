@@ -3,6 +3,7 @@
 # pylint: disable=W0703 # Catching too general exception Exception (broad-except)
 
 import codecs
+import datetime
 import hashlib
 import io
 import json
@@ -16,6 +17,7 @@ from io import BytesIO
 from traceback import print_exc
 
 import requests
+from dateutil.parser import parse as parsedate
 
 CACHE_DIR = "cache"
 HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
@@ -23,11 +25,44 @@ NOTES = "If this application is useful to you, please consider donating to NirSo
 REFERER = "https://www.nirsoft.net/"
 SECONDS_BETWEEN_MANIFESTS = 10
 
+
+def is_newer(url: string, filename: str) -> bool:
+    """is_newer"""
+    if not os.path.isfile(filename):
+        return True
+    headers={'referer': REFERER}
+    req = requests.get(url, headers=headers, timeout=60)
+    url_time = req.headers['last-modified']
+    url_mtime = parsedate(url_time)
+    file_mtime = datetime.datetime.fromtimestamp(os.path.getmtime(filename))
+    return url_mtime > file_mtime
+
+
+def load(filename: str) -> bytes:
+    """load"""
+    print(f"Loading {filename}", end="")
+    with io.open(filename, "rb") as fh:
+        data = fh.read()
+        print(f" ({len(bytes)} bytes)")
+        return data
+
+
 def save(filename: str, data: bytes) -> None:
     """save"""
     print(f"Saving {filename} ({len(data)} bytes)")
     with io.open(filename, "wb") as fh:
         fh.write(data)
+
+
+def get_zip_data(url: str, filename: str) -> bytes:
+    """get_zip_data"""
+    if is_newer(url, filename):
+        data = get(url)
+        save(filename, data)
+    else:
+        data = load(filename)
+    return data
+
 
 def get(url: str) -> bytes:
     """get"""
@@ -126,22 +161,17 @@ if __name__ == "__main__":
                 pass
 
             download = download.replace("http:", "https:")
-            zip = os.path.basename(download)
-            zippath = os.path.join(CACHE_DIR, zip)
+            zip32 = os.path.basename(download)
+            zippath = os.path.join(CACHE_DIR, zip32)
             
             download64 = download.replace(".zip", "-x64.zip")
             zip64 = os.path.basename(download64)
             zippath64 = os.path.join(CACHE_DIR, zip64)
+            
             name = os.path.splitext(os.path.basename(line))[0]
 
-            data = get(download)
-            if not os.path.isfile(zippath64):
-                save(zippath, data)
-            
-            if not os.path.isfile(zippath64):
-                data64 = get(download64)
-                save(zippath64, data64)
-            
+            data = get_zip_data(download, zippath)
+
             exe = probe_for_exe(data)
             if not exe:
                 print("No executable found! Skipping")
@@ -156,11 +186,12 @@ if __name__ == "__main__":
 
             r = requests.head(download64, headers=HEADERS, timeout=60)
             x64 = bool(r.ok)
-            if not x64:
-                print("64-bit download not found")
-            else:
+            if x64:
                 print(f"64-bit download found: {download64}")
-
+                data64 = get_zip_data(download64, zippath64)
+            else:
+                data64 = ""
+            
             json_file = "bucket/" + name + ".json"
             existing = {}
             if os.path.isfile(json_file):
@@ -183,7 +214,7 @@ if __name__ == "__main__":
                 if rehash or hash32 == "tbd":
                     hash32 = sha256sum(data)
                 if rehash or hash64 == "tbd":
-                    hash64 = sha256sum(get(download64))
+                    hash64 = sha256sum(data64)
 
             manifest = {
                 "version": version,
