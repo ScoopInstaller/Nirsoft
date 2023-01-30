@@ -32,10 +32,18 @@ jobs:
       - name: run actions/checkout@v3
         uses: actions/checkout@v3
 
+      - name: Cache zips
+        id: cache-zips
+        uses: actions/cache@v3
+        with:
+          path: ~/cache
+          key: ${{ hashFiles('**/*.zip') }}
+
       - name: run actions/setup-python@v4
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+          cache: 'pip'
 
       - name: run pip install -r requirements.txt
         run: |
