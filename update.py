@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
-
 """update.py"""
 # pylint: disable=C0103 # Constant name "description" doesn't conform to UPPER_CASE naming style (invalid-name)
 # pylint: disable=W0703 # Catching too general exception Exception (broad-except)
-
-# @TODO don't save .zips, just save mtime, url, and if exe is found in it
 
 import codecs
 import csv
@@ -137,11 +134,6 @@ def main() -> int:
     if not os.path.isdir(CACHE_DIR):
         os.makedirs(CACHE_DIR)
 
-    # if not os.path.isfile(URLS_CSV):
-    #     with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
-    #         writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS)
-    #         writer.writeheader()
-
     urls: Urls = {}
 
     if os.path.isfile(URLS_CSV):
@@ -179,13 +171,6 @@ def main() -> int:
         for _, row in urls.items():
             writer.writerow(row)
 
-    # handled now by GitHub action:
-    # cmd = "pwsh -Command ./bin/checkver.ps1 -f"
-    # print(f"Running {cmd}")
-    # run(cmd)
-    # cmd = "pwsh -Command ./bin/formatjson.ps1"
-    # print(f"Running {cmd}")
-    # run(cmd)
     return 0
 
 
