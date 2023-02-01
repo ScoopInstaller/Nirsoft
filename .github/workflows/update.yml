@@ -32,16 +32,6 @@ jobs:
       - name: run actions/checkout@v3
         uses: actions/checkout@v3
 
-      - name: create cache directory
-        run: test -d cache || mkdir cache
-
-      - name: Cache zips
-        id: cache-zips
-        uses: actions/cache@v3
-        with:
-          path: ~/cache
-          key: cache-key-${{ hashFiles('cache/urls.csv') }}
-
       - name: run actions/setup-python@v4
         uses: actions/setup-python@v4
         with:
@@ -80,11 +70,10 @@ jobs:
               git commit -m "$message"
               continue
             fi
-            # lessen commits by saving/loading from cache instead:
-            # if [[ $file =~ urls\.csv$ ]]; then
-            #   git add "$file"
-            #   git commit -m "Update urls.csv"
-            # fi
+            if [[ $file =~ urls\.csv$ ]]; then
+              git add "$file"
+              git commit -m "Update url list [ci skip]"
+            fi
           done < <(git diff --ignore-all-space --name-only --no-color)
 
       - name: run ad-m/github-push-action@v0.6.0
