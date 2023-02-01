@@ -32,6 +32,9 @@ jobs:
       - name: run actions/checkout@v3
         uses: actions/checkout@v3
 
+      - name: create cache directory
+        run: test -d cache || mkdir cache
+
       - name: Cache zips
         id: cache-zips
         uses: actions/cache@v3
