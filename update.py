@@ -24,6 +24,7 @@ CACHE_DIR = "cache"
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 PADLINKS_URL = "https://www.nirsoft.net/pad/pad-links.txt"
 REFERER = "https://www.nirsoft.net/"
+# 10 seconds per request could cause each run to take about 2h 45m, but if we get caching working, it should only take <50m on average.
 SECONDS_BETWEEN_REQUESTS = 10
 SI_HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
 
