@@ -1,14 +1,18 @@
+#!/usr/bin/env python3
+
 """update.py"""
 # pylint: disable=C0103 # Constant name "description" doesn't conform to UPPER_CASE naming style (invalid-name)
 # pylint: disable=W0703 # Catching too general exception Exception (broad-except)
 
+# @TODO don't save .zips, just save mtime, url, and if exe is found in it
+
 import codecs
+import csv
 import hashlib
 import io
 import json
 import os
 import re
-import subprocess
 import sys
 import time
 import typing as T
@@ -21,66 +25,55 @@ import requests
 from dateutil.parser import parse as parsedate
 
 CACHE_DIR = "cache"
+CACHE_DOWNLOADS = os.environ.get("CACHE_DOWNLOADS", False)
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 PADLINKS_URL = "https://www.nirsoft.net/pad/pad-links.txt"
 REFERER = "https://www.nirsoft.net/"
 SECONDS_BETWEEN_REQUESTS = 10
-SI_HEADERS = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
+SI_HEADERS: dict[str, str] = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
+URLS_CSV = os.path.join(CACHE_DIR, "urls.csv")
+URLS_FIELDS: list[str] = ["url", "status", "last_modified", "hash", "exe"]
 
 HEADERS = {"Referer": REFERER}
+
+UrlEntry = dict[str, T.Any]
+Urls = dict[str, UrlEntry]
 
 
 def pause_between_requests() -> None:
     """pause_between_requests"""
-    if os.environ.get("CI", False):
+    if os.environ.get("CI", "") == "true":
         time.sleep(SECONDS_BETWEEN_REQUESTS)
 
 
-def is_newer(url: str, filename: str) -> bool:
-    """is_newer"""
-    if not os.path.isfile(filename):
-        return True
-    req = requests.head(url, headers=HEADERS, timeout=60)
-    pause_between_requests()
+def get_mtime(req: T.Any) -> float:
+    """get_mtime"""
     url_time = req.headers["last-modified"]
     url_dt = parsedate(url_time)
-    url_mtime = url_dt.timestamp()
-    file_mtime = os.path.getmtime(filename)
-    return url_mtime > file_mtime
-
-
-def load(filename: str) -> bytes:
-    """load"""
-    print(f"Loading {filename}", end="")
-    with io.open(filename, "rb") as fh:
-        data = fh.read()
-        print(f" ({len(data)} bytes)")
-        return data
-
-
-def save(filename: str, data: bytes) -> None:
-    """save"""
-    print(f"Saving {filename} ({len(data)} bytes)")
-    with io.open(filename, "wb") as fh:
-        fh.write(data)
-
-
-def get_zip_data(url: str, filename: str) -> bytes:
-    """get_zip_data"""
-    if is_newer(url, filename):
-        data = get(url)
-        save(filename, data)
-    else:
-        data = load(filename)
-    return data
+    return url_dt.timestamp()
 
 
 def get(url: str) -> bytes:
     """get"""
+    cached_zip = os.path.join(CACHE_DIR, os.path.basename(url))
+    if CACHE_DOWNLOADS and os.path.isfile(cached_zip):
+        print(f"Reading {cached_zip}")
+        with io.open(cached_zip, "rb") as fh:
+            return fh.read()
+
     print(f"Downloading {url}...")
     req = requests.get(url, headers=HEADERS, timeout=60)
     pause_between_requests()
     req.raise_for_status()
+
+    if CACHE_DOWNLOADS:
+        print(f"Writing {cached_zip}")
+        with io.open(cached_zip, "wb") as fh:
+            fh.write(req.content)
+        mtime = get_mtime(req)
+        print(f"Setting time of {cached_zip} to {mtime}")
+        os.utime(cached_zip, (mtime, mtime))
+
     return req.content
 
 
@@ -107,24 +100,54 @@ def sha256sum(data: bytes) -> str:
     return sha256.hexdigest()
 
 
-def run(cmd: str) -> int:
-    """run"""
-    print(f"Running: {cmd}")
-    with subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:  # nosec
-        (_out, _err) = process.communicate()
-        rv = process.wait()
-        out = _out.decode("utf-8", "backslashreplace")
-        err = _err.decode("utf-8", "backslashreplace")
-    print("rv=%d", rv)
-    print(out)
-    print(err)
-    return rv
+def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool, UrlEntry]:
+    """update_row"""
+
+    req = requests.head(url, headers=HEADERS, timeout=60)
+    pause_between_requests()
+    row["url"] = url
+    row["status"] = req.status_code
+    if not bool(req.ok):
+        if req.status_code != 404 or report_404s:
+            print(f"Cannot download {url}: {req.status_code}: {req.reason}")
+        return (False, row)
+
+    mtime = get_mtime(req)
+
+    if not row["last_modified"]:
+        row["last_modified"] = "0"
+
+    if mtime > int(row["last_modified"]):
+        row["last_modified"] = str(mtime)
+        data = get(url)
+        row["hash"] = sha256sum(data)
+        row["exe"] = probe_for_exe(data)
+    else:
+        cached_zip = os.path.join(CACHE_DIR, os.path.basename(url))
+        if CACHE_DOWNLOADS and os.path.isfile(cached_zip):
+            print(f"Setting time of {cached_zip} to {mtime}")
+            os.utime(cached_zip, (mtime, mtime))
+
+    return (True, row)
 
 
 def main() -> int:
     """main"""
     if not os.path.isdir(CACHE_DIR):
         os.makedirs(CACHE_DIR)
+
+    # if not os.path.isfile(URLS_CSV):
+    #     with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
+    #         writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS)
+    #         writer.writeheader()
+
+    urls: Urls = {}
+
+    if os.path.isfile(URLS_CSV):
+        with io.open(URLS_CSV, "r", encoding="utf8", newline="\n") as fh:
+            reader = csv.DictReader(fh)
+            for row in reader:
+                urls[row["url"]] = row
 
     print(f"Fetching {PADLINKS_URL}")
     req = requests.get(PADLINKS_URL, headers=SI_HEADERS, timeout=60)
@@ -143,11 +166,17 @@ def main() -> int:
         print("")
         print(f"Generating from {line} ({i}/{pad_lines})")
         try:
-            do_padfile(line)
+            urls = do_padfile(line, urls)
         except Exception:
             print_exc()
 
     print(f"Processed {pad_lines} manifests")
+
+    with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
+        writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS)
+        writer.writeheader()
+        for _, row in urls.items():
+            writer.writerow(row)
 
     # handled now by GitHub action:
     # cmd = "pwsh -Command ./bin/checkver.ps1 -f"
@@ -163,7 +192,7 @@ def main() -> int:
 # pylint: disable=R0912 # Too many branches (17/12) (too-many-branches)
 # pylint: disable=R0914 # Too many local variables (34/15) (too-many-locals)
 # pylint: disable=R0915 # Too many statements (88/50) (too-many-statements)
-def do_padfile(line: str) -> bool:
+def do_padfile(line: str, urls: Urls) -> Urls:
     """do_padfile"""
 
     version = ""
@@ -207,57 +236,46 @@ def do_padfile(line: str) -> bool:
         description = ""
 
     download = download.replace("http:", "https:")
-    zip32 = os.path.basename(download)
-    zippath = os.path.join(CACHE_DIR, zip32)
+    row: UrlEntry = urls.get(download, dict.fromkeys(URLS_FIELDS, ""))
+    (rv, row) = update_row(row, download)
+    if download not in urls:
+        urls[download] = row
+    if not rv:
+        # don't update urls on temporary 404s
+        return urls
+
+    urls[download] = row
+
+    if not row["exe"]:
+        print(f"No executable found in {download}, skipping")
+        return urls
 
     download64 = download.replace(".zip", "-x64.zip")
-    zip64 = os.path.basename(download64)
-    zippath64 = os.path.join(CACHE_DIR, zip64)
+    row64: UrlEntry = urls.get(download64, dict.fromkeys(URLS_FIELDS, ""))
+    (x64, row64) = update_row(row64, download64, False)
+    if download64 not in urls:
+        urls[download64] = row64
 
     name = os.path.splitext(os.path.basename(line))[0]
-
-    data = get_zip_data(download, zippath)
-
-    exe = probe_for_exe(data)
-    if not exe:
-        print(f"No executable found in {zip32}, skipping")
-        return False
-
-    req = requests.head(download64, headers=HEADERS, timeout=60)
-    pause_between_requests()
-    x64 = bool(req.ok)
-    if x64:
-        print(f"Found 64-bit download: {download64}")
-        data64 = get_zip_data(download64, zippath64)
-    else:
-        data64 = b""
-
     json_file = "bucket/" + name + ".json"
-    existing = {}
+
     if os.path.isfile(json_file):
         print(f"Reading {json_file}")
         with open(json_file, "r", encoding="utf-8") as j:
-            existing = json.load(j)
+            manifest = json.load(j)
+            architecture = manifest.get("architecture", {})
+            bit64 = architecture.get("64bit", {})
+            url64 = bit64.get("url", "")
+            if not x64 and url64:
+                # don't update urls on temporary 404s
+                print(f"{json_file} has {url64} but cannot access {download64}, skipping")
+                return urls
 
-    hash_ = existing.get("hash", "tbd")
-    architecture = existing.get("architecture", {})
-    bit32 = architecture.get("32bit", {})
-    bit64 = architecture.get("64bit", {})
-    hash32 = bit32.get("hash", "tbd")
-    hash64 = bit64.get("hash", "tbd")
-
-    rehash = version != existing.get("version", "n/a")
-    if not x64:
-        if rehash or hash_ == "tbd":
-            hash_ = sha256sum(data)
-    else:
-        if rehash or hash32 == "tbd":
-            hash32 = sha256sum(data)
-        if rehash or hash64 == "tbd":
-            hash64 = sha256sum(data64)
+    urls[download64] = row64
 
     shortcut = "NirSoft\\" + full_name
-
+    exe = row["exe"]
+    hash32 = row["hash"]
     manifest = {
         "version": version,
         "homepage": website,
@@ -265,7 +283,7 @@ def do_padfile(line: str) -> bool:
         "bin": exe,
         "shortcuts": [[exe, shortcut]],
         "persist": [name + "_lng.ini", name + ".cfg"],
-        "hash": hash_,
+        "hash": hash32,
         "architecture": "",
         "description": description,
         "license": "Freeware",
@@ -278,6 +296,7 @@ def do_padfile(line: str) -> bool:
     }
 
     if x64:
+        hash64 = row64["hash"]
         manifest.pop("url")
         manifest.pop("hash")
         manifest["autoupdate"] = {
@@ -290,11 +309,11 @@ def do_padfile(line: str) -> bool:
     else:
         manifest.pop("architecture")
         manifest["url"] = download
-        manifest["hash"] = hash_
+        manifest["hash"] = hash32
 
     rewrite_json(json_file, manifest)
 
-    return True
+    return urls
 
 
 def rewrite_json(json_file: str, manifest: dict[str, T.Any]) -> bool:

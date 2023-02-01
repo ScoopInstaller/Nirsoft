@@ -37,7 +37,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/cache
-          key: cache-key-${{ hashFiles('ziplist.txt') }}
+          key: cache-key-${{ hashFiles('cache/urls.csv') }}
 
       - name: run actions/setup-python@v4
         uses: actions/setup-python@v4
@@ -52,12 +52,6 @@ jobs:
 
       - name: run python update.py
         run: python update.py ${{ github.event.inputs.options }}
-
-      - name: save ziplist.txt
-        run: |
-          cd cache
-          ls -ltr
-          sha256sum * >../ziplist.txt
 
       # - name: run foosel/scoop-checkver-action@main
       #  uses: foosel/scoop-checkver-action@main
@@ -83,10 +77,11 @@ jobs:
               git commit -m "$message"
               continue
             fi
-            if [[ $file =~ ziplist\.txt$ ]]; then
-              git add "$file"
-              git commit -m "Update ziplist.txt"
-            fi
+            # lessen commits by saving/loading from cache instead:
+            # if [[ $file =~ urls\.csv$ ]]; then
+            #   git add "$file"
+            #   git commit -m "Update urls.csv"
+            # fi
           done < <(git diff --ignore-all-space --name-only --no-color)
 
       - name: run ad-m/github-push-action@v0.6.0
