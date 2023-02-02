@@ -69,7 +69,7 @@ def get(url: str) -> bytes:
         with io.open(cached_zip, "wb") as fh:
             fh.write(req.content)
         mtime = get_mtime(req)
-        print(f"Setting time of {cached_zip} to {mtime}")
+        # print(f"Setting time of {cached_zip} to {mtime}")
         os.utime(cached_zip, (mtime, mtime))
 
     return req.content
@@ -114,8 +114,7 @@ def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool,
 
     if not row["last_modified"]:
         row["last_modified"] = "0"
-
-    if mtime > int(row["last_modified"]):
+    if mtime > float(row["last_modified"]):
         row["last_modified"] = str(mtime)
         data = get(url)
         row["hash"] = sha256sum(data)
@@ -123,7 +122,7 @@ def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool,
     else:
         cached_zip = os.path.join(CACHE_DIR, os.path.basename(url))
         if CACHE_DOWNLOADS and os.path.isfile(cached_zip):
-            print(f"Setting time of {cached_zip} to {mtime}")
+            # print(f"Setting time of {cached_zip} to {mtime}")
             os.utime(cached_zip, (mtime, mtime))
 
     return (True, row)
@@ -137,8 +136,8 @@ def main() -> int:
     urls: Urls = {}
 
     if os.path.isfile(URLS_CSV):
-        with io.open(URLS_CSV, "r", encoding="utf8", newline="\n") as fh:
-            reader = csv.DictReader(fh)
+        with io.open(URLS_CSV, "r", encoding="utf8", newline="") as fh:
+            reader = csv.DictReader(fh, lineterminator="\n")
             for row in reader:
                 urls[row["url"]] = row
 
@@ -166,7 +165,7 @@ def main() -> int:
     print(f"Processed {pad_lines} manifests")
 
     with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
-        writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS)
+        writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS, lineterminator="\n")
         writer.writeheader()
         for _, row in urls.items():
             writer.writerow(row)
