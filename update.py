@@ -38,17 +38,20 @@ HEADERS = {"Referer": REFERER}
 UrlEntry = dict[str, T.Any]
 Urls = dict[str, UrlEntry]
 
+
 def seconds_to_sleep() -> int:
     """seconds_to_sleep"""
-    if not os.environ.get("CI", False):
-        return 0
     if len(sys.argv) > 1 and len(sys.argv[1]) > 0:
         return int(sys.argv[1])
+    if not os.environ.get("CI", False):
+        return 0
     return SECONDS_BETWEEN_REQUESTS
+
 
 def pause_between_requests() -> None:
     """pause_between_requests"""
     time.sleep(seconds_to_sleep())
+
 
 def get_mtime(req: T.Any) -> float:
     """get_mtime"""
@@ -137,6 +140,8 @@ def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool,
 # pylint: disable=R0914 # Too many local variables (17/15) (too-many-locals)
 def main() -> int:
     """main"""
+    print(f"Sleeping {seconds_to_sleep()} seconds between requests")
+
     if not os.path.isdir(CACHE_DIR):
         os.makedirs(CACHE_DIR)
 
@@ -153,8 +158,6 @@ def main() -> int:
     pause_between_requests()
     req.raise_for_status()
     pad_urls = req.text
-
-    print(f"Sleeping {seconds_to_sleep()} seconds between requests")
 
     total_pads = len(pad_urls.splitlines())
 
