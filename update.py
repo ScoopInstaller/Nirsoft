@@ -5,6 +5,7 @@
 
 import codecs
 import csv
+import datetime as DT
 import hashlib
 import io
 import json
@@ -26,7 +27,7 @@ CACHE_DOWNLOADS = os.environ.get("CACHE_DOWNLOADS", False)
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 PADLINKS_URL = "https://www.nirsoft.net/pad/pad-links.txt"
 REFERER = "https://www.nirsoft.net/"
-# 10 seconds per request could cause each run to take about 2h 45m, but if we get caching working, it should only take <50m on average.
+# 10 seconds per request could cause each run to take 3 hours or more, but with caching it should only take <50m on average.
 SECONDS_BETWEEN_REQUESTS = 10
 SI_HEADERS: dict[str, str] = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
 URLS_CSV = os.path.join(CACHE_DIR, "urls.csv")
@@ -68,9 +69,6 @@ def get(url: str) -> bytes:
         print(f"Writing {cached_zip}")
         with io.open(cached_zip, "wb") as fh:
             fh.write(req.content)
-        mtime = get_mtime(req)
-        # print(f"Setting time of {cached_zip} to {mtime}")
-        os.utime(cached_zip, (mtime, mtime))
 
     return req.content
 
@@ -119,15 +117,19 @@ def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool,
         data = get(url)
         row["hash"] = sha256sum(data)
         row["exe"] = probe_for_exe(data)
-    else:
-        cached_zip = os.path.join(CACHE_DIR, os.path.basename(url))
-        if CACHE_DOWNLOADS and os.path.isfile(cached_zip):
+
+    cached_zip = os.path.join(CACHE_DIR, os.path.basename(url))
+    if CACHE_DOWNLOADS and os.path.isfile(cached_zip):
+        try:
             # print(f"Setting time of {cached_zip} to {mtime}")
             os.utime(cached_zip, (mtime, mtime))
+        except Exception:
+            pass  # ignore failures
 
     return (True, row)
 
 
+# pylint: disable=R0914 # Too many local variables (17/15) (too-many-locals)
 def main() -> int:
     """main"""
     if not os.path.isdir(CACHE_DIR):
@@ -145,24 +147,33 @@ def main() -> int:
     req = requests.get(PADLINKS_URL, headers=SI_HEADERS, timeout=60)
     pause_between_requests()
     req.raise_for_status()
-    pads = req.text
+    pad_urls = req.text
 
     if os.environ.get("CI", False):
         print(f"Sleeping {SECONDS_BETWEEN_REQUESTS} seconds between requests")
 
-    pad_lines = len(pads.splitlines())
+    total_pads = len(pad_urls.splitlines())
 
-    i = 0
-    for line in pads.splitlines():
-        i += 1
-        print("")
-        print(f"Generating from {line} ({i}/{pad_lines})")
+    start = time.time()
+
+    done = 0
+    for pad_url in pad_urls.splitlines():
+        done += 1
+
+        index = done - 1
+        elapsed_each = (time.time() - start) / index if index else 0.0
+        remaining_seconds = (total_pads - index) * elapsed_each
+        remaining_time = str(DT.timedelta(seconds=remaining_seconds))
+        # strip off fractional seconds:
+        remaining_time = re.sub(r"\.\d+\s*$", "", remaining_time)
+        completed_pct = 100.0 * index / total_pads
+        print(f"{done:3d}/{total_pads}: {completed_pct:5.2f}% complete, {remaining_time} left, processing {pad_url}")
         try:
-            urls = do_padfile(line, urls)
+            urls = do_padfile(pad_url, urls)
         except Exception:
             print_exc()
 
-    print(f"Processed {pad_lines} manifests")
+    print(f"Processed {total_pads} manifests")
 
     with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
         writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS, lineterminator="\n")
@@ -177,7 +188,7 @@ def main() -> int:
 # pylint: disable=R0912 # Too many branches (17/12) (too-many-branches)
 # pylint: disable=R0914 # Too many local variables (34/15) (too-many-locals)
 # pylint: disable=R0915 # Too many statements (88/50) (too-many-statements)
-def do_padfile(line: str, urls: Urls) -> Urls:
+def do_padfile(pad_url: str, urls: Urls) -> Urls:
     """do_padfile"""
 
     version = ""
@@ -186,7 +197,7 @@ def do_padfile(line: str, urls: Urls) -> Urls:
     download = ""
     description = ""
 
-    req = requests.get(line, headers=SI_HEADERS, timeout=60)
+    req = requests.get(pad_url, headers=SI_HEADERS, timeout=60)
     pause_between_requests()
     req.raise_for_status()
     padfile = req.text
@@ -241,11 +252,11 @@ def do_padfile(line: str, urls: Urls) -> Urls:
     if download64 not in urls:
         urls[download64] = row64
 
-    name = os.path.splitext(os.path.basename(line))[0]
+    name = os.path.splitext(os.path.basename(pad_url))[0]
     json_file = "bucket/" + name + ".json"
 
     if os.path.isfile(json_file):
-        print(f"Reading {json_file}")
+        # print(f"Reading {json_file}")
         with open(json_file, "r", encoding="utf-8") as j:
             manifest = json.load(j)
             architecture = manifest.get("architecture", {})
@@ -311,7 +322,7 @@ def rewrite_json(json_file: str, manifest: dict[str, T.Any]) -> bool:
             new = re.sub(r"\s+", " ", new)
             # don't rewrite the file if nothing changed
             if old == new:
-                print(f"Skipping writing {json_file}: no changes")
+                # print(f"Skipping writing {json_file}: no changes")
                 return True
 
     print(f"Writing {json_file}")
