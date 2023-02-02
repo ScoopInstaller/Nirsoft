@@ -37,12 +37,13 @@ jobs:
 
       - name: Commit changes
         run: |
+          set -x -v
           # Commit changes to repository
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
           function commit() {
-            printf "Found %d changed %s file(s)\n" "${#MAPFILE[@]}" "$1"
+            printf "Found %s changed %s file(s)\n" "${#MAPFILE[@]}" "$1"
             if ((${#MAPFILE[@]}==0)); then
               return 0
             fi
@@ -65,7 +66,7 @@ jobs:
               fi
               printf "UH OH! Found unexpected changed file '%s'\n" "${file}"
             done
-            printf "Committed %d of %d changed files\n" "${commits}" "${#MAPFILE[@]}"
+            printf "Committed %s of %s changed files\n" "${commits}" "${#MAPFILE[@]}"
             return 0
           }
 

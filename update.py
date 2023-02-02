@@ -38,15 +38,17 @@ HEADERS = {"Referer": REFERER}
 UrlEntry = dict[str, T.Any]
 Urls = dict[str, UrlEntry]
 
+def seconds_to_sleep() -> int:
+    """seconds_to_sleep"""
+    if not os.environ.get("CI", False):
+        return 0
+    if len(sys.argv) > 1 and len(sys.argv[1]) > 0:
+        return int(sys.argv[1])
+    return SECONDS_BETWEEN_REQUESTS
 
 def pause_between_requests() -> None:
     """pause_between_requests"""
-    if os.environ.get("CI", "") != "true":
-        return
-    sleep = SECONDS_BETWEEN_REQUESTS
-    if len(sys.argv) > 1 and len(sys.argv[1]) > 0:
-        sleep = int(sys.argv[1])
-    time.sleep(sleep)
+    time.sleep(seconds_to_sleep())
 
 def get_mtime(req: T.Any) -> float:
     """get_mtime"""
@@ -152,8 +154,7 @@ def main() -> int:
     req.raise_for_status()
     pad_urls = req.text
 
-    if os.environ.get("CI", False):
-        print(f"Sleeping {SECONDS_BETWEEN_REQUESTS} seconds between requests")
+    print(f"Sleeping {seconds_to_sleep()} seconds between requests")
 
     total_pads = len(pad_urls.splitlines())
 
