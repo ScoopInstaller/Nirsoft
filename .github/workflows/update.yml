@@ -7,6 +7,11 @@ on:
     - cron: '0 3 * * *'
 
   workflow_dispatch:
+   inputs:
+      sleep_seconds:
+       description: "Enter seconds to pause between requests (default: 10)"
+       required: false
+       default: '10'
 
 jobs:
   update:
@@ -28,7 +33,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run python update.py (can take up to 3 hours)
-        run: python update.py
+        run: python update.py ${{ github.event.inputs.sleep_seconds }}
 
       - name: Commit changes
         run: |
@@ -43,7 +48,7 @@ jobs:
             fi
             # create individual commit per updated manifest
             commits=0
-            for file in "${MAPFILE[@]}"
+            for file in "${MAPFILE[@]}"; do
               if [[ "${file}" =~ bucket/.*\.json$ ]]; then
                 manifest=$(basename "${file}" .json)
                 version=$(jq -r .version <"${file}")

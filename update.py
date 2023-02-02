@@ -41,9 +41,12 @@ Urls = dict[str, UrlEntry]
 
 def pause_between_requests() -> None:
     """pause_between_requests"""
-    if os.environ.get("CI", "") == "true":
-        time.sleep(SECONDS_BETWEEN_REQUESTS)
-
+    if os.environ.get("CI", "") != "true":
+        return
+    sleep = SECONDS_BETWEEN_REQUESTS
+    if len(sys.argv) > 1 and len(sys.argv[1]) > 0:
+        sleep = int(sys.argv[1])
+    time.sleep(sleep)
 
 def get_mtime(req: T.Any) -> float:
     """get_mtime"""
@@ -82,7 +85,7 @@ def probe_for_exe(data: bytes) -> str:
                     return filename
     except zipfile.BadZipFile as exc:
         encoded = codecs.encode(data[:2], "hex")
-        print(f"{exc}: expected 504b, found {encoded!r}:")
+        print(f"{exc}: expected a .zips' 504b magic signature, found {encoded!r}:")
         utf8 = data.decode("utf-8", "backslashreplace")
         print(utf8[:256])
 
