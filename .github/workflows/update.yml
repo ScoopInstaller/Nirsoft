@@ -37,7 +37,6 @@ jobs:
 
       - name: Commit changes
         run: |
-          set -x -v
           # Commit changes to repository
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -55,13 +54,13 @@ jobs:
                 version=$(jq -r .version <"${file}")
                 git add "${file}"
                 git commit -m "${manifest}: Update to version ${version}"
-                ((commits++))
+                ((commits++)) || true
                 continue
               fi
               if [[ ${file} =~ urls\.csv$ ]]; then
                 git add "${file}"
                 git commit -m "Update url list [ci skip]"
-                ((commits++))
+                ((commits++)) || true
                 continue
               fi
               printf "UH OH! Found unexpected changed file '%s'\n" "${file}"
