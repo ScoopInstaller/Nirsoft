@@ -182,7 +182,7 @@ def main() -> int:
 
     print(f"Processed {total_pads} manifests")
 
-    with io.open(URLS_CSV, "a", encoding="utf8", newline="\n") as fh:
+    with io.open(URLS_CSV, "w", encoding="utf8", newline="\n") as fh:
         writer = csv.DictWriter(fh, fieldnames=URLS_FIELDS, lineterminator="\n")
         writer.writeheader()
         for _, row in urls.items():
