@@ -14,7 +14,7 @@ on:
         default: '10'
       recheck_404s:
         description: "Recheck 404s (default: false)"
-        type: bool
+        type: boolean
         required: false
         default: false
 
@@ -38,7 +38,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run python update.py (can take up to 3 hours)
-        run: python update.py ${{ github.event.inputs.sleep_seconds }} ${{ github.event.inputs.recheck_404s }}
+        run: python update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}
 
       - name: Commit changes
         run: |
