@@ -39,6 +39,13 @@ UrlEntry = dict[str, T.Any]
 Urls = dict[str, UrlEntry]
 
 
+def check_404s() -> bool:
+    """check_404s"""
+    if len(sys.argv) > 2 and len(sys.argv[2]) > 0:
+        return bool(sys.argv[2])
+    return bool(os.environ.get("CHECK_404S", False))
+
+
 def seconds_to_sleep() -> int:
     """seconds_to_sleep"""
     if len(sys.argv) > 1 and len(sys.argv[1]) > 0:
@@ -106,6 +113,9 @@ def sha256sum(data: bytes) -> str:
 
 def update_row(row: UrlEntry, url: str, report_404s: bool = True) -> tuple[bool, UrlEntry]:
     """update_row"""
+
+    if row["status"] and int(row["status"]) == 404 and not check_404s():
+        return (False, row)
 
     req = requests.head(url, headers=HEADERS, timeout=60)
     pause_between_requests()
