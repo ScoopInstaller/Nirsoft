@@ -172,9 +172,9 @@ def main() -> int:
     done = 0
     with zipfile.ZipFile(BytesIO(req.content)) as z:
         total_pads = len(z.namelist())
-        for padname in z.namelist(): 
-            with z.open(padname) as zh:
-                padfile = str(zh.read(), "utf-8")
+        for pad_name in z.namelist(): 
+            with z.open(pad_name) as zh:
+                pad_data = str(zh.read(), "utf-8")
                 done += 1
                 index = done - 1
                 elapsed_each = (time.time() - start) / index if index else 0.0
@@ -183,9 +183,9 @@ def main() -> int:
                 # strip off fractional seconds:
                 remaining_time = re.sub(r"\.\d+\s*$", "", remaining_time)
                 completed_pct = 100.0 * index / total_pads
-                print(f"{done:3d}/{total_pads}: {completed_pct:5.2f}% complete, {remaining_time} left, processing {pad_url}")
+                print(f"{done:3d}/{total_pads}: {completed_pct:5.2f}% complete, {remaining_time} left, processing {pad_name}")
                 try:
-                    urls = do_padfile(padfile, urls)
+                    urls = do_padfile(pad_name, pad_data, urls)
                 except Exception:
                     print_exc()
 
@@ -204,7 +204,7 @@ def main() -> int:
 # pylint: disable=R0912 # Too many branches (17/12) (too-many-branches)
 # pylint: disable=R0914 # Too many local variables (34/15) (too-many-locals)
 # pylint: disable=R0915 # Too many statements (88/50) (too-many-statements)
-def do_padfile(padfile: str, urls: Urls) -> Urls:
+def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
     """do_padfile"""
 
     version = ""
@@ -213,7 +213,7 @@ def do_padfile(padfile: str, urls: Urls) -> Urls:
     download = ""
     description = ""
 
-    root = ET.fromstring(padfile)
+    root = ET.fromstring(pad_data)
 
     try:
         info = root.find("Program_Info")
@@ -264,7 +264,7 @@ def do_padfile(padfile: str, urls: Urls) -> Urls:
     if download64 not in urls:
         urls[download64] = row64
 
-    name = os.path.splitext(os.path.basename(pad_url))[0]
+    name = os.path.splitext(os.path.basename(pad_name))[0]
     json_file = "bucket/" + name + ".json"
 
     if os.path.isfile(json_file):
