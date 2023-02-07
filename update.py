@@ -25,7 +25,7 @@ from dateutil.parser import parse as parsedate
 CACHE_DIR = "cache"
 CACHE_DOWNLOADS = os.environ.get("CACHE_DOWNLOADS", False)
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
-PADLINKS_URL = "https://www.nirsoft.net/pad/pad-links.txt"
+PADS_ZIP_URL = "https://www.nirsoft.net/pad/pads.zip"
 REFERER = "https://www.nirsoft.net/"
 # 10 seconds per request could cause each run to take 3 hours or more, but with caching it should only take <50m on average.
 SECONDS_BETWEEN_REQUESTS = 10
@@ -163,32 +163,31 @@ def main() -> int:
             for row in reader:
                 urls[row["url"]] = row
 
-    print(f"Fetching {PADLINKS_URL}")
-    req = requests.get(PADLINKS_URL, headers=SI_HEADERS, timeout=60)
+    print(f"Fetching {PADS_ZIP_URL}")
+    req = requests.get(PADS_ZIP_URL, headers=SI_HEADERS, timeout=60)
     pause_between_requests()
     req.raise_for_status()
-    pad_urls = req.text
-
-    total_pads = len(pad_urls.splitlines())
-
+    
     start = time.time()
-
     done = 0
-    for pad_url in pad_urls.splitlines():
-        done += 1
-
-        index = done - 1
-        elapsed_each = (time.time() - start) / index if index else 0.0
-        remaining_seconds = (total_pads - index) * elapsed_each
-        remaining_time = str(DT.timedelta(seconds=remaining_seconds))
-        # strip off fractional seconds:
-        remaining_time = re.sub(r"\.\d+\s*$", "", remaining_time)
-        completed_pct = 100.0 * index / total_pads
-        print(f"{done:3d}/{total_pads}: {completed_pct:5.2f}% complete, {remaining_time} left, processing {pad_url}")
-        try:
-            urls = do_padfile(pad_url, urls)
-        except Exception:
-            print_exc()
+    with ZipFile(BytesIO(req.content)) as z:
+        total_pads = len(z.namelist())
+        for filename in z.namelist(): 
+            with z.open(filename) as zh:
+                padfile = str(zh.read(), "utf-8")
+                done += 1
+                index = done - 1
+                elapsed_each = (time.time() - start) / index if index else 0.0
+                remaining_seconds = (total_pads - index) * elapsed_each
+                remaining_time = str(DT.timedelta(seconds=remaining_seconds))
+                # strip off fractional seconds:
+                remaining_time = re.sub(r"\.\d+\s*$", "", remaining_time)
+                completed_pct = 100.0 * index / total_pads
+                print(f"{done:3d}/{total_pads}: {completed_pct:5.2f}% complete, {remaining_time} left, processing {pad_url}")
+                try:
+                    urls = do_padfile(padfile, urls)
+                except Exception:
+                    print_exc()
 
     print(f"Processed {total_pads} manifests")
 
@@ -205,7 +204,7 @@ def main() -> int:
 # pylint: disable=R0912 # Too many branches (17/12) (too-many-branches)
 # pylint: disable=R0914 # Too many local variables (34/15) (too-many-locals)
 # pylint: disable=R0915 # Too many statements (88/50) (too-many-statements)
-def do_padfile(pad_url: str, urls: Urls) -> Urls:
+def do_padfile(padfile: str, urls: Urls) -> Urls:
     """do_padfile"""
 
     version = ""
@@ -214,10 +213,6 @@ def do_padfile(pad_url: str, urls: Urls) -> Urls:
     download = ""
     description = ""
 
-    req = requests.get(pad_url, headers=SI_HEADERS, timeout=60)
-    pause_between_requests()
-    req.raise_for_status()
-    padfile = req.text
     root = ET.fromstring(padfile)
 
     try:
