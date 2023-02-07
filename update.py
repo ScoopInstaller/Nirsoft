@@ -170,10 +170,10 @@ def main() -> int:
     
     start = time.time()
     done = 0
-    with ZipFile(BytesIO(req.content)) as z:
+    with zipfile.ZipFile(BytesIO(req.content)) as z:
         total_pads = len(z.namelist())
-        for filename in z.namelist(): 
-            with z.open(filename) as zh:
+        for padname in z.namelist(): 
+            with z.open(padname) as zh:
                 padfile = str(zh.read(), "utf-8")
                 done += 1
                 index = done - 1
