@@ -38,7 +38,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run python update.py (can take up to 3 hours)
-        run: python update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}
+        run: python update.py ${{ inputs.sleep_seconds }} ${{ fromJSON(inputs.recheck_404s) }}
 
       - name: Commit changes
         run: |
@@ -47,7 +47,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
           function commit() {
-            printf "Found %s changed %s file(s)\n" "${#MAPFILE[@]}" "$1"
+            printf "Found %s %s file(s)\n" "${#MAPFILE[@]}" "$1"
             if ((${#MAPFILE[@]}==0)); then
               return 0
             fi
@@ -75,7 +75,7 @@ jobs:
           }
 
           mapfile -t < <(git diff --ignore-all-space --name-only --no-color)
-          commit "existing"
+          commit "changed"
 
           mapfile -t < <(git ls-files bucket/*.json --others --exclude-standard)
           commit "new"
