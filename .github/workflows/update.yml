@@ -38,7 +38,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run python update.py (can take up to 3 hours)
-        run: python update.py ${{ inputs.sleep_seconds }} ${{ fromJSON(inputs.recheck_404s) }}
+        # ignore syntax error on the following line
+        run: python update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}
 
       - name: Commit changes
         run: |
