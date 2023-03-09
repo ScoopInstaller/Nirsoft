@@ -303,6 +303,13 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
         "autoupdate": {"url": download},
     }
 
+    # See https://github.com/ScoopInstaller/Nirsoft/issues/17
+    if name == "webbrowserpassview":
+        manifest["pre_install"] = [
+            r"$zip=(Get-ChildItem $dir\\webbrowserpassview*).Name",
+            r"7z x $dir\\$zip -pwbpv28821@ $('-o' + $dir) | Out-Null"
+        ]
+
     if x64:
         hash64 = row64["hash"]
         manifest.pop("url")
