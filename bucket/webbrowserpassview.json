@@ -1,7 +1,7 @@
 {
     "version": "2.12",
     "homepage": "https://www.nirsoft.net/utils/web_browser_password.html",
-    "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip",
+    "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip#dl.zip_",
     "bin": "WebBrowserPassView.exe",
     "shortcuts": [
         [
