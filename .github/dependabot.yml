@@ -6,3 +6,7 @@ updates:
     directory: "/" # == /.github/workflows/
     schedule:
       interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
