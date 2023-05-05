@@ -326,6 +326,12 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
             r"$zip=(Get-ChildItem $dir\\webbrowserpassview*).Name",
             r"7z x $dir\\$zip -pwbpv28821@ $('-o' + $dir) | Out-Null"
         ]
+    if name == "wirelesskeyview":
+        manifest["url"] += "#dl.zip_"
+        manifest["pre_install"] = [
+            r"$zip=(Get-ChildItem $dir\\wirelesskeyview*).Name",
+            r"7z x $dir\\$zip -pWKey4567# $('-o' + $dir) | Out-Null"
+        ]
 
     rewrite_json(json_file, manifest)
 
