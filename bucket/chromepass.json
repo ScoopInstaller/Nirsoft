@@ -25,7 +25,7 @@
         "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip"
     },
     "pre_install": [
-        "$zip=(Get-ChildItem $dir\\\\$name*).Name",
-        "7z x $dir\\\\$zip -p'$password' $('-o' + $dir) | Out-Null"
+        "$zip=(Get-ChildItem $dir\\\\chromepass*).Name",
+        "7z x $dir\\\\$zip -p'chpass9126*$('-o' + $dir) | Out-Null"
     ]
 }
