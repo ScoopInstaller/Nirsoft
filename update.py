@@ -38,7 +38,7 @@ HEADERS = {"Referer": REFERER}
 PASSWORDS: dict[str, str] = {
     'chromepass': 'chpass9126*',
     'dialupass': 'nsdlps3861@',
-    'iepv': 'iepv68861$'
+    'iepv': 'iepv68861$',
     'netpass': 'ntps5291#',
     'passwordfox': 'nspsfx403!',
     'webbrowserpassview': 'wbpv28821@',
