@@ -35,6 +35,16 @@ URLS_FIELDS: list[str] = ["url", "status", "last_modified", "hash", "exe"]
 
 HEADERS = {"Referer": REFERER}
 
+PASSWORDS: dict[str, str] = {
+    'chromepass': 'chpass9126*',
+    'dialupass': 'nsdlps3861@',
+    'iepv': 'iepv68861$'
+    'netpass': 'ntps5291#',
+    'passwordfox': 'nspsfx403!',
+    'webbrowserpassview': 'wbpv28821@',
+    'wirelesskeyview': 'WKey4567#',
+}
+
 UrlEntry = dict[str, T.Any]
 Urls = dict[str, UrlEntry]
 
@@ -320,17 +330,13 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
         manifest["hash"] = hash32
         
     # See https://github.com/ScoopInstaller/Nirsoft/issues/17
-    if name == "webbrowserpassview":
+    # See https://github.com/ScoopInstaller/Nirsoft/issues/46
+    password = PASSWORDS.get(name, '')
+    if password:
         manifest["url"] += "#dl.zip_"
         manifest["pre_install"] = [
-            r"$zip=(Get-ChildItem $dir\\webbrowserpassview*).Name",
-            r"7z x $dir\\$zip -pwbpv28821@ $('-o' + $dir) | Out-Null"
-        ]
-    if name == "wirelesskeyview":
-        manifest["url"] += "#dl.zip_"
-        manifest["pre_install"] = [
-            r"$zip=(Get-ChildItem $dir\\wirelesskeyview*).Name",
-            r"7z x $dir\\$zip -pWKey4567# $('-o' + $dir) | Out-Null"
+            r"$zip=(Get-ChildItem $dir\\$name*).Name",
+            r"7z x $dir\\$zip -p'$password' $('-o' + $dir) | Out-Null"
         ]
 
     rewrite_json(json_file, manifest)
