@@ -25,7 +25,7 @@
         "url": "https://www.nirsoft.net/toolsdownload/dialupass.zip"
     },
     "pre_install": [
-        "$zip=(Get-ChildItem $dir\\\\$name*).Name",
-        "7z x $dir\\\\$zip -p'$password' $('-o' + $dir) | Out-Null"
+        "$zip=(Get-ChildItem $dir\\\\dialupass*).Name",
+        "7z x $dir\\\\$zip -p'nsdlps3861@$('-o' + $dir) | Out-Null"
     ]
 }
