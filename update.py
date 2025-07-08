@@ -333,7 +333,7 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
     # See https://github.com/ScoopInstaller/Nirsoft/issues/46
     password = PASSWORDS.get(name, '')
     if password:
-        arch = manifest.get("architecture", ''):
+        arch = manifest.get("architecture", '')
         if arch:
             if arch.get("64bit", ''):
                 manifest["architecture"]["64bit"]["url"] += "#dl.zip_"
