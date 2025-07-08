@@ -333,7 +333,14 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
     # See https://github.com/ScoopInstaller/Nirsoft/issues/46
     password = PASSWORDS.get(name, '')
     if password:
-        manifest["url"] += "#dl.zip_"
+        arch = manifest.get("architecture", ''):
+        if arch:
+            if arch.get("64bit", ''):
+                manifest["architecture"]["64bit"]["url"] += "#dl.zip_"
+            if arch.get("32bit", ''):
+                manifest["architecture"]["32bit"]["url"] += "#dl.zip_"
+        else:
+            manifest["url"] += "#dl.zip_"
         manifest["pre_install"] = [
             r"$zip=(Get-ChildItem $dir\\$name*).Name",
             r"7z x $dir\\$zip -p'$password' $('-o' + $dir) | Out-Null"
