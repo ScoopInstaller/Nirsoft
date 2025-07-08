@@ -342,8 +342,8 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
         else:
             manifest["url"] += "#dl.zip_"
         manifest["pre_install"] = [
-            r"$zip=(Get-ChildItem $dir\\$name*).Name",
-            r"7z x $dir\\$zip -p'$password' $('-o' + $dir) | Out-Null"
+            r"$zip=(Get-ChildItem $dir\\" + name + "*).Name",
+            r"7z x $dir\\$zip -p'" + password + "$('-o' + $dir) | Out-Null"
         ]
 
     rewrite_json(json_file, manifest)
