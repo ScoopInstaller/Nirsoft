@@ -9,9 +9,10 @@ on:
   workflow_dispatch:
     inputs:
       sleep_seconds:
-        description: "Enter seconds to pause between requests (default: 10)"
+        # 10s = ~1hr, 5s = ~30m, 2s = ~12m
+        description: "Enter seconds to pause between requests (default: 2)"
         required: false
-        default: '10'
+        default: '2'
       recheck_404s:
         description: "Recheck 404s (default: false)"
         type: boolean
