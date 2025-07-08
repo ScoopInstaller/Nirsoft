@@ -26,6 +26,6 @@
     },
     "pre_install": [
         "$zip=(Get-ChildItem $dir\\\\dialupass*).Name",
-        "7z x $dir\\\\$zip -p'nsdlps3861@$('-o' + $dir) | Out-Null"
+        "7z x $dir\\\\$zip -p'nsdlps3861@' $('-o' + $dir) | Out-Null"
     ]
 }
