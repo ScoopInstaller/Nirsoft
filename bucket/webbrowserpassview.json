@@ -25,7 +25,7 @@
         "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip"
     },
     "pre_install": [
-        "$zip=(Get-ChildItem $dir\\\\webbrowserpassview*).Name",
-        "7z x $dir\\\\$zip -pwbpv28821@ $('-o' + $dir) | Out-Null"
+        "$zip=(Get-ChildItem $dir\\\\$name*).Name",
+        "7z x $dir\\\\$zip -p'$password' $('-o' + $dir) | Out-Null"
     ]
 }
