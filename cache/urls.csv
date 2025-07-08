@@ -31,7 +31,7 @@ https://www.nirsoft.net/utils/axhelper-x64.zip,404,,,
 https://www.nirsoft.net/utils/batteryhistoryview.zip,200,1734705431.0,20b32fd07d1e687e1de064c73a102bd77e7356e12c4539b07442e4447fa78474,BatteryHistoryView.exe
 https://www.nirsoft.net/utils/batteryhistoryview-x64.zip,404,,,
 https://www.nirsoft.net/utils/batteryinfoview.zip,200,1733222416.0,c70d21d8997a498000bbdce36e7ee6260176f918aee85e56a66ac334bd53f8de,BatteryInfoView.exe
-https://www.nirsoft.net/utils/batteryinfoview-x64.zip,404,,,
+https://www.nirsoft.net/utils/batteryinfoview-x64.zip,200,1733222417.0,409d1020aab0354f749e05324e0ccfcca8677bfd15977458c66463fa8d048441,BatteryInfoView.exe
 https://www.nirsoft.net/utils/bluescreenview.zip,200,1422537052.0,15ba3b0ca0a1ff21e89715da52ecc5918177b97ce40903d299fd591909e7b3ab,BlueScreenView.exe
 https://www.nirsoft.net/utils/bluescreenview-x64.zip,200,1422537052.0,df57d4c9418dd2771035f2f7b70952caeb20d2269af683a0ab0665125c821479,BlueScreenView.exe
 https://www.nirsoft.net/utils/bluetoothcl.zip,200,1392645493.0,025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f,BluetoothCL.exe
@@ -55,7 +55,7 @@ https://www.nirsoft.net/utils/bulletspassview-x64.zip,200,1425240063.0,7a811e7e8
 https://www.nirsoft.net/utils/chromecacheview.zip,200,1737642048.0,ea9fa922eaad76d5eb1cc27d75066945a635ec01e3e7317980120f11a65b0303,ChromeCacheView.exe
 https://www.nirsoft.net/utils/chromecacheview-x64.zip,404,,,
 https://www.nirsoft.net/utils/chromecookiesview.zip,200,1747405320.0,7f68007657b3b04f9e9a9d5638450f4111b8a16b3642c8d356c18ff6d213cefc,ChromeCookiesView.exe
-https://www.nirsoft.net/utils/chromecookiesview-x64.zip,404,,,
+https://www.nirsoft.net/utils/chromecookiesview-x64.zip,200,1747405321.0,af9dcf132575250a01092e11526df55b6688b3e4d96a21f149031369f76b9152,ChromeCookiesView.exe
 https://www.nirsoft.net/utils/chromehistoryview.zip,200,1700125310.0,2ec1c491db61f9f003ea2d8b9c01773a298ec4f46eb838b2ef277b02d16d9ba7,ChromeHistoryView.exe
 https://www.nirsoft.net/utils/chromehistoryview-x64.zip,404,,,
 https://www.nirsoft.net/toolsdownload/chromepass.zip,200,1749122072.0,1b8cf40432319545ad28c01f506f35b70ce3f5178bc86e69bb160ff7cc7f53f1,ChromePass.exe
@@ -559,7 +559,7 @@ https://www.nirsoft.net/utils/wirelessnetconsole-x64.zip,404,,,
 https://www.nirsoft.net/utils/wirelessnetview.zip,200,1507046373.0,d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78,WirelessNetView.exe
 https://www.nirsoft.net/utils/wirelessnetview-x64.zip,404,,,
 https://www.nirsoft.net/utils/wnetwatcher.zip,200,1749550259.0,7f9c1e46f0f80ad6e41430f129db1482356e633d00a522441e16d1c9d18bfac5,WNetWatcher.exe
-https://www.nirsoft.net/utils/wnetwatcher-x64.zip,404,,,
+https://www.nirsoft.net/utils/wnetwatcher-x64.zip,200,1749550260.0,971bfa54e2f7677cf64371631e7eb8af5318b3971dc11114c38551a0cfb29fd5,WNetWatcher.exe
 https://www.nirsoft.net/utils/wul.zip,200,1496728852.0,944bfcc87558b7315966542c0b3c82110a4754e222e759f091d0b27eb76fc0a7,wul.exe
 https://www.nirsoft.net/utils/wul-x64.zip,404,,,
 https://www.nirsoft.net/utils/zipinst.zip,200,1103783140.0,5f086a0dc689217026f06111327ae5a7d9baaa250322b84ff9dda2c74f3de788,zipinst.exe
