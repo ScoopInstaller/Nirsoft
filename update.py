@@ -328,7 +328,11 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
         manifest.pop("architecture")
         manifest["url"] = download
         manifest["hash"] = hash32
-        
+
+    manifest["pre_install"] = [
+        r'if (-not (Test-Path \"$persist_dir\\'+ name + r'.cfg\")) { New-Item \"$dir\\' +name + r'.cfg\" -ItemType file | Out-Null }',
+        r'if (-not (Test-Path \"$persist_dir\\' + name + r'_lng.ini\")) { New-Item \"$dir\\' + name + r'_lng.ini\" -ItemType file | Out-Null }',
+    ]
     # See https://github.com/ScoopInstaller/Nirsoft/issues/17
     # See https://github.com/ScoopInstaller/Nirsoft/issues/46
     password = PASSWORDS.get(name, '')
@@ -341,10 +345,8 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
                 manifest["architecture"]["32bit"]["url"] += "#dl.zip_"
         else:
             manifest["url"] += "#dl.zip_"
-        manifest["pre_install"] = [
-            r"$zip=(Get-ChildItem $dir\\" + name + "*).Name",
-            r"7z x $dir\\$zip -p'" + password + "' $('-o' + $dir) | Out-Null"
-        ]
+        manifest["pre_install"].append(r"$zip=(Get-ChildItem $dir\\" + name + "*).Name")
+        manifest["pre_install"].append(r"7z x $dir\\$zip -p'" + password + "' $('-o' + $dir) | Out-Null")
 
     rewrite_json(json_file, manifest)
 
