@@ -38,6 +38,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Test manifest generation
+        run: python -m unittest discover -s test -p "test_*.py"
+
       - name: Run python update.py (can take up to 3 hours)
         # ignore syntax error on the following line
         run: python update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}

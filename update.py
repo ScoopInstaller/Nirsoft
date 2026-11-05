@@ -346,6 +346,14 @@ def do_padfile(pad_name: str, pad_data: str, urls: Urls) -> Urls:
             r"7z x $dir\\$zip -p'" + password + "' $('-o' + $dir) | Out-Null"
         ]
 
+    # Missing persist paths are treated as directories by Scoop. Initialize files
+    # after extracting password-protected archives, without replacing existing data.
+    manifest.setdefault("pre_install", []).extend(
+        f'if (!(Test-Path "$persist_dir\\{filename}") -and !(Test-Path "$dir\\{filename}")) '
+        f'{{ New-Item "$dir\\{filename}" -ItemType File | Out-Null }}'
+        for filename in manifest["persist"]
+    )
+
     rewrite_json(json_file, manifest)
 
     return urls
