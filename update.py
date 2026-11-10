@@ -27,13 +27,21 @@ CACHE_DOWNLOADS = os.environ.get("CACHE_DOWNLOADS", False)
 NOTES = "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html"
 PADS_ZIP_URL = "https://www.nirsoft.net/pad/pads.zip"
 REFERER = "https://www.nirsoft.net/"
-# 10 seconds per request could cause each run to take 3 hours or more, but with caching it should only take <50m on average.
-SECONDS_BETWEEN_REQUESTS = 10
-SI_HEADERS: dict[str, str] = {"Referer": "https://github.com/ScoopInstaller/Nirsoft"}
+USER_AGENT = "ScoopNirsoftUpdater/1.0 (+https://github.com/ScoopInstaller/Nirsoft)"
+# 5 seconds per request could cause each run to take 1.5 hours or more, but with caching it should only take <30m on average.
+SECONDS_BETWEEN_REQUESTS = 5
 URLS_CSV = os.path.join(CACHE_DIR, "urls.csv")
 URLS_FIELDS: list[str] = ["url", "status", "last_modified", "hash", "exe"]
 
-HEADERS = {"Referer": REFERER}
+HEADERS: dict[str, str] = {
+    "Referer": REFERER,
+    "User-Agent": USER_AGENT,
+}
+
+SI_HEADERS: dict[str, str] = {
+    "Referer": "https://github.com/ScoopInstaller/Nirsoft",
+    "User-Agent: USER_AGENT,
+}
 
 PASSWORDS: dict[str, str] = {
     'chromepass': 'chpass9126*',
