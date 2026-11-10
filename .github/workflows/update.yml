@@ -19,6 +19,9 @@ on:
         required: false
         default: false
 
+env: 
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -35,15 +38,15 @@ jobs:
       - name: Run pip install -r requirements.txt
         run: |
           # Run pip install -r requirements.txt
-          python -m pip install --upgrade pip
+          python -u -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Test manifest generation
-        run: python -m unittest discover -s test -p "test_*.py"
+        run: python -u -m unittest discover -s test -p "test_*.py"
 
       - name: Run python update.py (can take up to 3 hours)
         # ignore syntax error on the following line
-        run: python update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}
+        run: python -u update.py ${{ inputs.sleep_seconds }} ${{ inputs.recheck_404s }}
 
       - name: Commit changes
         run: |
