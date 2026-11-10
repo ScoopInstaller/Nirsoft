@@ -3,7 +3,7 @@ name: update
 
 on:
   schedule:
-    # run every day at 3am
+    # run every day at 3am UTC
     - cron: '0 3 * * *'
 
   workflow_dispatch:
@@ -74,9 +74,9 @@ jobs:
                 continue
               fi
               ((errors++)) || true
-              printf "::error::Found unexpected changed file %d: '%s'\n" "$(errors}" "${file}"
+              printf "::error::Found unexpected changed file %d: '%s'\n" "${errors}" "${file}"
             done
-            printf "Committed %s of %s changed files\n" "${commits}" "${#MAPFILE[@]}"
+            printf "::notice::Committed %s of %s changed files\n" "${commits}" "${#MAPFILE[@]}"
             return "${errors}"
           }
           errors=0
