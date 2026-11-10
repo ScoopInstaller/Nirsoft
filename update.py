@@ -40,7 +40,7 @@ HEADERS: dict[str, str] = {
 
 SI_HEADERS: dict[str, str] = {
     "Referer": "https://github.com/ScoopInstaller/Nirsoft",
-    "User-Agent: USER_AGENT,
+    "User-Agent": USER_AGENT,
 }
 
 PASSWORDS: dict[str, str] = {
