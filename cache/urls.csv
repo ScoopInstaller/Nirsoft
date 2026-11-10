@@ -99,7 +99,7 @@ https://www.nirsoft.net/utils/dllexp-x64.zip,200,1479233543.0,07d4ddd976679891ee
 https://www.nirsoft.net/utils/dnsdataview.zip,200,1735740938.0,2b7168de8e9e968668e8579f45a910bd6f6c63372911800f885bad4b91901f7c,DNSDataView.exe
 https://www.nirsoft.net/utils/dnsdataview-x64.zip,404,,,
 https://www.nirsoft.net/utils/dnslookupview.zip,200,1791973864.0,d1d341bd89981d1be843acd3c4c4e9f3d14de9d759caa2c71632ac3973a72678,DNSLookupView.exe
-https://www.nirsoft.net/utils/dnslookupview-x64.zip,404,,,
+https://www.nirsoft.net/utils/dnslookupview-x64.zip,200,1791973865.0,aa464a7e9ccc1d1dc4d8e54be5fa7109ee27fb47c8197be95cfa2b5a7b309c42,DNSLookupView.exe
 https://www.nirsoft.net/utils/dnsquerysniffer.zip,200,1781260142.0,ba5511628a471360b4cfdb8107108f31d4df85229970dbea5fb7a11e309508a2,DNSQuerySniffer.exe
 https://www.nirsoft.net/utils/dnsquerysniffer-x64.zip,200,1781260142.0,f410d3213f04d2a67d45d6aa3453254be4cab02fc24b1e9eee1ad5d53e43120b,DNSQuerySniffer.exe
 https://www.nirsoft.net/utils/domainhostingview.zip,200,1563081047.0,19840123792425409b10d6259cb6c22cbbb3a6e1e1cc8b909926a71268a77fe9,DomainHostingView.exe
@@ -238,7 +238,7 @@ https://www.nirsoft.net/toolsdownload/lsasecretsdump.zip,200,1414177416.0,870cbd
 https://www.nirsoft.net/toolsdownload/lsasecretsdump-x64.zip,200,1414177416.0,8d097c09a665fc846cc9389830994a94eaf73ec85c4b8500cfba59113cb20f24,LSASecretsDump.exe
 https://www.nirsoft.net/toolsdownload/lsasecretsview.zip,200,1705751906.0,a657dc525edd15474f6e0449a52a418fc525ca2c2237be71ef5f032a5c6ffdb9,LSASecretsView.exe
 https://www.nirsoft.net/toolsdownload/lsasecretsview-x64.zip,200,1705751907.0,0cb712678ec4f4f3d96fa1f9ec005d1e8633061408c2f922e15c026670702a63,LSASecretsView.exe
-https://www.nirsoft.net/utils/macaddressview.zip,200,1782911478.0,03adf69e54ea51830ee0d81da0384c6a0829fac22e24a0e293553f4d668071e1,MACAddressView.exe
+https://www.nirsoft.net/utils/macaddressview.zip,200,1794153701.0,0e3ff8478cde1914e8f1f2494e7c72fd4fde8895cdbf6acdfce8601a433cc7c7,MACAddressView.exe
 https://www.nirsoft.net/utils/macaddressview-x64.zip,404,,,
 https://www.nirsoft.net/utils/madpassext.zip,200,1640623553.0,d20fb5b9af14b0cb025a95575c8e7febe19f19c2dab3a126d186becd29e3a90b,MadPassExt.exe
 https://www.nirsoft.net/utils/madpassext-x64.zip,404,,,
@@ -343,7 +343,7 @@ https://www.nirsoft.net/toolsdownload/passwordfox-x64.zip,200,1761205513.0,60a9e
 https://www.nirsoft.net/utils/passwordscan.zip,200,1767024148.0,96a0ccd7999dc55f25b6a8cb96512e1d9b9c08270f8e2e4cc46359beabc19e7b,PasswordScan.exe
 https://www.nirsoft.net/utils/passwordscan-x64.zip,200,1767024148.0,05ef2d450d2c20e559e3c3ffb8b8992fced4fd71a674af85738e4ce2931774e6,PasswordScan.exe
 https://www.nirsoft.net/utils/pinginfoview.zip,200,1768477536.0,1175cee5a78f8c91555fa8285db2cbc30b064a65c08e1aa10d4832e2f8d0a1b4,PingInfoView.exe
-https://www.nirsoft.net/utils/pinginfoview-x64.zip,404,,,
+https://www.nirsoft.net/utils/pinginfoview-x64.zip,200,1768477536.0,e8b7b8b88c7115e7e0bff66a6ce0c7d2b298f16f8ef2bd2091e2fb3badae7b13,PingInfoView.exe
 https://www.nirsoft.net/pocket_pc/pocketasterisk.zip,200,1192835766.0,823acbc7958014ec2999b5b61408f0415a90d428707fe158b3f14db6f8612ebd,PocketAsterisk.exe
 https://www.nirsoft.net/pocket_pc/pocketasterisk-x64.zip,404,,,
 https://www.nirsoft.net/utils/previousfilesrecovery.zip,200,1600282948.0,62992bada592bbd7e3b5152b28d6f63d4cb0290efcc7f324143db4356747429b,PreviousFilesRecovery.exe
