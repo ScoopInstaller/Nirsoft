@@ -29,7 +29,7 @@ jobs:
       - name: Run actions/setup-python
         uses: actions/setup-python@v7
         with:
-          python-version: '3.10'
+          python-version: '3.14'
           cache: 'pip'
 
       - name: Run pip install -r requirements.txt
@@ -73,22 +73,23 @@ jobs:
                 ((commits++)) || true
                 continue
               fi
-              printf "UH OH! Found unexpected changed file '%s'\n" "${file}"
+              ((errors++)) || true
+              printf "::error::Found unexpected changed file %d: '%s'\n" "$(errors}" "${file}"
             done
             printf "Committed %s of %s changed files\n" "${commits}" "${#MAPFILE[@]}"
-            return 0
+            return "${errors}"
           }
-
+          errors=0
           mapfile -t < <(git diff --ignore-all-space --name-only --no-color)
           commit "changed"
 
           mapfile -t < <(git ls-files bucket/*.json --others --exclude-standard)
           commit "new"
 
-          exit 0
+          exit "${errors}"
 
       - name: Run ad-m/github-push-action
-        uses: ad-m/github-push-action@v1.3.0
+        uses: ad-m/github-push-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
